@@ -136,14 +136,31 @@ p {
     -webkit-text-fill-color: transparent;
 }
 
+.font-title {
+    font-family: 'Work Sans', 'Arial', sans-serif;
+}
+.font-text {
+    font-family: 'Karma', serif;
+}
+
 /* ----------------------------------------- */
 /* PAGE HEADER                               */
 /* ----------------------------------------- */
-
 section {
     padding:2rem 0;
     position: relative;
 }
+.section-content {
+    display: none;
+}
+.section-content.active {
+    display: block
+}
+
+/* ----------------------------------------- */
+/* PAGE HEADER                               */
+/* ----------------------------------------- */
+
 section.main-header {
     padding-bottom: 0;
 }
@@ -297,7 +314,9 @@ section.main-view {
     font-weight: 100;
     text-transform: lowercase;
 }
-
+.navbar-bar {
+    margin-bar: 1rem;
+}
 .navbar-nav .nav-link,
 .navbar-nav .nav-link:visited,
 .navbar-nav .nav-link:focus {
@@ -334,7 +353,14 @@ section.main-view {
 .icon-menu-up {
     display: none;
 }
-
+.navbar-nav .nav-item.active .nav-link{
+    background-image: -webkit-linear-gradient(left, rgb(192, 192, 192) 40%, rgba(255, 255, 255, 0) 20%);
+    background-image: -webkit-linear-gradient(left, rgb(192, 192, 192) 25%, rgba(255, 255, 255, 0) 0%);
+    background-image: linear-gradient(to right, rgb(192, 192, 192) 25%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 5px 1px;
+    background-repeat: repeat-x;
+}
 .animation-width {
     transition: max-width 0.3s ease-in-out;
 }
@@ -612,34 +638,26 @@ section.main-view {
     border-radius: 3%;
     display: block;
     margin: 0px auto;
-    margin-bottom: 15px;
+    margin-bottom: 0.6rem;
 }
 
-.bio-icon,
 .bio-link {
     color: rgb(222, 222, 222);
-    font-size: 120%;
-    padding-right: 10px;
-}
-
-.bio-link {
-    padding-left: 10px;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    transition: color 0.2s ease-in-out;
 }
 
 .bio-link:hover {
-    color: rgb(128, 128, 128);
-}
-
-#bio-content table {
-    font-size: 80%;
+    color: rgb(52, 152, 219);
 }
 
 .bio-row {
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
 }
 
 .table-bio-date {
-    padding-right: 20px;
+    padding-right: 1rem;
     font-style: italic;
     font-weight: bolder;
     vertical-align: top;
@@ -798,7 +816,7 @@ div[data-error-id] {
 }
 
 #publication-carousel_01 {
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 
 #pub-content>.pub-item {
