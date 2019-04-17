@@ -163,6 +163,7 @@ section {
 
 section.main-header {
     padding-bottom: 0;
+    background-color: rgba(252,252,252,1);
 }
 h1.main-logo-wrapper {
     position: relative;
@@ -353,7 +354,7 @@ section.main-view {
 .icon-menu-up {
     display: none;
 }
-.navbar-nav .nav-item.active .nav-link{
+.navbar-nav .nav-item.active>.nav-link{
     background-image: -webkit-linear-gradient(left, rgb(192, 192, 192) 40%, rgba(255, 255, 255, 0) 20%);
     background-image: -webkit-linear-gradient(left, rgb(192, 192, 192) 25%, rgba(255, 255, 255, 0) 0%);
     background-image: linear-gradient(to right, rgb(192, 192, 192) 25%, rgba(255, 255, 255, 0) 0%);

@@ -211,7 +211,6 @@ $(function() {
                         //$("#js-portfolio-carousel-indicators").children().eq(selectorind).addClass('active');
                     }
                 });
-                      
             /* ---------- event listener for a return icon to move out of a gallery  ---------- */
             
                 $('.return-from-portfolio').on( 'click', function() {
@@ -302,7 +301,7 @@ $(function() {
                     (index === 1) ? active = "active" : active = "";
                     (index === 1) ? indicator = "class='active'" : indicator = "";
                     if (index > 0) {
-                        htmlCode += "<div class='item " + active + " '><img src=" + cached[i].image_path + " alt= '" + cached[i].image_alt + "'><div class='carousel-caption'></div></div>";    
+                        htmlCode += "<div class='carousel-item " + active + " '><img class='d-block w-100' src=" + cached[i].image_path + " alt= '" + cached[i].image_alt + "'></div>";    
                         indicators += "<li data-target='#portfolio-carousel' data-slide-to='" + (index - 1) + "' " + indicator + "></li>";
                         //console.log("image path: " + cached[i].image_path);
                         //console.log("image alt: " + cached[i].image_alt);
@@ -314,7 +313,6 @@ $(function() {
             $('#js-portfolio-carousel-inner').html(htmlCode);
             $('#js-portfolio-carousel-indicators').html(indicators);
             }
-            
 
             /* ---------- event listener for inside of About menu ---------- */
 
@@ -343,7 +341,7 @@ $(function() {
             htmlCode += "<li class='nav-item'><a class='nav-link' href='#'><span>" + cacheportfolio + "</span></a></li>";       
             //console.log(cacheportfolio, portfolio.portfolio_name_en);    
         });
-        //console.log(htmlCode);
+        // console.log(htmlCode);
         
         $('#portfolios-menu').html(htmlCode);
     }; /* ------------------------- The end of function ------------------------- */

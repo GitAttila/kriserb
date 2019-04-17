@@ -1,77 +1,44 @@
 $(function() {
     
-    $.ajaxSetup({ cache: false });
+    // $.ajaxSetup({ cache: false });
+
+    var lastNavLinkClicked = '';
 
     $('.navbar-nav .nav-link').on( 'click', function(e) {
         e.preventDefault();
-        // var url = this.href;
-        // var hashTag = this.text.trim().toLowerCase();
+        
         var linkTo = $(this).data('menulink');
+        if (lastNavLinkClicked === linkTo && $(this).siblings('.submenu').length === 0 ) {
+            return;
+        }
+        lastNavLinkClicked = linkTo;
+
         console.log('linkTo: '+ linkTo);
 
-        // console.log("url :  " + url);
-        // console.log("hashTag: " + hashTag);
+        // toggle up and down icons in case they are present
+        if ($(this).children('span').children('.icon-menu-down') || $(this).children('span').children('.icon-menu-up')) {
+            $(this).children('span').children('.icon-menu-down').toggle(); 
+            $(this).children('span').children('.icon-menu-up').toggle(); 
+        }
+        // in case the nav item clicked has a submenu, toggle it
+        if ($(this).siblings('.submenu')) {
+            $(this).siblings('.submenu').slideToggle();
+        }
         
-        if (linkTo !== undefined && linkTo !== 'gallery') {
+        if (linkTo !== 'about') {
+            $('#navbar .nav-item').removeClass('active');
+            $('#navbar [data-menulink=' + linkTo + ']').parent().addClass('active'); 
             
-            console.log("inside of if statement: ");
-            
-            // location.hash = hashTag;
-            
-            if ($('#portfolios-menu').is(':visible')) {
-                
-                //console.log('#portfolios-menu is visible:hide it');
-                
-                $( "#portfolios-menu").hide();    
-                $( ".js-gallerymenu-toggle>a>span>.menu-up" ).hide();
-                $( ".js-gallerymenu-toggle>a>span>.menu-down" ).show();
-            }
-            
-            // $('#galleries-container').fadeOut(500, function(){
             $('.section-content.active').animateCss('fadeOutUp','',function(){
                 $('.section-content.active').removeClass('active');
-                $('#navbar .nav-item').removeClass('active');
-                $('#navbar [data-menulink=' + linkTo + ']').parent().addClass('active'); 
-                // $('#navbar [data-menulink=' + linkTo + ']').parent().parent('.submenu').siblings('.nav-link').parent().addClass('active');
                 $('#content-' + linkTo).css('opacity','0');
                 $('#content-' + linkTo).addClass('active').animateCss('fadeInUp','', function(){
                     $('#content-' + linkTo).css('opacity','1');
                 });
             })
-            // });
-
-            // $('#ajax-container').remove();
-            // $('#ajax-content').load(url + ' #ajax-container').hide().delay(500).fadeIn(500).promise().done(function() {
-            //     initFormListener();
-            //     // initPublications();
-            // });
         }
         
     });
-    
-    /* ----------     event listener for About menu     ---------- */
-
-    $('.js-aboutmenu-toggle').on('click', function(event) {  
-        
-        console.log("inside of event listener: About menu ");
-        
-        $('#about-menu').slideToggle();    
-        $( ".js-aboutmenu-toggle>a>span>.menu-up" ).toggle();
-        $( ".js-aboutmenu-toggle>a>span>.menu-down" ).toggle();
-    });  
-    
-    /* ----------     event listener to add 'gallery' hashTag  ---------- */
-    
-    $('.js-gallerymenu-toggle').on('click', function(e) {  
-        e.preventDefault();
-        $this = $(this);
-        var hashTag = $this.children().first().text().trim().toLowerCase();
-        if (hashTag === 'gallery') {
-            //console.log("hashTag: " + hashTag);
-            location.hash = hashTag;
-        }
-        
-    });  
 
     $('#navbar').on( 'show.bs.collapse', function(e) {
         $('.hamburger-icon').addClass('hamburger-close-x');

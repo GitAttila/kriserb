@@ -131,11 +131,11 @@
                         <div id="navbar" class="navbar-collapse collapse">
 
                             <ul class="navbar-nav">
-                                <li class="nav-item active js-gallerymenu-toggle">
+                                <li class="nav-item active">
                                     <a class="nav-link" data-menulink="gallerries" href="#">
                                         <span>Gallery
-                                            <i class="icon-menu-down icon ion-md-arrow-dropdown"></i>
-                                            <i class="icon-menu-up icon ion-android-arrow-dropup"></i>
+                                            <i class="icon-menu-down icon ion-ios-arrow-down"></i>
+                                            <i class="icon-menu-up icon ion-ios-arrow-up"></i>
                                         </span>
                                     </a>
                                     <ul class="nav submenu" id="portfolios-menu">
@@ -147,14 +147,14 @@
                                         <span>Publications</span>
                                     </a>
                                 </li>
-                                <li class="nav-item js-aboutmenu-toggle">
-                                    <a class="nav-link" href="#">
+                                <li class="nav-item">
+                                    <a class="nav-link" data-menulink="about" href="#">
                                         <span>About
-                                            <i class="icon-menu-down icon ion-md-arrow-dropdown"></i>
-                                            <i class="icon-menu-up icon ion-android-arrow-dropup"></i>
+                                            <i class="icon-menu-down icon ion-ios-arrow-down"></i>
+                                            <i class="icon-menu-up icon ion-ios-arrow-up"></i>
                                         </span>
                                     </a>
-                                    <ul class="nav submenu" id="about-menu">
+                                    <ul class="nav submenu">
                                         <li class="nav-item">
                                             <a class="nav-link" data-menulink="biography" href="biography.html">
                                                 <span>biography</span>
@@ -221,7 +221,7 @@
                         </div>
 
                         <div id="portfolio-carousel-frame">
-                            <div id="portfolio-carousel" class="carousel">
+                            <div id="portfolio-carousel"  class="carousel slide" data-ride="carousel">
                                 <!-- Indicators -->
                                 <ol class="carousel-indicators" id="js-portfolio-carousel-indicators">
                                     <!--A place for Javascript to write in the indicators-->
@@ -231,28 +231,16 @@
                                 <!-- Wrapper for slides -->
                                 <div id="js-portfolio-carousel-inner" class="carousel-inner" role="listbox">
                                     <!--A place for Javascript to write in the selected portfolio images-->
-                                    <div class="item active">
-                                        <img src="resources/img/portfolios/KE_fragilemoments01.jpg"
-                                            alt="fragile moments 01">
-                                        <div class="carousel-caption">
-                                        </div>
-                                    </div>
-                                    <div class="item active">
-                                        <img src="resources/img/portfolios/KE_fragilemoments02.jpg"
-                                            alt="fragile moments 02">
-                                        <div class="carousel-caption">
-                                        </div>
-                                    </div>
                                 </div>
 
                                 <!-- Controls -->
-                                <a class="left carousel-control" href="#portfolio-carousel" role="button" data-slide="prev">
-                                    <span class="icon-prev icon ion-md-arrow-round-back" aria-hidden="true"></span>
+                                <a class="carousel-control-prev" href="#portfolio-carousel" role="button" data-slide="prev">
+                                    <span class="icon ion-ios-arrow-back" aria-hidden="true"></span>
                                     <span class="sr-only">Previous</span>
                                 </a>
-                                <a class="right carousel-control" href="#portfolio-carousel" role="button"
+                                <a class="carousel-control-next" href="#portfolio-carousel" role="button"
                                     data-slide="next">
-                                    <span class="icon-next icon ion-md-arrow-round-forward" aria-hidden="true"></span>
+                                    <span class="icon ion-ios-arrow-forward" aria-hidden="true"></span>
                                     <span class="sr-only">Next</span>
                                 </a>
                             </div>
