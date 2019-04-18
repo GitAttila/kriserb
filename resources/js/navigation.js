@@ -1,6 +1,4 @@
-$(function() {
-    
-    // $.ajaxSetup({ cache: false });
+var Navigation = (function(){
 
     var lastNavLinkClicked = 'home';
 
@@ -8,7 +6,15 @@ $(function() {
         e.preventDefault();
         
         var linkTo = $(this).data('menulink');
-        if (lastNavLinkClicked === linkTo && $(this).siblings('.submenu').length === 0 ) {
+        console.log($(this).siblings('.submenu').length);
+        if (lastNavLinkClicked === linkTo && $(this).siblings('.submenu').length === 0) {
+            //if ($(this).siblings('.submenu').length > 0) {
+                // if (linkTo === 'about') {
+                //     return;
+                // } else if (linkTo === 'gallerries') {
+                //     //
+                // }
+            //}
             return;
         }
         lastNavLinkClicked = linkTo;
@@ -27,7 +33,7 @@ $(function() {
         
         if (linkTo !== 'about') {
             $('#navbar .nav-item').removeClass('active');
-            $('#navbar [data-menulink=' + linkTo + ']').parent().addClass('active'); 
+            $('#navbar [data-menulink="' + linkTo + '"]').parent().addClass('active'); 
             
             $('.section-content.active').animateCss('fadeOutUp','',function(){
                 $('.section-content.active').removeClass('active');
@@ -41,6 +47,22 @@ $(function() {
             })
         }
         
+    });
+
+    $('[data-gallerylink]').on( 'click', function(e) {
+        filterTag = $(this).data('gallerylink');
+        console.log(filterTag);
+        
+        $( "#thumbnail-portfolio-gallery" ).hide();
+        $( "#portfolio-carousel-frame" ).hide();
+        $( "#main-gallery" ).show();
+        
+        $('.grid').isotope(
+            {
+                filter: '[data-tag="' + filterTag +'"]'
+            }
+        );
+
     });
 
     $('#navbar').on( 'show.bs.collapse', function(e) {
@@ -59,4 +81,6 @@ $(function() {
         
         $('#content-container').removeClass('col-sm-9').addClass('col-sm-12');
     });
+
 });
+
