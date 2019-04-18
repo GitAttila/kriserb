@@ -27,28 +27,39 @@ $(function() {
             updateHomeGallery(randomImages);
             galleryCode = getGallery(rqstData);
             //initMainGallery(galleryCode);
-            loadThumbnailGallery();
+            thumbnailGalleryCode = buildThumbnailGallery(cached);
+            $('#thumbnail-portfolio-gallery').html(thumbnailGalleryCode);
             updatePortfolioGallery(portfolioName);
             
             //console.log("check GalleryCode:   " + galleryCode);
             
             var $grid = $('.grid');
             var $thumbnailGrid = $('.thumbnail-grid');
-            
-            $thumbnailGrid.imagesLoaded(function(){
-                $thumbnailGrid.masonry({
-                    // options...
-                    columnWidth: '.grid-sizer2',
-                    itemSelector: '.grid-item',
-                    percentPosition: true,
-                    isAnimated: true,
-                        animationOptions: {
-                        duration: 700,
-                        easing: 'linear',
-                        queue: false
-                        }
-                });
-                $thumbnailGrid.masonry('layout');
+            $thumbnailGrid.isotope({
+                itemSelector: '.grid-item',
+                masonry: {
+                    columnWidth: '.grid-sizer2'
+                }
+            });
+
+            $grid.isotope({
+                itemSelector: '.grid-item',
+                masonry: {
+                    columnWidth: '.grid-sizer'
+                }
+            });
+
+            $('.main-view').imagesLoaded(function(){
+                
+                setTimeout(function(){
+                    $thumbnailGrid.isotope('layout');
+                    $('#content-spinner').animateCss("fadeOut", "", function(){
+                        $('#content-spinner').addClass('hidden');
+                        $('#content-container').removeClass('hidden');
+                        $('#content-home').animateCss('fadeIn');
+                    });
+                },1000);
+                
             });  // end of Images Loaded function() for thmubmnail-portfolio-gallery
             
                 /* ---------- event listener for portfolios-menu slideup/down ---------- */
@@ -66,7 +77,7 @@ $(function() {
                         $( "#home-gallery" ).fadeOut(500).promise().done(function() {
                         
                             $( "#thumbnail-portfolio-gallery" ).fadeIn(700);
-                            $thumbnailGrid.masonry('layout');
+                            $thumbnailGrid.isotope('layout');
                         });
                         
                         $( "#main-gallery" ).hide();
@@ -101,10 +112,9 @@ $(function() {
                     $( "#thumbnail-portfolio-gallery" ).hide();
                     $( "#portfolio-carousel-frame" ).hide();
                     $( "#main-gallery" ).hide();
-                    $( ".is-loading" ).show();
                     
                     $grid.imagesLoaded( function() {
-                        $grid.masonry({
+                        $grid.isotope({
                         // options...
                             columnWidth: '.grid-sizer',
                             itemSelector: '.grid-item',
@@ -116,9 +126,8 @@ $(function() {
                                 queue: false
                                 }
                         });
-                        $( ".is-loading" ).hide();
                         $( "#main-gallery" ).show();
-                        $grid.masonry('layout');
+                        $grid.isotope('layout');
                     });
 
                 });  // on click event ENDS 
@@ -137,10 +146,9 @@ $(function() {
                     $( "#thumbnail-portfolio-gallery" ).hide();
                     $( "#portfolio-carousel-frame" ).hide();
                     $( "#main-gallery" ).hide();
-                    $( ".is-loading" ).show();
                     
                     $grid.imagesLoaded( function() {
-                        $grid.masonry({
+                        $grid.isotope({
                         // options...
                             columnWidth: '.grid-sizer',
                             itemSelector: '.grid-item',
@@ -152,9 +160,8 @@ $(function() {
                                 queue: false
                                 }
                         });
-                        $( ".is-loading" ).hide();
                         $( "#main-gallery" ).show();
-                        $grid.masonry('layout');
+                        $grid.isotope('layout');
                     });
 
                 });
@@ -170,15 +177,15 @@ $(function() {
                         $( ".max-min-button>.ion-ios-plus-outline" ).toggle();
                         $( ".max-min-button>.ion-ios-minus-outline" ).toggle();
                         
-                        $('.grid').masonry('layout');
+                        $('.grid').isotope('layout');
                         $(this).one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",
                                 function(event) {
-                                $('.grid').masonry('layout');
+                                $('.grid').isotope('layout');
                                 });
                     } else {
                         $( "#main-gallery" ).hide();
                         $( "#portfolio-carousel-frame" ).show();
-                        $('.grid').masonry('layout');
+                        $('.grid').isotope('layout');
                         
                         var $slideNum = $(this).index();
                         $slideNum = $slideNum -1;
@@ -190,25 +197,6 @@ $(function() {
                         console.log ("portfolioName:  " + portfolioName);
                         
                         $( "#portfolio-carousel" ).carousel($slideNum);
-                        
-                        //$('#portfolio-carousel').carousel(2);
-
-                        //$("#js-portfolio-carousel-inner").children().removeClass('active');
-                        //var selectorimg = $(this).children().children().attr('alt');
-
-                        //console.log("selectorimg: "+selectorimg);
-
-                        //var makeactive = $("#js-portfolio-carousel-inner").children().find("[alt = '" + selectorimg + "']");
-
-                        //console.log(makeactive, makeactive.parent());
-
-                        //makeactive.parent().addClass('active');
-                        //var selectorind = $("#js-portfolio-carousel-inner>div.active").index();
-
-                        //console.log("selectorind: "+selectorind);
-
-                        //$("#js-portfolio-carousel-indicators").children().removeClass('active');
-                        //$("#js-portfolio-carousel-indicators").children().eq(selectorind).addClass('active');
                     }
                 });
             /* ---------- event listener for a return icon to move out of a gallery  ---------- */
@@ -220,7 +208,7 @@ $(function() {
                         
                         $( "#portfolio-carousel-frame" ).hide();
                         $( "#main-gallery" ).show();
-                        $('.grid').masonry( 'layout');
+                        $('.grid').isotope( 'layout');
                     } else {
                         
                         //console.log(" portfolio carousel frame is not visible ");
@@ -228,7 +216,7 @@ $(function() {
                         $( "#thumbnail-portfolio-gallery" ).show();
                         $( "#main-gallery" ).hide();
                         $( "#portfolio-carousel-frame" ).hide();
-                        $thumbnailGrid.masonry( 'layout');
+                        $thumbnailGrid.isotope( 'layout');
                     }          
                 });
             
@@ -237,52 +225,43 @@ $(function() {
             function updateMainGallery(portName) {
                 $galleryEls = $(galleryCode);
 
-                //console.log("Code:" + galleryCode);
-                //console.log("$('.grid-item').length:    " + $('.grid-item').length);
-                //console.log("$galleryEls:" + $galleryEls.children());
-
                 var selected = $galleryEls.find("[data-tag ='" + portName + "']");
                 var toRemove = $(".grid").find("div");
-                //console.log(toRemove);
-                //console.log("toRemove:" + toRemove);
-                //console.log("selected:" + selected);
-                //console.log("selected:" + selected.children());  
                     
-                    $('.grid').masonry( 'remove', toRemove );  //$('.grid-item')
+                    $('.grid').isotope( 'remove', toRemove );  //$('.grid-item')
                     
                     if (selected.eq(1).hasClass('grid-sizer')) {
-                        $('.grid').prepend(selected).masonry( 'prepended', selected );
+                        $('.grid').prepend(selected).isotope( 'prepended', selected );
                     } else {
                         selected.eq(1).addClass('grid-sizer');
-                        $('.grid').prepend(selected).masonry( 'prepended', selected );
+                        $('.grid').prepend(selected).isotope( 'prepended', selected );
                     }
 
             }
             
-            function loadThumbnailGallery() {
+            function buildThumbnailGallery(images) {
                 var txt = "";
                 var gridclass = "";           
-                //console.log("cached.length : " + cached.length);              
-                for (var i=0; i < cached.length; i++) {
+                //console.log("images.length : " + images.length);              
+                for (var i=0; i < images.length; i++) {
                     if (i === 0) {
                         gridclass = " grid-sizer2";
                     } else {
                         gridclass = "";
                     }               
                     //console.log("i : " + i + " ___ gridclass + " + gridclass);
-                    //console.log("lead photo : " + cached[i].lead_photo);          
-                    if (cached[i].portfolio_description_en !== "image" ) {
-                        txt += "<div class='grid-item grid-item--width3" + gridclass + "' data-tag='" + cached[i].datatag.trim().toLowerCase() + "'>";
-                        txt += "<div class='animated pulse image-wrapper'><img src='" + cached[i].lead_photo + "' alt=''>";
-                        txt += "<div class='portfolio-title'><h2>" + cached[i].datatag.trim().toLowerCase();
-                        txt += "</h2><div class='frosted-overlay'> <img src='" + cached[i].lead_photo + "' alt=''> </div></div></div></div>";        
+                    //console.log("lead photo : " + images[i].lead_photo);          
+                    if (images[i].portfolio_description_en !== "image" ) {
+                        txt += "<div class='grid-item grid-item--width3" + gridclass + "' data-tag='" + images[i].datatag.trim().toLowerCase() + "'>";
+                        txt += "<div class='thumbnail-wrapper'><h2 class='thumbnail-title'>" + images[i].datatag.trim().toLowerCase() + "</h2>"
+                        txt += "<div class='thumbnail-image-wrapper'>"
+                        txt += "<img src='" + images[i].lead_photo + "' alt=''></div></div></div>";        
                     } 
                 }  //end of 'for' statement         
                 txt = "<div class='thumbnail-grid'>" + txt + "</div>";              
-                //console.log("Thumbnail Portfolio Code :  +++" + txt + "+++ ");         
-                $( "#thumbnail-portfolio-gallery" ).html(txt);
+                // console.log("Thumbnail Portfolio Code :  +++" + txt + "+++ ");         
+                return txt;
             }
-            
             
             function updatePortfolioGallery(portName) {
             var htmlCode = "";
@@ -321,10 +300,9 @@ $(function() {
             //    evet.preventDefault(event);    
             //});            
             
-        }).fail(function() {                                                                        // The End of .Done function()
-            
-            $('#main-gallery').html("<h2>Sorry, could not load the json gallery file.</h2>");       // If a problem: show message
-            
+        }).fail(function(err) {                                                                        // The End of .Done function()
+            console.log('Error: ' + err.statusText);
+            $('#content-spinner .spinner-msg').addClass('spinner-msg-alert').html("Could not load the json gallery file.</br> Check console for more detail.");            
         });
     } /* ------------------------- The end of function ------------------------- */
         
@@ -387,7 +365,7 @@ $(function() {
             
             galleryCode = "<div class='grid' >" + galleryCode + "</div>";
             
-        //console.log("galleryCode :      "+galleryCode)
+        // console.log("galleryCode :      "+galleryCode)
             
         return galleryCode;
     }; /* ------------------------- The end of function ------------------------- */
@@ -413,7 +391,6 @@ $(function() {
         var randomImages = [];
         var cachedCarouselImgs = [];
         var index = 0;
-        //cached = cacheGallery(galleries);
         
         for (var x=0; x < cached.length; x++) {
             if (cached[x].home_carousel === "true") {
@@ -427,7 +404,7 @@ $(function() {
         
         if (cachedCarouselImgs.length < numOfRandomImages) {
             numOfRandomImages = cachedCarouselImgs.length;
-            console.log ("The actual number of all images is: "+ numOfRandomImages + " which is lower than defined number of random images in getRandomImages() funciton.");
+            console.log ("The actual number of all images is: "+ numOfRandomImages + " which is lower than defined number of random images.");
             getRNDimages(numOfRandomImages);
         } else {
             getRNDimages(numOfRandomImages);
@@ -437,26 +414,17 @@ $(function() {
             var duplicates = [];
             for (var i=0; i < numRND; i++) {
                 var num = Math.floor((1+(cachedCarouselImgs.length-1))*Math.random())
-                randomImages[i] = cachedCarouselImgs[num];   
-                
-                //console.log("index i: " +i );
-                //console.log("random number: " + num + " cachedCarouselImgs.length: " +cachedCarouselImgs.length );
-                //console.log("img path: " + randomImages[i].image_path);  
-                
+                randomImages[i] = cachedCarouselImgs[num];    
                 if (randomImages[i].image_path === undefined) {
-                    
                     //console.log("randomImages[i].image_path..." + randomImages[i].image_path);
-                    
                     i=-1;
                     //console.log("index i: after resetting:  " +i );
                 }
                 
                 if (duplicates[num] === undefined ) {
                     duplicates[num] = 1
-                } else {
-                    
-                //console.log("Found duplicate, resetting..." + duplicates[num]);
-                    
+                } else {        
+                //console.log("Found duplicate, resetting..." + duplicates[num]);         
                     i=-1;
                     duplicates = [];
                 }
@@ -529,6 +497,7 @@ $(function() {
                 index++;
             }
         }
+        // console.log(cachedImages);
         return cachedImages;
     }; /* ------------------------- The end of function ------------------------- */
     

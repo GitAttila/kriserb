@@ -73,64 +73,73 @@
 
     <section class="main-header">
         <div class="container">
-            <div class="dotted-spaced">
-                <h1 class="main-logo-wrapper">
-                    <a class="" href="index.html">
-                        <span class="main-logo-text">
-                            <span class="logo-blur">Kris</span>
-                            <span class="logo-blur-onhover main-logo-text-offset-tyna">týna</span>
-                            <br/>
-                            <span class="logo-blur main-logo-text-offset-erb">Erb</span>
-                            <span class="logo-blur-onhover main-logo-text-offset-enova">enová</span>
-                        </span>
-                        <div class="main-logo-frame"></div>
-                    </a>
-                </h1>
-            </div>
-            <div class="main-header-icons">
-                <div class="row align-items-center">
-                    <div class="col-10">
-                        <div class="social-media">
-                            <a href="https://instagram.com/kris_erb/" target="_blank">
-                                <i class="icon ion-logo-instagram"></i>
-                            </a>
-                            <a href="https://www.facebook.com/kristyna.erbenova" target="_blank">
-                                <i class="icon ion-logo-facebook"></i>
-                            </a>
-                            <a href="http://deadnlovely.blogspot.cz/" target="_blank">
-                                <i class="icon ion-md-clipboard"></i>
-                            </a>
-                            <a href="https://www.pinterest.com/kristynaerbenova/" target="_blank">
-                                <i class="icon ion-logo-pinterest"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-2 text-right">
-                        <button role="button" class="hamburger-wrapper" data-toggle="collapse" data-target="#navbar">  
 
-                            <div class="hamburger-icon">
-                                <div class="hamburger-icon-middle"></div>
-                            </div>
-                        </button> 
+            <div class="row justify-content-between dotted-spaced mb-3">
+                <div class="col-10">
+                    <h1 class="main-logo-wrapper">
+                        <a class="" href="index.html">
+                            <span class="main-logo-text">
+                                <span class="logo-blur">Kris</span>
+                                <span class="logo-blur-onhover main-logo-text-offset-tyna">týna</span>
+                                <br />
+                                <span class="logo-blur main-logo-text-offset-erb">Erb</span>
+                                <span class="logo-blur-onhover main-logo-text-offset-enova">enová</span>
+                            </span>
+                            <div class="main-logo-frame"></div>
+                        </a>
+                    </h1>
+                </div>
+                <div class="col-2 text-right d-inline align-self-end">
+                    <div class="icon-home-wrapper">
+                        <a class="nav-link" data-menulink="home" href="#">
+                            <i class="icon icon-home ion-ios-home"></i>
+                        </a>
                     </div>
                 </div>
-                
             </div>
-        </div> <!-- end of container -->
-    </section> 
 
+            <div class="row align-items-center">
+                <div class="col-10">
+                    <div class="social-media">
+                        <a href="https://instagram.com/kris_erb/" target="_blank">
+                            <i class="icon ion-logo-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/kristyna.erbenova" target="_blank">
+                            <i class="icon ion-logo-facebook"></i>
+                        </a>
+                        <a href="http://deadnlovely.blogspot.cz/" target="_blank">
+                            <i class="icon ion-md-clipboard"></i>
+                        </a>
+                        <a href="https://www.pinterest.com/kristynaerbenova/" target="_blank">
+                            <i class="icon ion-logo-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-2 text-right d-inline">
+                    <button role="button" class="hamburger-wrapper" data-toggle="collapse" data-target="#navbar">
+
+                        <div class="hamburger-icon">
+                            <div class="hamburger-icon-middle"></div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+        </div> <!-- end of container -->
+    </section>
 
     <section class="main-view">
         <div class="container">
             <div class="row justify-content-between">
 
-                <div id="navbar-container" class="col-12 col-sm-3 animation-width"> <!--  -->
+                <div id="navbar-container" class="col-12 col-sm-3 animation-width navbar-menu-collapsed">
+                    <!--  -->
 
                     <nav class="navbar" role="navigation">
 
                         <div id="navbar" class="navbar-collapse collapse">
 
-                            <ul class="navbar-nav">
+                            <ul class="navbar-nav mb-2">
                                 <li class="nav-item active">
                                     <a class="nav-link" data-menulink="gallerries" href="#">
                                         <span>Gallery
@@ -179,13 +188,32 @@
 
                 </div> <!-- END of Bootstrap column 1-->
 
-                <section id="content-container" class="col-12 col-sm-9 animation-width">
+                <section id="content-spinner" class="section-spinner">
+                    <div class="main-logo-wrapper">
+                        <a class="" href="">
+                            <span class="main-logo-text">
+                                <span class="">Kris</span>
+                                <span class="main-logo-text-offset-tyna">týna</span>
+                                <br />
+                                <span class="main-logo-text-offset-erb">Erb</span>
+                                <span class="main-logo-text-offset-enova">enová</span>
+                            </span>
+                            <div class="main-logo-frame"></div>
+                        </a>
+                        <div class="spinner-msg spinner-msg-info">loading...</div>
+                    </div>
+                </section>
 
-                    <div id = "content-gallerries" class="section-content active">
+                <section id="content-container" class="col-12 col-sm-12 animation-width hidden">
 
-                        <div class="is-loading is-loading-spin">
-                            <i class="icon ion-ios-cog"></i>
-                        </div>
+                    <section id="content-home" class="section-content active">
+                        
+                        <!-- <div class="thumbnail-wrapper">
+                            <h2 class="thumbnail-title">moondust</h2>
+                            <div class="thumbnail-image-wrapper">
+                                <img src="resources/img/portfolios/KE_moondust_01.jpg" alt="">
+                            </div>
+                        </div> -->
 
                         <div id="home-gallery">
                             <div id="home-carousel" class="carousel slide">
@@ -203,6 +231,9 @@
                                 </a>
                             </div>
                         </div>
+                    </section>
+
+                    <section id="content-gallerries" class="section-content">
 
                         <div id="thumbnail-portfolio-gallery">
 
@@ -221,12 +252,10 @@
                         </div>
 
                         <div id="portfolio-carousel-frame">
-                            <div id="portfolio-carousel"  class="carousel slide" data-ride="carousel">
+                            <div id="portfolio-carousel" class="carousel slide" data-ride="carousel">
                                 <!-- Indicators -->
                                 <ol class="carousel-indicators" id="js-portfolio-carousel-indicators">
                                     <!--A place for Javascript to write in the indicators-->
-                                    <li data-target="#portfolio-carousel" data-slide-to="0" class="active"></li>
-                                    <li data-target="#portfolio-carousel" data-slide-to="1"></li>
                                 </ol>
                                 <!-- Wrapper for slides -->
                                 <div id="js-portfolio-carousel-inner" class="carousel-inner" role="listbox">
@@ -234,7 +263,8 @@
                                 </div>
 
                                 <!-- Controls -->
-                                <a class="carousel-control-prev" href="#portfolio-carousel" role="button" data-slide="prev">
+                                <a class="carousel-control-prev" href="#portfolio-carousel" role="button"
+                                    data-slide="prev">
                                     <span class="icon ion-ios-arrow-back" aria-hidden="true"></span>
                                     <span class="sr-only">Previous</span>
                                 </a>
@@ -248,115 +278,141 @@
                                 <i class="icon ion-md-arrow-round-back"></i>
                             </div>
                         </div>
-                    </div>
+                    </section>
 
                     <!-- PUBLICATIONS SECTION -->
-                    <section id = "content-publications" class="section-content">
-                    
+                    <section id="content-publications" class="section-content">
+
                         <div class="row dotted-spaced-light pub-item">
-                            <div class = "col-12 col-sm-5">
-                                
-                                <div id="publication-carousel_00" class="carousel carousel-pub slide" data-ride="carousel" data-interval="5000">
+                            <div class="col-12 col-sm-5">
+
+                                <div id="publication-carousel_00" class="carousel carousel-pub slide"
+                                    data-ride="carousel" data-interval="5000">
 
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner">
                                         <div class="carousel-item active">
-                                            <img class="d-block w-100" src="resources/img/KE_pub_moondust01.png" alt="Publication 'Moondust'">
+                                            <img class="d-block w-100" src="resources/img/KE_pub_moondust01.png"
+                                                alt="Publication 'Moondust'">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="resources/img/KE_pub_moondust02.png" alt="Publication 'Moondust'">
+                                            <img class="d-block w-100" src="resources/img/KE_pub_moondust02.png"
+                                                alt="Publication 'Moondust'">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="resources/img/KE_pub_moondust03.png" alt="Publication 'Moondust'">
+                                            <img class="d-block w-100" src="resources/img/KE_pub_moondust03.png"
+                                                alt="Publication 'Moondust'">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="resources/img/KE_pub_moondust04.png" alt="Publication 'Moondust'">
+                                            <img class="d-block w-100" src="resources/img/KE_pub_moondust04.png"
+                                                alt="Publication 'Moondust'">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="resources/img/KE_pub_moondust05.png" alt="Publication 'Moondust'">
+                                            <img class="d-block w-100" src="resources/img/KE_pub_moondust05.png"
+                                                alt="Publication 'Moondust'">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="resources/img/KE_pub_moondust06.png" alt="Publication 'Moondust'">
+                                            <img class="d-block w-100" src="resources/img/KE_pub_moondust06.png"
+                                                alt="Publication 'Moondust'">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="resources/img/KE_pub_moondust07.png" alt="Publication 'Moondust'">
+                                            <img class="d-block w-100" src="resources/img/KE_pub_moondust07.png"
+                                                alt="Publication 'Moondust'">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="resources/img/KE_pub_moondust08.png" alt="Publication 'Moondust'">
+                                            <img class="d-block w-100" src="resources/img/KE_pub_moondust08.png"
+                                                alt="Publication 'Moondust'">
                                         </div>
                                     </div>
 
                                     <!-- Controls -->
-                                    <a class="carousel-control-prev" href="#publication-carousel_00" role="button" data-slide="prev">
+                                    <a class="carousel-control-prev" href="#publication-carousel_00" role="button"
+                                        data-slide="prev">
                                         <span aria-hidden="true"><i class="icon ion-ios-arrow-back"></i></span>
                                         <span class="sr-only">Previous</span>
                                     </a>
-                                    <a class="carousel-control-next" href="#publication-carousel_00" role="button" data-slide="next">
+                                    <a class="carousel-control-next" href="#publication-carousel_00" role="button"
+                                        data-slide="next">
                                         <span aria-hidden="true"><i class="icon ion-ios-arrow-forward"></i></span>
                                         <span class="sr-only">Next</span>
                                     </a>
                                 </div>
                             </div><!-- END of col -->
-                            
-                            <div class = "col-12 col-sm-7">
+
+                            <div class="col-12 col-sm-7">
                                 <h3>kristýna erbenová</h3>
                                 <h4>moondust</h4>
                                 <p>Moondust exhibition photobook from 2018</p>
-                                <p>Night medium format photography of the Australian landscape accompanied by original texts by three different authors: curatorial, literary critical and philosophical. Both in Czech and English. </p>
-                                <a href="https://www.facebook.com/kristynaerbenova/videos/838543086478640/" target="_blank" class="btn-site" role="button">
+                                <p>Night medium format photography of the Australian landscape accompanied by original
+                                    texts by three different authors: curatorial, literary critical and philosophical.
+                                    Both in Czech and English. </p>
+                                <a href="https://www.facebook.com/kristynaerbenova/videos/838543086478640/"
+                                    target="_blank" class="btn-site" role="button">
                                     <span>order</span>
                                 </a>
                             </div> <!-- END of col -->
                         </div> <!-- END of row -->
 
                         <div class="row dotted-spaced-light pub-item">
-                            <div class = "col-sm-12 col-md-5">
-                                
-                                <div id="publication-carousel_01" class="carousel carousel-pub slide" data-ride="carousel" data-interval="5000">
+                            <div class="col-sm-12 col-md-5">
+
+                                <div id="publication-carousel_01" class="carousel carousel-pub slide"
+                                    data-ride="carousel" data-interval="5000">
 
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner" role="listbox">
                                         <div class="carousel-item active">
-                                            <img class="d-block w-100" src="resources/img/KE_pub_darkless01.png" alt="Publication 'In the darkless'">
+                                            <img class="d-block w-100" src="resources/img/KE_pub_darkless01.png"
+                                                alt="Publication 'In the darkless'">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="resources/img/KE_pub_darkless02.png" alt="Publication 'In the darkless'">
+                                            <img class="d-block w-100" src="resources/img/KE_pub_darkless02.png"
+                                                alt="Publication 'In the darkless'">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="resources/img/KE_pub_darkless03.png" alt="Publication 'In the darkless'">
+                                            <img class="d-block w-100" src="resources/img/KE_pub_darkless03.png"
+                                                alt="Publication 'In the darkless'">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="resources/img/KE_pub_darkless04.png" alt="Publication 'In the darkless'">
+                                            <img class="d-block w-100" src="resources/img/KE_pub_darkless04.png"
+                                                alt="Publication 'In the darkless'">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="resources/img/KE_pub_darkless05.png" alt="Publication 'In the darkless'">
+                                            <img class="d-block w-100" src="resources/img/KE_pub_darkless05.png"
+                                                alt="Publication 'In the darkless'">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="resources/img/KE_pub_darkless06.png" alt="Publication 'In the darkless'">
+                                            <img class="d-block w-100" src="resources/img/KE_pub_darkless06.png"
+                                                alt="Publication 'In the darkless'">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="resources/img/KE_pub_darkless07.png" alt="Publication 'In the darkless'">
+                                            <img class="d-block w-100" src="resources/img/KE_pub_darkless07.png"
+                                                alt="Publication 'In the darkless'">
                                         </div>
                                     </div>
 
                                     <!-- Controls -->
-                                    <a class="carousel-control-prev" href="#publication-carousel_01" role="button" data-slide="prev">
+                                    <a class="carousel-control-prev" href="#publication-carousel_01" role="button"
+                                        data-slide="prev">
                                         <span aria-hidden="true"><i class="icon ion-ios-arrow-back"></i></span>
                                         <span class="sr-only">Previous</span>
                                     </a>
-                                    <a class="carousel-control-next" href="#publication-carousel_01" role="button" data-slide="next">
+                                    <a class="carousel-control-next" href="#publication-carousel_01" role="button"
+                                        data-slide="next">
                                         <span aria-hidden="true"><i class="icon ion-ios-arrow-forward"></i></span>
                                         <span class="sr-only">Next</span>
                                     </a>
                                 </div>
                             </div><!-- END of col -->
-                            
-                            <div class = "col-sm-12 col-md-7">
+
+                            <div class="col-sm-12 col-md-7">
                                 <h3>kristýna erbenová</h3>
                                 <h4>in the darkless</h4>
                                 <p>limited photobook edition from 2014</p>
-                                <p>All photographs in this book were taken exclusively at night, using only the moonlight and medium format film material. 
-                                    The series “In the Darkless” is an ongoing project. The author has been shooting every month around the time of the full moon,
+                                <p>All photographs in this book were taken exclusively at night, using only the
+                                    moonlight and medium format film material.
+                                    The series “In the Darkless” is an ongoing project. The author has been shooting
+                                    every month around the time of the full moon,
                                     since October 2013.</p>
                                 <p>The book contains excerpts from the book “Loď” (Ship) by Marek Orko Vácha.</p>
                                 <p>2nd version of the book is currently in progress, coming in 2016</p>
@@ -364,172 +420,205 @@
                         </div> <!-- END of row -->
 
                         <div class="row dotted-spaced-light pub-item">
-                            <div class = "col-sm-12 col-md-5">
-                                
-                                <div id="publication-carousel_02" class="carousel carousel-pub slide" data-ride="carousel" data-interval="5000">
+                            <div class="col-sm-12 col-md-5">
+
+                                <div id="publication-carousel_02" class="carousel carousel-pub slide"
+                                    data-ride="carousel" data-interval="5000">
 
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner" role="listbox">
                                         <div class="carousel-item active">
-                                            <img class="d-block w-100" src="resources/img/KE_pub_Fierlinger01.png" alt="Publication Paul Fierlinger">
+                                            <img class="d-block w-100" src="resources/img/KE_pub_Fierlinger01.png"
+                                                alt="Publication Paul Fierlinger">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="resources/img/KE_pub_Fierlinger02.png" alt="Publication Paul Fierlinger">
+                                            <img class="d-block w-100" src="resources/img/KE_pub_Fierlinger02.png"
+                                                alt="Publication Paul Fierlinger">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="resources/img/KE_pub_Fierlinger03.png" alt="Publication Paul Fierlinger">
+                                            <img class="d-block w-100" src="resources/img/KE_pub_Fierlinger03.png"
+                                                alt="Publication Paul Fierlinger">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="resources/img/KE_pub_Fierlinger04.png" alt="Publication Paul Fierlinger">
+                                            <img class="d-block w-100" src="resources/img/KE_pub_Fierlinger04.png"
+                                                alt="Publication Paul Fierlinger">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="resources/img/KE_pub_Fierlinger05.png" alt="Publication Paul Fierlinger">
+                                            <img class="d-block w-100" src="resources/img/KE_pub_Fierlinger05.png"
+                                                alt="Publication Paul Fierlinger">
                                         </div>
                                     </div>
 
                                     <!-- Controls -->
-                                    <a class="carousel-control-prev" href="#publication-carousel_02" role="button" data-slide="prev">
+                                    <a class="carousel-control-prev" href="#publication-carousel_02" role="button"
+                                        data-slide="prev">
                                         <span aria-hidden="true"><i class="icon ion-ios-arrow-back"></i></span>
                                         <span class="sr-only">Previous</span>
                                     </a>
-                                    <a class="carousel-control-next" href="#publication-carousel_02" role="button" data-slide="next">
+                                    <a class="carousel-control-next" href="#publication-carousel_02" role="button"
+                                        data-slide="next">
                                         <span aria-hidden="true"><i class="icon ion-ios-arrow-forward"></i></span>
                                         <span class="sr-only">Next</span>
                                     </a>
                                 </div>
                             </div><!-- END of col -->
-                            
-                            <div class = "col-sm-12 col-md-7">
+
+                            <div class="col-sm-12 col-md-7">
                                 <h3>petr bilík, kristýna erbenová</h3>
                                 <h4>Paul Fierlinger</h4>
                                 <p>Biografie, Olomouc: UP, 2014</p>
-                                <p>The book applies a biographical method on the life story and the filmography of one of the currenťs most significant animators. Fierlinger's professional career and filmography is reconstructed with the help of archive materials, databases and biographical sources. A great part of the publication is comprised of a narrative interview; a unique source to the post-war history of Czechoslovakia, the exile studies and to the independent production culture of the second part of the 20th century.</p>
-                                
+                                <p>The book applies a biographical method on the life story and the filmography of one
+                                    of the currenťs most significant animators. Fierlinger's professional career and
+                                    filmography is reconstructed with the help of archive materials, databases and
+                                    biographical sources. A great part of the publication is comprised of a narrative
+                                    interview; a unique source to the post-war history of Czechoslovakia, the exile
+                                    studies and to the independent production culture of the second part of the 20th
+                                    century.</p>
+
                             </div> <!-- END of col -->
                         </div> <!-- END of row -->
-                        
+
                         <div class="row dotted-spaced-light pub-item">
-                            <div class = "col-sm-12 col-md-5">
-                                
-                                <div id="publication-carousel_03" class="carousel carousel-pub slide" data-ride="carousel" data-interval="5000">
+                            <div class="col-sm-12 col-md-5">
+
+                                <div id="publication-carousel_03" class="carousel carousel-pub slide"
+                                    data-ride="carousel" data-interval="5000">
 
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner" role="listbox">
                                         <div class="carousel-item active">
-                                            <img class="d-block w-100" src="resources/img/KE_pub_Kubicek01.png" alt="Kubicek Publication">
+                                            <img class="d-block w-100" src="resources/img/KE_pub_Kubicek01.png"
+                                                alt="Kubicek Publication">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="resources/img/KE_pub_Kubicek02.png" alt="Kubicek Publication">
+                                            <img class="d-block w-100" src="resources/img/KE_pub_Kubicek02.png"
+                                                alt="Kubicek Publication">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="resources/img/KE_pub_Kubicek03.png" alt="Kubicek Publication">
+                                            <img class="d-block w-100" src="resources/img/KE_pub_Kubicek03.png"
+                                                alt="Kubicek Publication">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="resources/img/KE_pub_Kubicek04.png" alt="Kubicek Publication">
+                                            <img class="d-block w-100" src="resources/img/KE_pub_Kubicek04.png"
+                                                alt="Kubicek Publication">
                                         </div>
                                         <div class="carousel-item">
-                                            <img class="d-block w-100" src="resources/img/KE_pub_Kubicek05.png" alt="Kubicek Publication">
+                                            <img class="d-block w-100" src="resources/img/KE_pub_Kubicek05.png"
+                                                alt="Kubicek Publication">
                                         </div>
                                     </div>
 
                                     <!-- Controls -->
-                                    <a class="carousel-control-prev" href="#publication-carousel_03" role="button" data-slide="prev">
+                                    <a class="carousel-control-prev" href="#publication-carousel_03" role="button"
+                                        data-slide="prev">
                                         <span aria-hidden="true"><i class="icon ion-ios-arrow-back"></i></span>
                                         <span class="sr-only">Previous</span>
                                     </a>
-                                    <a class="carousel-control-next" href="#publication-carousel_03" role="button" data-slide="next">
+                                    <a class="carousel-control-next" href="#publication-carousel_03" role="button"
+                                        data-slide="next">
                                         <span aria-hidden="true"><i class="icon ion-ios-arrow-forward"></i></span>
                                         <span class="sr-only">Next</span>
                                     </a>
                                 </div>
                             </div><!-- END of col -->
-                            
-                            <div class = "col-sm-12 col-md-7">
+
+                            <div class="col-sm-12 col-md-7">
                                 <h3>kristýna erbenová</h3>
                                 <h4>Malíř a fotografie</h4>
                                 <p>In: Riese, Hans Peter: Jan Kubíček, Praha: KANT, 2014.</p>
-                                <p>The article in the biographical book outlines and describes the photography work of 
-                                    Jan Kubíček as an important part of his painting and graphic production, and also 
+                                <p>The article in the biographical book outlines and describes the photography work of
+                                    Jan Kubíček as an important part of his painting and graphic production, and also
                                     as a means of his thinking about art and perceiving the world.</p>
-                                
+
                             </div> <!-- END of col -->
                         </div> <!-- END of row -->
-                        
+
                     </section>
                     <!-- END OF PUBLICATIONS SECTION -->
 
                     <!-- BIOGRAPHY SECTION -->
-                    <div  id = "content-biography" class="section-content">
+                    <div id="content-biography" class="section-content">
                         <div class="bio-row row">
-                            <div class = "col-xs-12 col-sm-12 col-md-3">
-                                <img class= "round-portrait" src="resources/img/portrait.jpg">
+                            <div class="col-xs-12 col-sm-12 col-md-3">
+                                <img class="round-portrait" src="resources/img/portrait.jpg">
                             </div>
-                            <div class = "col-xs-12 col-sm-12 col-md-9 dotted-spaced-light">
+                            <div class="col-xs-12 col-sm-12 col-md-9 dotted-spaced-light">
                                 <h3>kristýna erbenová</h3>
                                 <h4>(1987, Czech Republic)</h4>
-                                <p>I‘m mainly interested in art photography with a focus on people, landscapes and the relationship between them.
-                                    In my photography, I‘m trying to bring together the inner world of feelings and thoughts with the outside world of appearances;
+                                <p>I‘m mainly interested in art photography with a focus on people, landscapes and the
+                                    relationship between them.
+                                    In my photography, I‘m trying to bring together the inner world of feelings and
+                                    thoughts with the outside world of appearances;
                                     to create an imaginary space of timelessness;
-                                    to capture the moments which lead us to a deeper experience of ourselves and the space around us.
+                                    to capture the moments which lead us to a deeper experience of ourselves and the
+                                    space around us.
                                 </p>
                                 <p>
-                                All my personal projects are shot on medium format film.
+                                    All my personal projects are shot on medium format film.
                                 </p>
                                 <p>
-                                I'm interested in commissions, collaborations, exhibitions and residences.
+                                    I'm interested in commissions, collaborations, exhibitions and residences.
                                 </p>
                             </div>
                         </div>
 
                         <div class="bio-row row">
-                            <div class = "col-xs-12 col-sm-12 col-md-3">
+                            <div class="col-xs-12 col-sm-12 col-md-3">
 
                             </div>
-                            <div class = "col-xs-12 col-sm-12 col-md-9 dotted-spaced-light">
+                            <div class="col-xs-12 col-sm-12 col-md-9 dotted-spaced-light">
                                 <h3>education</h3>
                                 <table>
                                     <tr>
                                         <td class="table-bio-date">2016</td>
-                                        <td>Institute of Creative Photography, Silesian University in Opava, Master of Arts Diploma (MgA.)</td>
+                                        <td>Institute of Creative Photography, Silesian University in Opava, Master of
+                                            Arts Diploma (MgA.)</td>
                                     </tr>
                                     <tr>
                                         <td class="table-bio-date">2015</td>
-                                        <td>Palacký University in Olomouc, Faculty of Arts: English Philology – Film Studies, Master's Diploma (Mgr.)
-                                            <a href="http://theses.cz/id/m9xexq/Kristyna_Erbenova_-_Paul_Fierlinger.pdf" target="_blank">
+                                        <td>Palacký University in Olomouc, Faculty of Arts: English Philology – Film
+                                            Studies, Master's Diploma (Mgr.)
+                                            <a href="http://theses.cz/id/m9xexq/Kristyna_Erbenova_-_Paul_Fierlinger.pdf"
+                                                target="_blank">
                                                 <i class="bio-link fa fa-newspaper-o"></i>
                                             </a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="table-bio-date">2011</td>
-                                        <td>Institute of Creative Photography, Silesian University in Opava, Bachelor of Arts (BcA.)
-                                            <a href="http://www.itf.cz/dokumenty/k-erbenova--jan-kubicek.pdf" target="_blank">
+                                        <td>Institute of Creative Photography, Silesian University in Opava, Bachelor of
+                                            Arts (BcA.)
+                                            <a href="http://www.itf.cz/dokumenty/k-erbenova--jan-kubicek.pdf"
+                                                target="_blank">
                                                 <i class="bio-link fa fa-newspaper-o"></i>
                                             </a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="table-bio-date">2010</td>
-                                        <td>Palacký University in Olomouc, Faculty of Arts: English Philology – Film Studies, Bachelor’s degree (Bc.)</td>
+                                        <td>Palacký University in Olomouc, Faculty of Arts: English Philology – Film
+                                            Studies, Bachelor’s degree (Bc.)</td>
                                     </tr>
                                     <tr>
                                         <td class="table-bio-date">2008</td>
-                                        <td>Faculty of Humanities, Utrecht University, Utrecht, Netherlands, abroad study</td>
+                                        <td>Faculty of Humanities, Utrecht University, Utrecht, Netherlands, abroad
+                                            study</td>
                                     </tr>
                                 </table>
                             </div>
                         </div>
 
                         <div class="bio-row row">
-                            <div class = "col-xs-12 col-sm-12 col-md-3">
+                            <div class="col-xs-12 col-sm-12 col-md-3">
 
                             </div>
-                            <div class = "col-xs-12 col-sm-12 col-md-9 dotted-spaced-light">
+                            <div class="col-xs-12 col-sm-12 col-md-9 dotted-spaced-light">
                                 <h3>awards</h3>
                                 <table>
                                     <tr>
                                         <td class="table-bio-date">4th place</td>
-                                        <td>The international photography competition Shots: Young Photographers Competition 2011 (see here)</td>
+                                        <td>The international photography competition Shots: Young Photographers
+                                            Competition 2011 (see here)</td>
                                     </tr>
                                     <tr>
                                         <td class="table-bio-date">finalist</td>
@@ -540,10 +629,10 @@
                         </div>
 
                         <div class="bio-row row">
-                            <div class = "col-xs-12 col-sm-12 col-md-3">
+                            <div class="col-xs-12 col-sm-12 col-md-3">
 
                             </div>
-                            <div class = "col-xs-12 col-sm-12 col-md-9 dotted-spaced-light">
+                            <div class="col-xs-12 col-sm-12 col-md-9 dotted-spaced-light">
                                 <h3>exhibitions</h3>
                                 <table>
                                     <tr>
@@ -552,28 +641,35 @@
                                     </tr>
                                     <tr>
                                         <td class="table-bio-date">2018</td>
-                                        <td><em>“Znejistění paměti”</em>, group exhibition, Galerie NTK, Prague, Czech Republic</td>
+                                        <td><em>“Znejistění paměti”</em>, group exhibition, Galerie NTK, Prague, Czech
+                                            Republic</td>
                                     </tr>
                                     <tr>
                                         <td class="table-bio-date">2017</td>
-                                        <td><em>"Miejsczaosobiste: młoda czeska fotografia"</em>, Muzeum Górnośląskie w Bytomiu, 2017</td>
+                                        <td><em>"Miejsczaosobiste: młoda czeska fotografia"</em>, Muzeum Górnośląskie w
+                                            Bytomiu, 2017</td>
                                     </tr>
                                     <tr>
                                         <td class="table-bio-date">2017</td>
-                                        <td><em>“Světlo jinak”</em>, group exhibition, Galerie Amadeus, Olomouc, Czech Republic</td>
+                                        <td><em>“Světlo jinak”</em>, group exhibition, Galerie Amadeus, Olomouc, Czech
+                                            Republic</td>
                                     </tr>
                                     <tr>
                                         <td class="table-bio-date">2016</td>
-                                        <td><em>“Private Territories”</em>, solo exhibition, Galerie Chaos, Střítež, Czech Republic</td>
+                                        <td><em>“Private Territories”</em>, solo exhibition, Galerie Chaos, Střítež,
+                                            Czech Republic</td>
                                     </tr>
                                     <tr>
                                         <td class="table-bio-date">2015</td>
-                                        <td><em>"I, Curator"</em>, OFF_festival, Pisztory palace, Bratislava, Slovakia.</td>
+                                        <td><em>"I, Curator"</em>, OFF_festival, Pisztory palace, Bratislava, Slovakia.
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td class="table-bio-date">2015</td>
-                                        <td>“In the Darkless”, solo exhibition, Galerie Fotografic, Prague, Czech Republic
-                                            <a href="http://www.ceskatelevize.cz/ct24/kultura/1528836-tma-je-jen-absence-svetla-erbenova-foti-v-bezetmi" target="_blank">
+                                        <td>“In the Darkless”, solo exhibition, Galerie Fotografic, Prague, Czech
+                                            Republic
+                                            <a href="http://www.ceskatelevize.cz/ct24/kultura/1528836-tma-je-jen-absence-svetla-erbenova-foti-v-bezetmi"
+                                                target="_blank">
                                                 <i class="bio-link icon ion-ios-paper"></i>
                                             </a>
                                         </td>
@@ -581,14 +677,16 @@
                                     <tr>
                                         <td class="table-bio-date">2015</td>
                                         <td>“V kupce vesmíru”, Galerie Opera, Ostrava, Czech Republic
-                                            <a href = "http://www.lidovky.cz/sam-za-sebe-sam-ve-dvou-dve-fotografky-v-kupce-vesmiru-pda-/kultura.aspx?c=A150505_121042_ln_kultura_hep" target="_blank">
+                                            <a href="http://www.lidovky.cz/sam-za-sebe-sam-ve-dvou-dve-fotografky-v-kupce-vesmiru-pda-/kultura.aspx?c=A150505_121042_ln_kultura_hep"
+                                                target="_blank">
                                                 <i class="bio-link icon ion-ios-paper"></i>
                                             </a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="table-bio-date">2015</td>
-                                        <td>“This Place – My Place”, visual storytelling workshop by PanAut collective, DOX, Prague, Czech Republic
+                                        <td>“This Place – My Place”, visual storytelling workshop by PanAut collective,
+                                            DOX, Prague, Czech Republic
                                             <a href="http://thisplacemyplace.tumblr.com" target="_blank">
                                                 <i class="bio-link icon ion-ios-paper"></i>
                                             </a>
@@ -604,7 +702,8 @@
                                     </tr>
                                     <tr>
                                         <td class="table-bio-date">2013</td>
-                                        <td>“Private Territories”, solo exhibition, Light Cube Gallery, Brno, Czech Republic</td>
+                                        <td>“Private Territories”, solo exhibition, Light Cube Gallery, Brno, Czech
+                                            Republic</td>
                                     </tr>
                                     <tr>
                                         <td class="table-bio-date">2013</td>
@@ -616,15 +715,18 @@
                                     </tr>
                                     <tr>
                                         <td class="table-bio-date">2012</td>
-                                        <td>“Private Territories”, solo exhibition, Galerie Amadeus, Olomouc, Czech Republic
-                                            <a href="http://www.ceskatelevize.cz/ct24/kultura/1134361-soukroma-uzemi-zverejnuje-fotografka-kristyna-erbenova" target="_blank">
+                                        <td>“Private Territories”, solo exhibition, Galerie Amadeus, Olomouc, Czech
+                                            Republic
+                                            <a href="http://www.ceskatelevize.cz/ct24/kultura/1134361-soukroma-uzemi-zverejnuje-fotografka-kristyna-erbenova"
+                                                target="_blank">
                                                 <i class="bio-link icon ion-ios-paper"></i>
                                             </a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="table-bio-date">2012</td>
-                                        <td>“The Censored Exhibition”, Copenhagen Photo Festival 2012, Copenhagen, Denmark</td>
+                                        <td>“The Censored Exhibition”, Copenhagen Photo Festival 2012, Copenhagen,
+                                            Denmark</td>
                                     </tr>
                                     <tr>
                                         <td class="table-bio-date">2012</td>
@@ -636,7 +738,8 @@
                                     </tr>
                                     <tr>
                                         <td class="table-bio-date">2012</td>
-                                        <td>“Prague Photo 2012″, Prague House, Brussels, Belgium, and Czech House, London, UK</td>
+                                        <td>“Prague Photo 2012″, Prague House, Brussels, Belgium, and Czech House,
+                                            London, UK</td>
                                     </tr>
                                     <tr>
                                         <td class="table-bio-date">2012</td>
@@ -644,13 +747,15 @@
                                     </tr>
                                     <tr>
                                         <td class="table-bio-date">2012</td>
-                                        <td>“Being Alone”, solo exhibition, Krásný ztráty gallery, Prague, Czech Republic
+                                        <td>“Being Alone”, solo exhibition, Krásný ztráty gallery, Prague, Czech
+                                            Republic
                                         </td>
                                     </tr>
                                     <tr>
                                         <td class="table-bio-date">2012</td>
                                         <td>“Like a nowhere”, solo exhibition, Hodonín, Czech Republic
-                                            <a href="http://www.young-fresh.eu/index.php/cs/tipynavystavy/483-kristyna-erbenova-jako-nikde" target="_blank">
+                                            <a href="http://www.young-fresh.eu/index.php/cs/tipynavystavy/483-kristyna-erbenova-jako-nikde"
+                                                target="_blank">
                                                 <i class="bio-link icon ion-ios-paper"></i>
                                             </a>
                                         </td>
@@ -658,7 +763,8 @@
                                     <tr>
                                         <td class="table-bio-date">2011</td>
                                         <td>The World Biennial of Student Photography 2011, Novi Sad, Serbia
-                                            <a href="http://www.polovina73.0fees.net/bijenale/3rdWorldBiennialOfStudentPhotography2011-Catalog.pdf?ckattempt=1" target="_blank">
+                                            <a href="http://www.polovina73.0fees.net/bijenale/3rdWorldBiennialOfStudentPhotography2011-Catalog.pdf?ckattempt=1"
+                                                target="_blank">
                                                 <i class="bio-link icon ion-ios-paper"></i>
                                             </a>
                                         </td>
@@ -673,7 +779,8 @@
                                     </tr>
                                     <tr>
                                         <td class="table-bio-date">2010</td>
-                                        <td>“Twenty years of the Institute of Creative Photography”, Month of photography, Bratislava, Slovakia
+                                        <td>“Twenty years of the Institute of Creative Photography”, Month of
+                                            photography, Bratislava, Slovakia
                                             <a href="http://www.itf.cz/dokumenty/01_katalogitf.pdf" target="_blank">
                                                 <i class="bio-link icon ion-ios-paper"></i>
                                             </a>
@@ -681,7 +788,8 @@
                                     </tr>
                                     <tr>
                                         <td class="table-bio-date">2009</td>
-                                        <td>“workshop with Jiří Šigut”, group exhibition, photography festival Funkeho Kolín, Malá Galerie Na Hradbách, Kolín, Czech Republic</td>
+                                        <td>“workshop with Jiří Šigut”, group exhibition, photography festival Funkeho
+                                            Kolín, Malá Galerie Na Hradbách, Kolín, Czech Republic</td>
                                     </tr>
                                     <tr>
                                         <td class="table-bio-date">2007</td>
@@ -689,7 +797,8 @@
                                     </tr>
                                     <tr>
                                         <td class="table-bio-date">2006</td>
-                                        <td>„Me, him, her…you“, group exhibition, Galerie v Zahradě, Kolín, Czech Republic</td>
+                                        <td>„Me, him, her…you“, group exhibition, Galerie v Zahradě, Kolín, Czech
+                                            Republic</td>
                                     </tr>
                                 </table>
                             </div>
@@ -698,338 +807,465 @@
                     <!-- END OF BIOGRAPHY SECTION -->
 
                     <!-- PRESS/MEDIA SECTION -->
-                    <div id = "content-press" class="section-content">
-                        
-                        <div class="row dotted-spaced-light row-press"> <!-- 4th row of media/press --> 
-                            <div class = "col-xs-12 col-sm-6">
+                    <div id="content-press" class="section-content">
+
+                        <div class="row dotted-spaced-light row-press">
+                            <!-- 4th row of media/press -->
+                            <div class="col-xs-12 col-sm-6">
                                 <div class="row">
-                                    <div class = "col-xs-12 col-lg-4">
-                                        <img class ="press-logo" src = "resources/img/press/knoviny.png" alt = "Kulturni noviny logo">
+                                    <div class="col-xs-12 col-lg-4">
+                                        <img class="press-logo" src="resources/img/press/knoviny.png"
+                                            alt="Kulturni noviny logo">
                                     </div><!-- END of col -->
-                                    <div class = "col-xs-12 col-lg-8">
+                                    <div class="col-xs-12 col-lg-8">
                                         <h3>Vzpomínky na budoucnost</h3>
                                         <h4>26.11.2018</h4>
-                                            <p>&quot;Věčné otázky Odkud jsme přišli? Kam kráčíme? jsou znova přinášeny na pořad dne. Má člověk ještě šanci najít své čisté, prapůvodní, životodárné kořeny? Ať chtěla, nebo nechtěla, Kristýna Erbenová nám svými fotografickými pohledy do tmy otevírá i tuto sebereflexivní připomínku potlačované dimenze naší existence.&quot;
-                                            </p>
-                                            <p class="font-title">
-                                                <a class = "press-link" href="https://www.kulturni-noviny.cz/nezavisle-vydavatelske-a-medialni-druzstvo/archiv/online/2018/48-2018/vzpominky-na-budoucnost" target="_blank">
+                                        <p>&quot;Věčné otázky Odkud jsme přišli? Kam kráčíme? jsou znova přinášeny na
+                                            pořad dne. Má člověk ještě šanci najít své čisté, prapůvodní, životodárné
+                                            kořeny? Ať chtěla, nebo nechtěla, Kristýna Erbenová nám svými fotografickými
+                                            pohledy do tmy otevírá i tuto sebereflexivní připomínku potlačované dimenze
+                                            naší existence.&quot;
+                                        </p>
+                                        <p class="font-title">
+                                            <a class="press-link"
+                                                href="https://www.kulturni-noviny.cz/nezavisle-vydavatelske-a-medialni-druzstvo/archiv/online/2018/48-2018/vzpominky-na-budoucnost"
+                                                target="_blank">
                                                 <i class="icon ion-ios-open"></i> VISIT</a>
-                                            </p>
+                                        </p>
                                     </div> <!-- END of col -->
                                 </div> <!-- END of row -->
                             </div> <!-- END of col -->
 
-                            <div class = "col-xs-12 col-sm-6">
+                            <div class="col-xs-12 col-sm-6">
                                 <div class="row">
-                                    <div class = "col-xs-12 col-lg-4">
-                                        <img class ="press-logo" src = "resources/img/press/logokp.png" alt = "Kolinsky pres logo">
+                                    <div class="col-xs-12 col-lg-4">
+                                        <img class="press-logo" src="resources/img/press/logokp.png"
+                                            alt="Kolinsky pres logo">
                                     </div><!-- END of col -->
-                                    <div class = "col-xs-12 col-lg-8">
+                                    <div class="col-xs-12 col-lg-8">
                                         <h3>V Austrálii jsem půl roku žila na pláži v obytné dodávce</h3>
                                         <h4>25.11.2018</h4>
-                                            <p>&quot;Kolín je už od časů první republiky městem, v němž se rodí, žijí i tvoří výjimeční fotografové. Výrazným zástupcem nejmladší fotografické generace je jedenatřicetiletá Kristýna Erbenová.&quot;
-                                            </p>
-                                            <p class="font-title">
-                                                <a class = "press-link" href="https://www.kolinskypres.cz/clanek-v-australii-jsem-pul-roku-zila-na-plazi-v-obytne-dodavce?fbclid=IwAR1TpiLiNCJK-zgaIZkz2KyEXAXtOQ5FsWLvL8bbbDSIX2blYCkDcN1HTMk" target="_blank">
-                                                    <i class="icon ion-ios-open"></i> VISIT</a>
-                                            </p>
+                                        <p>&quot;Kolín je už od časů první republiky městem, v němž se rodí, žijí i
+                                            tvoří výjimeční fotografové. Výrazným zástupcem nejmladší fotografické
+                                            generace je jedenatřicetiletá Kristýna Erbenová.&quot;
+                                        </p>
+                                        <p class="font-title">
+                                            <a class="press-link"
+                                                href="https://www.kolinskypres.cz/clanek-v-australii-jsem-pul-roku-zila-na-plazi-v-obytne-dodavce?fbclid=IwAR1TpiLiNCJK-zgaIZkz2KyEXAXtOQ5FsWLvL8bbbDSIX2blYCkDcN1HTMk"
+                                                target="_blank">
+                                                <i class="icon ion-ios-open"></i> VISIT</a>
+                                        </p>
                                     </div> <!-- END of col -->
                                 </div> <!-- END of row -->
                             </div> <!-- END of col -->
-                            
+
                         </div>
 
                         <div class="row dotted-spaced-light row-press">
 
-                            <div class = "col-xs-12 col-sm-6">
+                            <div class="col-xs-12 col-sm-6">
                                 <div class="row">
-                                    <div class = "col-xs-12 col-lg-4">
-                                        <img class ="press-logo" src = "resources/img/press/logo_gask.png" alt = "Lidove Noviny logo">
+                                    <div class="col-xs-12 col-lg-4">
+                                        <img class="press-logo" src="resources/img/press/logo_gask.png"
+                                            alt="Lidove Noviny logo">
                                     </div><!-- END of col -->
-                                    <div class = "col-xs-12 col-lg-8">
+                                    <div class="col-xs-12 col-lg-8">
                                         <h3>GASK: Kristýna Erbenová - MOONDUST</h3>
                                         <h4>29.10.2018</h4>
-                                            <p>&quot;Mysteriózní a tajemné série nočních snímků za svitu měsíce zachycující krajinu i blízké přátele odkrývají další poetické roviny naší existence. Australská intimní tvorba je pokračováním fotografické cesty Kristýny Erbenové. Přináší kontemplativní a rozjímavé záběry jako protiváhu k reportážním či dokumentárním záznamům. V souvztažnosti s nalezenými objekty, strukturami nebo krajinnými motivy vytváří osobní reflexi tamní atmosféry.&quot;
-                                            </p>
-                                            <p class="font-title">
-                                                <a class = "press-link" href="https://www.youtube.com/watch?v=D_hoD3-BBLI" target="_blank">
-                                                    <i class="icon ion-ios-open"></i> VISIT</a>
-                                            </p>
+                                        <p>&quot;Mysteriózní a tajemné série nočních snímků za svitu měsíce zachycující
+                                            krajinu i blízké přátele odkrývají další poetické roviny naší existence.
+                                            Australská intimní tvorba je pokračováním fotografické cesty Kristýny
+                                            Erbenové. Přináší kontemplativní a rozjímavé záběry jako protiváhu k
+                                            reportážním či dokumentárním záznamům. V souvztažnosti s nalezenými objekty,
+                                            strukturami nebo krajinnými motivy vytváří osobní reflexi tamní
+                                            atmosféry.&quot;
+                                        </p>
+                                        <p class="font-title">
+                                            <a class="press-link" href="https://www.youtube.com/watch?v=D_hoD3-BBLI"
+                                                target="_blank">
+                                                <i class="icon ion-ios-open"></i> VISIT</a>
+                                        </p>
                                     </div> <!-- END of col -->
                                 </div> <!-- END of row -->
                             </div> <!-- END of col -->
 
-                            <div class = "col-xs-12 col-sm-6">
+                            <div class="col-xs-12 col-sm-6">
                                 <div class="row">
-                                    <div class = "col-xs-12 col-lg-4">
-                                        <img class ="press-logo" src = "resources/img/press/LN_logo.png" alt = "Lidove Noviny logo">
+                                    <div class="col-xs-12 col-lg-4">
+                                        <img class="press-logo" src="resources/img/press/LN_logo.png"
+                                            alt="Lidove Noviny logo">
                                     </div><!-- END of col -->
-                                    <div class = "col-xs-12 col-lg-8">
+                                    <div class="col-xs-12 col-lg-8">
                                         <h3>OBRAZEM</h3>
-                                        <h4>29.10.2018</h4> 
-                                        <p>&quot;Moondust Kristýny Erbenové. Cesta do bezčasí australské buše&quot;.</p> 
-                                            <p>&quot;Fotografka Kristýna Erbenová prozkoumává různé formy samoty. V předchozích souborech nahlížela do světa dospívajících. Nyní v kutnohorské galerii GASK představuje sérii Moondust, která ukazuje její noční putování australskou krajinou. Nejsou to však líbivé přírodní scenerie, ale intimní pohledy do nitra člověka, který je sám uprostřed nedotčené přírody.&quot;
-                                            </p>
-                                            <p class="font-title">
-                                                <a class = "press-link" href="https://www.lidovky.cz/kultura/obrazem-moondust-kristyny-erbenove-cesta-do-bezcasi-australske-buse.A181029_102219_ln_kultura_jto" target="_blank">
-                                                    <i class="icon ion-ios-open"></i> VISIT</a>
-                                            </p>
+                                        <h4>29.10.2018</h4>
+                                        <p>&quot;Moondust Kristýny Erbenové. Cesta do bezčasí australské buše&quot;.</p>
+                                        <p>&quot;Fotografka Kristýna Erbenová prozkoumává různé formy samoty. V
+                                            předchozích souborech nahlížela do světa dospívajících. Nyní v kutnohorské
+                                            galerii GASK představuje sérii Moondust, která ukazuje její noční putování
+                                            australskou krajinou. Nejsou to však líbivé přírodní scenerie, ale intimní
+                                            pohledy do nitra člověka, který je sám uprostřed nedotčené přírody.&quot;
+                                        </p>
+                                        <p class="font-title">
+                                            <a class="press-link"
+                                                href="https://www.lidovky.cz/kultura/obrazem-moondust-kristyny-erbenove-cesta-do-bezcasi-australske-buse.A181029_102219_ln_kultura_jto"
+                                                target="_blank">
+                                                <i class="icon ion-ios-open"></i> VISIT</a>
+                                        </p>
                                     </div> <!-- END of col -->
                                 </div> <!-- END of row -->
                             </div> <!-- END of col -->
-                        
+
                         </div> <!-- END of row -->
 
-                        <div class="row dotted-spaced-light row-press"> <!-- 4th row of media/press --> 
+                        <div class="row dotted-spaced-light row-press">
+                            <!-- 4th row of media/press -->
 
-                            <div class = "col-xs-12 col-sm-6">
+                            <div class="col-xs-12 col-sm-6">
                                 <div class="row">
-                                    <div class = "col-xs-12 col-lg-4">
-                                        <img class ="press-logo" src = "resources/img/press/CT_logo.png" alt = "Ceska Televize logo">
+                                    <div class="col-xs-12 col-lg-4">
+                                        <img class="press-logo" src="resources/img/press/CT_logo.png"
+                                            alt="Ceska Televize logo">
                                     </div><!-- END of col -->
-                                    <div class = "col-xs-12 col-lg-8">
+                                    <div class="col-xs-12 col-lg-8">
                                         <h3>Události v kultuře</h3>
-                                        <h4>23.9.2018</h4> 
-                                            <p>&quot;Absolventka Tvůrčí fotografie Slezské univerzity v Opavě a Univerzity Palackého v Olomouci vychází ve své práci z čerstvě nabyté zkušenosti ze zahraničního pobytu v Austrálii, kde strávila více než rok. Autorka pochází z nedalekého Kolína, který je proslulý modernistickou fotografickou tradicí díky světově uznávaným osobnostem, jako byl Jaromír Funke, Josef Sudek či Eugen Wiškovský. Mladá fotografka neotřele navazuje na tuto silnou uměleckou linii experimentálním přístupem a svěžím, neotřelým a snivým nazíráním na realitu. Její mysteriózní a tajemné série nočních snímků za svitu měsíce zachycující krajinu i blízké přátele odkrývají další poetické roviny naší existence. Australská intimní tvorba je pokračováním její fotografické cesty. Přináší kontemplativní a rozjímavé záběry jako protiváhu k reportážním či dokumentárním záznamům. V souvztažnosti s nalezenými objekty, strukturami nebo krajinnými motivy vytváří osobní reflexi tamní atmosféry.
-                                                &quot;</p>
-                                            <p class="font-title">
-                                                <a class = "press-link" href="https://www.ceskatelevize.cz/porady/1097206490-udalosti-v-kulture/218411000120923/video/645682" target="_blank">
-                                                    <i class="icon ion-ios-open"></i> VISIT</a>
-                                            </p>
+                                        <h4>23.9.2018</h4>
+                                        <p>&quot;Absolventka Tvůrčí fotografie Slezské univerzity v Opavě a Univerzity
+                                            Palackého v Olomouci vychází ve své práci z čerstvě nabyté zkušenosti ze
+                                            zahraničního pobytu v Austrálii, kde strávila více než rok. Autorka pochází
+                                            z nedalekého Kolína, který je proslulý modernistickou fotografickou tradicí
+                                            díky světově uznávaným osobnostem, jako byl Jaromír Funke, Josef Sudek či
+                                            Eugen Wiškovský. Mladá fotografka neotřele navazuje na tuto silnou uměleckou
+                                            linii experimentálním přístupem a svěžím, neotřelým a snivým nazíráním na
+                                            realitu. Její mysteriózní a tajemné série nočních snímků za svitu měsíce
+                                            zachycující krajinu i blízké přátele odkrývají další poetické roviny naší
+                                            existence. Australská intimní tvorba je pokračováním její fotografické
+                                            cesty. Přináší kontemplativní a rozjímavé záběry jako protiváhu k
+                                            reportážním či dokumentárním záznamům. V souvztažnosti s nalezenými objekty,
+                                            strukturami nebo krajinnými motivy vytváří osobní reflexi tamní atmosféry.
+                                            &quot;</p>
+                                        <p class="font-title">
+                                            <a class="press-link"
+                                                href="https://www.ceskatelevize.cz/porady/1097206490-udalosti-v-kulture/218411000120923/video/645682"
+                                                target="_blank">
+                                                <i class="icon ion-ios-open"></i> VISIT</a>
+                                        </p>
                                     </div> <!-- END of col -->
                                 </div> <!-- END of row -->
                             </div> <!-- END of col -->
 
-                            <div class = "col-xs-12 col-sm-6">
+                            <div class="col-xs-12 col-sm-6">
                                 <div class="row">
-                                    <div class = "col-xs-12 col-lg-4">
-                                        <img class ="press-logo" src = "resources/img/press/atelier_logo_black.png" alt = "Atelier logo">
+                                    <div class="col-xs-12 col-lg-4">
+                                        <img class="press-logo" src="resources/img/press/atelier_logo_black.png"
+                                            alt="Atelier logo">
                                     </div><!-- END of col -->
-                                    <div class = "col-xs-12 col-lg-8">
+                                    <div class="col-xs-12 col-lg-8">
                                         <h3>Ateliér</h3>
                                         <h4>11.6.2015</h4>
-                                        <p>&quot;V bezetmí&quot;.</p>  
-                                            <p>&quot;Z hluboké tmy stoupá načekaná záře, která nás nutí uvažovat o fyziologických limitech našeho vnímání stejně jako o poznávacích schopnostech člověka. Implicitně je zde naznačeno, jak rozlehlá mohou být tajemství „za“ naším zřením, které jsme si tak samozřejmě zvykli pokládat za komplexní a vyčerpávající. Další otázkou, která v úvaze diváka tvoří stupňující se napětí, je rozměr a plynutí času. Jsou-li fyzikální danosti relativní, je fyzika v podání Kristýny Erbenové protnuta samou metafyzikou.&quot;</p>
-                                            <p class="font-title">
-                                                <a href="resources/img/press/ATELIER_11062015.jpg" data-lightbox = "press-atelier2" class = "press-link">
-                                                    <i class="icon ion-ios-paper"></i> VIEW ARTICLE</a>
-                                            </p>
+                                        <p>&quot;V bezetmí&quot;.</p>
+                                        <p>&quot;Z hluboké tmy stoupá načekaná záře, která nás nutí uvažovat o
+                                            fyziologických limitech našeho vnímání stejně jako o poznávacích
+                                            schopnostech člověka. Implicitně je zde naznačeno, jak rozlehlá mohou být
+                                            tajemství „za“ naším zřením, které jsme si tak samozřejmě zvykli pokládat za
+                                            komplexní a vyčerpávající. Další otázkou, která v úvaze diváka tvoří
+                                            stupňující se napětí, je rozměr a plynutí času. Jsou-li fyzikální danosti
+                                            relativní, je fyzika v podání Kristýny Erbenové protnuta samou
+                                            metafyzikou.&quot;</p>
+                                        <p class="font-title">
+                                            <a href="resources/img/press/ATELIER_11062015.jpg"
+                                                data-lightbox="press-atelier2" class="press-link">
+                                                <i class="icon ion-ios-paper"></i> VIEW ARTICLE</a>
+                                        </p>
                                     </div> <!-- END of col -->
                                 </div> <!-- END of row -->
                             </div> <!-- END of col -->
-                        
+
                         </div> <!-- END of row -->
 
-                        <div class="row dotted-spaced-light row-press"> <!-- 4th row of media/press --> 
+                        <div class="row dotted-spaced-light row-press">
+                            <!-- 4th row of media/press -->
 
-                            <div class = "col-xs-12 col-sm-6">
+                            <div class="col-xs-12 col-sm-6">
                                 <div class="row">
-                                    <div class = "col-xs-12 col-lg-4">
-                                        <img class ="press-logo" src = "resources/img/press/CR_Vltava_logo.png" alt = "CR Vltava logo">
+                                    <div class="col-xs-12 col-lg-4">
+                                        <img class="press-logo" src="resources/img/press/CR_Vltava_logo.png"
+                                            alt="CR Vltava logo">
                                     </div><!-- END of col -->
-                                    <div class = "col-xs-12 col-lg-8">
+                                    <div class="col-xs-12 col-lg-8">
                                         <h3>Tma je jen málem světla</h3>
                                         <h4>21.5.2015</h4>
-                                        <p>"Mladá fotografka Kristýna Erbenová vystavuje v Galerii Fotografic cyklus nazvaný „V bezetmí“. Barevné snímky zachycují noční krajiny. Fantazie dostává podněty jako překvapení a novou dimenzi reálného světa." </p>
+                                        <p>"Mladá fotografka Kristýna Erbenová vystavuje v Galerii Fotografic cyklus
+                                            nazvaný „V bezetmí“. Barevné snímky zachycují noční krajiny. Fantazie
+                                            dostává podněty jako překvapení a novou dimenzi reálného světa." </p>
                                         <p class="font-title">
-                                            <a class = "press-link" href="http://www.rozhlas.cz/mozaika/vytvarne/_zprava/tma-je-jen-malem-svetla--1492577" target="_blank">
-                                            <i class="icon ion-ios-open"></i> VISIT</a>
+                                            <a class="press-link"
+                                                href="http://www.rozhlas.cz/mozaika/vytvarne/_zprava/tma-je-jen-malem-svetla--1492577"
+                                                target="_blank">
+                                                <i class="icon ion-ios-open"></i> VISIT</a>
                                         </p>
                                     </div> <!-- END of col -->
                                 </div> <!-- END of row -->
                             </div> <!-- END of col -->
-                            
-                            <div class = "col-xs-12 col-sm-6">
+
+                            <div class="col-xs-12 col-sm-6">
                                 <div class="row">
-                                    <div class = "col-xs-12 col-lg-4">
-                                        <img class ="press-logo" src = "resources/img/press/CT_logo.png" alt = "Ceska Televize logo">
+                                    <div class="col-xs-12 col-lg-4">
+                                        <img class="press-logo" src="resources/img/press/CT_logo.png"
+                                            alt="Ceska Televize logo">
                                     </div><!-- END of col -->
-                                    <div class = "col-xs-12 col-lg-8">
+                                    <div class="col-xs-12 col-lg-8">
                                         <h3>Události v kultuře</h3>
                                         <h4>16.5.2015</h4>
-                                        <p> "Místo ve dne začala fotit v noci. Od té doby fotí při každém úplňku. Kristýna Erbenová patří k nejmladší generaci českých fotografů a už má za sebou desítky výstav u nás i v zahraničí."</p>
+                                        <p> "Místo ve dne začala fotit v noci. Od té doby fotí při každém úplňku.
+                                            Kristýna Erbenová patří k nejmladší generaci českých fotografů a už má za
+                                            sebou desítky výstav u nás i v zahraničí."</p>
                                         <p class="font-title">
-                                            <a class = "press-link" href="http://www.ceskatelevize.cz/porady/1097206490-udalosti-v-kulture/215411000120516/video/400933" target="_blank">
-                                            <i class="icon ion-ios-open"></i> VISIT</a>
+                                            <a class="press-link"
+                                                href="http://www.ceskatelevize.cz/porady/1097206490-udalosti-v-kulture/215411000120516/video/400933"
+                                                target="_blank">
+                                                <i class="icon ion-ios-open"></i> VISIT</a>
                                         </p>
                                     </div> <!-- END of col -->
                                 </div> <!-- END of row -->
                             </div><!-- END of col -->
-                            
+
                         </div> <!-- END of row -->
 
-                        <div class="row dotted-spaced-light row-press"><!-- 2nd row of media/press --> 
+                        <div class="row dotted-spaced-light row-press">
+                            <!-- 2nd row of media/press -->
 
-                            <div class = "col-xs-12 col-sm-6">
+                            <div class="col-xs-12 col-sm-6">
                                 <div class="row">
-                                    <div class = "col-xs-12 col-lg-4">
-                                        <img class ="press-logo" src = "resources/img/press/vice-logo.png" alt = "Vice Magazine logo">
+                                    <div class="col-xs-12 col-lg-4">
+                                        <img class="press-logo" src="resources/img/press/vice-logo.png"
+                                            alt="Vice Magazine logo">
                                     </div><!-- END of col -->
-                                    <div class = "col-xs-12 col-lg-8">
+                                    <div class="col-xs-12 col-lg-8">
                                         <h3>Fotím v noci</h3>
                                         <h4>11.5.2015</h4>
-                                        <p>"Noc, ticho, tma, stříbrné stíny, dobrodružství, strach, zvuky noci, zvířata, návštěvníci, zastavit se, nehýbat, vnímat, propojit se. Tady a teď, v tichosti, sdílet čas a prostor, klid i vnitřní napětí." </p>
+                                        <p>"Noc, ticho, tma, stříbrné stíny, dobrodružství, strach, zvuky noci, zvířata,
+                                            návštěvníci, zastavit se, nehýbat, vnímat, propojit se. Tady a teď, v
+                                            tichosti, sdílet čas a prostor, klid i vnitřní napětí." </p>
                                         <p class="font-title">
-                                            <a class = "press-link" href="http://www.vice.com/cs/read/fotim-v-noci" target="_blank">
-                                            <i class="icon ion-ios-open"></i> VISIT</a>
+                                            <a class="press-link" href="http://www.vice.com/cs/read/fotim-v-noci"
+                                                target="_blank">
+                                                <i class="icon ion-ios-open"></i> VISIT</a>
                                         </p>
                                     </div> <!-- END of col -->
                                 </div> <!-- END of row -->
                             </div><!-- END of col -->
 
-                            <div class = "col-xs-12 col-sm-6">
+                            <div class="col-xs-12 col-sm-6">
                                 <div class="row">
-                                    <div class = "col-xs-12 col-lg-4">
-                                        <img class ="press-logo" src = "resources/img/press/LN_logo.png" alt = "LN newspaper logo">
+                                    <div class="col-xs-12 col-lg-4">
+                                        <img class="press-logo" src="resources/img/press/LN_logo.png"
+                                            alt="LN newspaper logo">
                                     </div><!-- END of col -->
-                                    <div class = "col-xs-12 col-lg-8">
+                                    <div class="col-xs-12 col-lg-8">
                                         <h3>Lidové noviny / Orientace</h3>
                                         <h4>2.5.2015</h4>
-                                        <p>&quot;Krajiny v souboru Soukromá území Kristýny Erbenové zvou k putování. Nevíme, kdy se vydáme na cestu a kde skončíme. Není důležité, kde jsme. Je to stále jeden a tentýž klidný svět…Úplně jiné je to ve světě lidí. Tam je klid jen zdánlivý. V souboru Somewhere Inside Kristýna Erbenová pomalu otevírá pomyslné dveře do nejrůznějších životních příběhů. ‚Fotím různé lidi, ale vlastně nejde o jejich konkrétní osudy, ale o stále stejný příběh. O jednotlivé životní kapitoly, které známe všichni. Říkám tomu bezčasí a bezprostor.‘&quot;</p>              
-                                            <p class="font-title">
-                                                <a href="resources/img/press/LN_Orientace02052015.jpg" data-lightbox = "press-ln" class = "press-link">
-                                                    <i class="icon ion-ios-paper"></i> VIEW ARTICLE</a>
-                                            </p>
+                                        <p>&quot;Krajiny v souboru Soukromá území Kristýny Erbenové zvou k putování.
+                                            Nevíme, kdy se vydáme na cestu a kde skončíme. Není důležité, kde jsme. Je
+                                            to stále jeden a tentýž klidný svět…Úplně jiné je to ve světě lidí. Tam je
+                                            klid jen zdánlivý. V souboru Somewhere Inside Kristýna Erbenová pomalu
+                                            otevírá pomyslné dveře do nejrůznějších životních příběhů. ‚Fotím různé
+                                            lidi, ale vlastně nejde o jejich konkrétní osudy, ale o stále stejný příběh.
+                                            O jednotlivé životní kapitoly, které známe všichni. Říkám tomu bezčasí a
+                                            bezprostor.‘&quot;</p>
+                                        <p class="font-title">
+                                            <a href="resources/img/press/LN_Orientace02052015.jpg"
+                                                data-lightbox="press-ln" class="press-link">
+                                                <i class="icon ion-ios-paper"></i> VIEW ARTICLE</a>
+                                        </p>
                                     </div> <!-- END of col -->
                                 </div> <!-- END of row -->
                             </div> <!-- END of col -->
-                            
+
                         </div> <!-- END of row -->
 
-                        <div class="row dotted-spaced-light row-press"><!-- 2nd row of media/press --> 
+                        <div class="row dotted-spaced-light row-press">
+                            <!-- 2nd row of media/press -->
 
-                            <div class = "col-xs-12 col-sm-6">
+                            <div class="col-xs-12 col-sm-6">
                                 <div class="row">
-                                    <div class = "col-xs-12 col-lg-4">
-                                        <img class ="press-logo" src = "resources/img/press/HN_logo.png" alt = "Hospodarske Noviny logo">
+                                    <div class="col-xs-12 col-lg-4">
+                                        <img class="press-logo" src="resources/img/press/HN_logo.png"
+                                            alt="Hospodarske Noviny logo">
                                     </div><!-- END of col -->
-                                    <div class = "col-xs-12 col-lg-8">
-                                        <h3>Mladé naděje české fotografie: Kristýna Erbenová a její soukromé vlastnictví</h3>
+                                    <div class="col-xs-12 col-lg-8">
+                                        <h3>Mladé naděje české fotografie: Kristýna Erbenová a její soukromé vlastnictví
+                                        </h3>
                                         <h4>31.1.2014</h4>
-                                        <p>"Série Soukromá území je mapou míst, která si Kristýna Erbenová přivlastnila. Důsledně tak pokračuje ve vlastní hlubinné terapii, ve vhledu do a za obecně vnímanou skutečnost. Soukromá území jsou vždy intimní a jemná místa, důležitá a viditelná hlavně pro jejich majitele."</p>
+                                        <p>"Série Soukromá území je mapou míst, která si Kristýna Erbenová přivlastnila.
+                                            Důsledně tak pokračuje ve vlastní hlubinné terapii, ve vhledu do a za obecně
+                                            vnímanou skutečnost. Soukromá území jsou vždy intimní a jemná místa,
+                                            důležitá a viditelná hlavně pro jejich majitele."</p>
                                         <p class="font-title">
-                                            <a class = "press-link" href="http://art.ihned.cz/c1-61569020-mlade-nadeje-ceske-fotografie" target="_blank">
-                                            <i class="icon ion-ios-open"></i> VISIT</a>
+                                            <a class="press-link"
+                                                href="http://art.ihned.cz/c1-61569020-mlade-nadeje-ceske-fotografie"
+                                                target="_blank">
+                                                <i class="icon ion-ios-open"></i> VISIT</a>
                                         </p>
                                     </div> <!-- END of col -->
                                 </div> <!-- END of row -->
                             </div><!-- END of col -->
-                            
-                            <div class = "col-xs-12 col-sm-6">
+
+                            <div class="col-xs-12 col-sm-6">
                                 <div class="row">
-                                    <div class = "col-xs-12 col-lg-4">
-                                        <img class ="press-logo" src = "resources/img/press/casopis-foto-logo.png" alt = "Foto magazine logo">
+                                    <div class="col-xs-12 col-lg-4">
+                                        <img class="press-logo" src="resources/img/press/casopis-foto-logo.png"
+                                            alt="Foto magazine logo">
                                     </div><!-- END of col -->
-                                    <div class = "col-xs-12 col-lg-8">
+                                    <div class="col-xs-12 col-lg-8">
                                         <h3>FOTO magazine</h3>
                                         <h4>February 2013</h4>
-                                        <p>&quot;Když se do nich ponoříte, jsou fotografie svou výpovědí opravdu silné, a to i přesto, že jsou vlastně velmi jemné, křehké a poetické. Autorka potvrzuje, že má dar nacházet poetické obrazy na zdánlivě nudných místech a svébytným vizuálním jazykem je s pokorou posílat dál divákovi. Kristýniny fotografie jsou básně, ke kterým si musí najít cestu divák sám – a v jejím případě to vůbec není těžké.&quot;</p>              
-                                            <p class="font-title">
-                                                <a href="resources/img/press/FOTO_unor_2013a.jpg" data-lightbox = "press-foto" class = "press-link">
-                                                    <i class="icon ion-ios-paper"></i> VIEW ARTICLE</a>
-                                            </p>
-                                        <a href="resources/img/press/FOTO_unor_2013b.jpg" data-lightbox = "press-foto"></a>
+                                        <p>&quot;Když se do nich ponoříte, jsou fotografie svou výpovědí opravdu silné,
+                                            a to i přesto, že jsou vlastně velmi jemné, křehké a poetické. Autorka
+                                            potvrzuje, že má dar nacházet poetické obrazy na zdánlivě nudných místech a
+                                            svébytným vizuálním jazykem je s pokorou posílat dál divákovi. Kristýniny
+                                            fotografie jsou básně, ke kterým si musí najít cestu divák sám – a v jejím
+                                            případě to vůbec není těžké.&quot;</p>
+                                        <p class="font-title">
+                                            <a href="resources/img/press/FOTO_unor_2013a.jpg" data-lightbox="press-foto"
+                                                class="press-link">
+                                                <i class="icon ion-ios-paper"></i> VIEW ARTICLE</a>
+                                        </p>
+                                        <a href="resources/img/press/FOTO_unor_2013b.jpg"
+                                            data-lightbox="press-foto"></a>
                                     </div> <!-- END of col -->
                                 </div> <!-- END of row -->
                             </div> <!-- END of col -->
-                            
+
                         </div> <!-- END of row -->
 
-                        <div class="row dotted-spaced-light row-press"> <!-- 4th row of media/press --> 
+                        <div class="row dotted-spaced-light row-press">
+                            <!-- 4th row of media/press -->
 
-                            <div class = "col-xs-12 col-sm-6">
+                            <div class="col-xs-12 col-sm-6">
                                 <div class="row">
-                                    <div class = "col-xs-12 col-lg-4">
-                                        <img class ="press-logo" src = "resources/img/press/CT_logo.png" alt = "Ceska Televize logo">
+                                    <div class="col-xs-12 col-lg-4">
+                                        <img class="press-logo" src="resources/img/press/CT_logo.png"
+                                            alt="Ceska Televize logo">
                                     </div><!-- END of col -->
-                                    <div class = "col-xs-12 col-lg-8">
+                                    <div class="col-xs-12 col-lg-8">
                                         <h3>Kultura v regionech</h3>
                                         <h4>17.11.2012</h4>
-                                        <p>(od času 10:45)<br/>„Melancholická atmosféra bezčasí, schopnost zachytit skryté napětí v na první pohled banálních situacích a dokonalé technické vybavení. To všechno charakterizuje fotografie Kristýny Erbenové.“</p>
+                                        <p>(od času 10:45)<br />„Melancholická atmosféra bezčasí, schopnost zachytit
+                                            skryté napětí v na první pohled banálních situacích a dokonalé technické
+                                            vybavení. To všechno charakterizuje fotografie Kristýny Erbenové.“</p>
                                         <p class="font-title">
-                                            <a class = "press-link" href="http://www.ceskatelevize.cz/ivysilani/10099403120-kultura-v-regionech/312281381931117/" target="_blank">
-                                            <i class="icon ion-ios-open"></i> VISIT</a>
+                                            <a class="press-link"
+                                                href="http://www.ceskatelevize.cz/ivysilani/10099403120-kultura-v-regionech/312281381931117/"
+                                                target="_blank">
+                                                <i class="icon ion-ios-open"></i> VISIT</a>
                                         </p>
                                     </div> <!-- END of col -->
                                 </div> <!-- END of row -->
                             </div> <!-- END of col -->
-                            
-                            <div class = "col-xs-12 col-sm-6">
+
+                            <div class="col-xs-12 col-sm-6">
                                 <div class="row">
-                                    <div class = "col-xs-12 col-lg-4">
-                                        <img class ="press-logo" src = "resources/img/press/CT_logo.png" alt = "Ceska Televize logo">
+                                    <div class="col-xs-12 col-lg-4">
+                                        <img class="press-logo" src="resources/img/press/CT_logo.png"
+                                            alt="Ceska Televize logo">
                                     </div><!-- END of col -->
-                                    <div class = "col-xs-12 col-lg-8">
+                                    <div class="col-xs-12 col-lg-8">
                                         <h3>Kultura.cz</h3>
                                         <h4>23.6.2012</h4>
-                                        <p>Portrét: Fotografka Kristýna Erbenová.</p><p>„Mým hlavním tématem je člověk a krajina a člověk v krajině. Být sám, uvnitř sebe. Momenty, které nás vedou k hlubšímu prožití místa a prostoru kolem nás i sebe sama.“</p>
+                                        <p>Portrét: Fotografka Kristýna Erbenová.</p>
+                                        <p>„Mým hlavním tématem je člověk a krajina a člověk v krajině. Být sám, uvnitř
+                                            sebe. Momenty, které nás vedou k hlubšímu prožití místa a prostoru kolem nás
+                                            i sebe sama.“</p>
                                         <p class="font-title">
-                                            <a class = "press-link" href="http://www.ceskatelevize.cz/ivysilani/1183619616-kultura-cz/312295350090013/obsah/208667-portret-fotografka-kristyna-erbenova/" target="_blank">
-                                            <i class="icon ion-ios-open"></i> VISIT</a>
+                                            <a class="press-link"
+                                                href="http://www.ceskatelevize.cz/ivysilani/1183619616-kultura-cz/312295350090013/obsah/208667-portret-fotografka-kristyna-erbenova/"
+                                                target="_blank">
+                                                <i class="icon ion-ios-open"></i> VISIT</a>
                                         </p>
                                     </div> <!-- END of col -->
                                 </div> <!-- END of row -->
                             </div> <!-- END of col -->
-                            
+
                         </div> <!-- END of row -->
 
-                        <div class="row dotted-spaced-light row-press"> <!-- 4th row of media/press --> 
+                        <div class="row dotted-spaced-light row-press">
+                            <!-- 4th row of media/press -->
 
-                            <div class = "col-xs-12 col-sm-6">
+                            <div class="col-xs-12 col-sm-6">
                                 <div class="row">
-                                    <div class = "col-xs-12 col-lg-4">
-                                        <img class ="press-logo" src = "resources/img/press/atelier_logo_black.png" alt = "Atelier magazine logo">
+                                    <div class="col-xs-12 col-lg-4">
+                                        <img class="press-logo" src="resources/img/press/atelier_logo_black.png"
+                                            alt="Atelier magazine logo">
                                     </div><!-- END of col -->
-                                    <div class = "col-xs-12 col-lg-8">
+                                    <div class="col-xs-12 col-lg-8">
                                         <h3>Ateliér</h3>
                                         <h4>3.5.2012</h4>
-                                        <p>&quot;Zamlklá zastavení&quot;</p>     
-                                            <p>&quot;Erbenová nepodléhá krátkodechým trendům, jimiž je fotografická scéna zaplavena. Přes riziko, že bude nařčena z patosu a prvoplánové emocionality, komponuje své fotografie s velkou mírou jistoty a čitelného talentu, jenž je zjevně vytříben obsáhlou znalostí (nejen) výtvarného umění. Tvoří tak čisté a univerzální artefakty, s nimiž může na první pohled stejně jako po delší zkušenosti komunikovat ten, komu není cizí jeden z prvotních účelů umění, jímž je rozhovor se sebou samým a formálně rafinované ztvárnění emocí.&quot;</p>
-                                            <p class="font-title">
-                                                <a href="resources/img/press/ATELIER_03052012.jpg" data-lightbox = "press-atelier" class = "press-link">
-                                                    <i class="icon ion-ios-paper"></i> VIEW ARTICLE</a>
-                                            </p>
+                                        <p>&quot;Zamlklá zastavení&quot;</p>
+                                        <p>&quot;Erbenová nepodléhá krátkodechým trendům, jimiž je fotografická scéna
+                                            zaplavena. Přes riziko, že bude nařčena z patosu a prvoplánové emocionality,
+                                            komponuje své fotografie s velkou mírou jistoty a čitelného talentu, jenž je
+                                            zjevně vytříben obsáhlou znalostí (nejen) výtvarného umění. Tvoří tak čisté
+                                            a univerzální artefakty, s nimiž může na první pohled stejně jako po delší
+                                            zkušenosti komunikovat ten, komu není cizí jeden z prvotních účelů umění,
+                                            jímž je rozhovor se sebou samým a formálně rafinované ztvárnění emocí.&quot;
+                                        </p>
+                                        <p class="font-title">
+                                            <a href="resources/img/press/ATELIER_03052012.jpg"
+                                                data-lightbox="press-atelier" class="press-link">
+                                                <i class="icon ion-ios-paper"></i> VIEW ARTICLE</a>
+                                        </p>
                                     </div> <!-- END of col -->
                                 </div> <!-- END of row -->
                             </div> <!-- END of col -->
-                            
-                            <div class = "col-xs-12 col-sm-6">
+
+                            <div class="col-xs-12 col-sm-6">
                                 <div class="row">
-                                    <div class = "col-xs-12 col-lg-4">
-                                        <img class ="press-logo" src = "resources/img/press/shots_logo.png" alt = "Shots magazine logo">
+                                    <div class="col-xs-12 col-lg-4">
+                                        <img class="press-logo" src="resources/img/press/shots_logo.png"
+                                            alt="Shots magazine logo">
                                     </div><!-- END of col -->
-                                    <div class = "col-xs-12 col-lg-8">
+                                    <div class="col-xs-12 col-lg-8">
                                         <h3>Shots Magazine</h3>
                                         <h4>December 2010</h4>
-                                            <p>&quot;Fragile Moments' depicts a series of restful, serene images, suspended - often in water, but mostly in time - each in some private ecstasy of solitude. The final image in the series, an old man gazing at the portrait of maybe a lost love, is a beautiful essay in a limited and carefully orchestrated colour palatte, which uses light and shade to create infinite depth.&quot;</p>   
-                                            <p class="font-title">
-                                                <a href="resources/img/press/Shots_dec_2010.png" data-lightbox = "press-shots" class = "press-link">
-                                                    <i class="icon ion-ios-paper"></i> VIEW ARTICLE</a>
-                                            </p>
+                                        <p>&quot;Fragile Moments' depicts a series of restful, serene images, suspended
+                                            - often in water, but mostly in time - each in some private ecstasy of
+                                            solitude. The final image in the series, an old man gazing at the portrait
+                                            of maybe a lost love, is a beautiful essay in a limited and carefully
+                                            orchestrated colour palatte, which uses light and shade to create infinite
+                                            depth.&quot;</p>
+                                        <p class="font-title">
+                                            <a href="resources/img/press/Shots_dec_2010.png" data-lightbox="press-shots"
+                                                class="press-link">
+                                                <i class="icon ion-ios-paper"></i> VIEW ARTICLE</a>
+                                        </p>
                                     </div> <!-- END of col -->
                                 </div> <!-- END of row -->
                             </div> <!-- END of col -->
-                            
+
                         </div> <!-- END of row -->
                     </div>
                     <!-- END OF PRESS/MEDIA SECTION -->
 
                     <!-- CONTACT SECTION -->
-                    <div  id = "content-contact" class="section-content">
-                        
+                    <div id="content-contact" class="section-content">
+
                         <h3>Send me a message</h3>
-                        <form id = "contact-form">
-                            <div class = "row">
-                                <div class = "col-12 col-sm-12 col-md-4">
-                                    <input class="input-contact-box style-input" type="text" name="name" placeholder="your name"/>
-                                    <div class = "form-error" data-error-id="name"></div>
-                                    <input class="input-contact-box style-input" type="email" name="email" placeholder="your email"/>
-                                    <div class = "form-error" data-error-id="email"></div>
-                                    <input class="input-contact-box style-input" type="text" name="subject" placeholder="your subject"/>
+                        <form id="contact-form">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-4">
+                                    <input class="input-contact-box style-input" type="text" name="name"
+                                        placeholder="your name" />
+                                    <div class="form-error" data-error-id="name"></div>
+                                    <input class="input-contact-box style-input" type="email" name="email"
+                                        placeholder="your email" />
+                                    <div class="form-error" data-error-id="email"></div>
+                                    <input class="input-contact-box style-input" type="text" name="subject"
+                                        placeholder="your subject" />
                                 </div>
-                                <div class = "col-12 col-sm-12 col-md-8">
-                                    <textarea class="input-message style-input" placeholder="your message..." name="message"></textarea>
-                                    <div class = "form-error" data-error-id="message"></div>
+                                <div class="col-12 col-sm-12 col-md-8">
+                                    <textarea class="input-message style-input" placeholder="your message..."
+                                        name="message"></textarea>
+                                    <div class="form-error" data-error-id="message"></div>
                                     <div id="send-result"></div>
                                     <div class="contact-submit" role="button">
                                         <span><i class="fa fa-envelope"></i>&nbsp;send</span>
@@ -1038,23 +1274,23 @@
                                 </div>
                             </div>
                         </form>
-                        
-                        <div class = "row">
-                            <div class = "contact-divider col-xs-12 col-sm-5 col-md-4"> 
+
+                        <div class="row">
+                            <div class="contact-divider col-xs-12 col-sm-5 col-md-4">
                                 <div class="contact-qrcode">
                                     <img src="resources/img/kriserb_qrcode_grey.png" alt="QR code with contact info">
                                 </div>
                             </div>
-                            <div class = "contact-card contact-divider col-xs-12 col-sm-7 col-md-8">
+                            <div class="contact-card contact-divider col-xs-12 col-sm-7 col-md-8">
                                 <h3>For print sale and commission enquiries<br /> please get in touch.</h3>
                                 <address>
                                     <p><i class="icon ion-ios-mail"></i>&nbsp;&nbsp;info@kristynaerbenova.com</p>
                                     <p><i class="ion-md-phone-portrait"></i>&nbsp;&nbsp;+420 728 013 007</p>
                                     <p><i class="ion-md-phone-portrait"></i>&nbsp;&nbsp;+61 477 233 145</p>
-                                </address>    
+                                </address>
                             </div>
                         </div>
-                        
+
                     </div>
                     <!-- END OF CONTACT SECTION -->
 
@@ -1065,10 +1301,10 @@
                     </section>
 
 
-                </div> <!-- END of column 2-->
-            </div> <!-- END of row-->
+            </div> <!-- END of column 2-->
+        </div> <!-- END of row-->
         </div> <!-- END of conatiner-->
-    </section> 
+    </section>
 
 
 
@@ -1077,8 +1313,10 @@
     <!-- Bootstrap JavaScript -->
     <script src="vendors/js/bootstrap.min.js" type="text/javascript"></script>
     <!-- Masonry JavaScript -->
-    <script src="vendors/js/masonry.pkgd.min.js"></script>
     <script src="vendors/js/imagesloaded.pkgd.min.js"></script>
+    <!-- <script src="vendors/js/masonry.pkgd.min.js"></script> -->
+    <script src="vendors/js/isotope.pkgd.min.js"></script>
+
     <!-- LightBox JavaScript -->
     <!-- <script src="vendors/js/lightbox.min.js"></script> -->
     <!-- Web tailored Javascript -->

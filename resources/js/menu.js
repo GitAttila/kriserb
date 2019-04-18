@@ -2,9 +2,9 @@ $(function() {
     
     // $.ajaxSetup({ cache: false });
 
-    var lastNavLinkClicked = '';
+    var lastNavLinkClicked = 'home';
 
-    $('.navbar-nav .nav-link').on( 'click', function(e) {
+    $('[data-menulink].nav-link').on( 'click', function(e) {
         e.preventDefault();
         
         var linkTo = $(this).data('menulink');
@@ -34,6 +34,9 @@ $(function() {
                 $('#content-' + linkTo).css('opacity','0');
                 $('#content-' + linkTo).addClass('active').animateCss('fadeInUp','', function(){
                     $('#content-' + linkTo).css('opacity','1');
+                    if (linkTo === 'gallerries') {
+                        $('.thumbnail-grid').isotope('layout');
+                    }
                 });
             })
         }
