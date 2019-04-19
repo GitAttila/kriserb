@@ -29,7 +29,7 @@
             "ion-icon": "ion-ios-clipboard"
         },
         {
-            "active": "false",
+            "active": "true",
             "name":"Twitter",
             "link":"",
             "open-new-window": "true",

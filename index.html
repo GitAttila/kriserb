@@ -100,19 +100,8 @@
 
             <div class="row align-items-center">
                 <div class="col-10">
-                    <div class="social-media">
-                        <a href="https://instagram.com/kris_erb/" target="_blank">
-                            <i class="icon ion-logo-instagram"></i>
-                        </a>
-                        <a href="https://www.facebook.com/kristyna.erbenova" target="_blank">
-                            <i class="icon ion-logo-facebook"></i>
-                        </a>
-                        <a href="http://deadnlovely.blogspot.cz/" target="_blank">
-                            <i class="icon ion-md-clipboard"></i>
-                        </a>
-                        <a href="https://www.pinterest.com/kristynaerbenova/" target="_blank">
-                            <i class="icon ion-logo-pinterest"></i>
-                        </a>
+                    <div class="social-media" data-site="socialmedia">
+                        <!-- Javascript will write code here  -->
                     </div>
                 </div>
                 <div class="col-2 text-right d-inline">
@@ -133,7 +122,6 @@
             <div class="row justify-content-between">
 
                 <div id="navbar-container" class="col-12 col-sm-3 animation-width navbar-menu-collapsed">
-                    <!--  -->
 
                     <nav class="navbar" role="navigation">
 
@@ -207,13 +195,6 @@
                 <section id="content-container" class="col-12 col-sm-12 animation-width hidden">
 
                     <section id="content-home" class="section-content active">
-                        
-                        <!-- <div class="thumbnail-wrapper">
-                            <h2 class="thumbnail-title">moondust</h2>
-                            <div class="thumbnail-image-wrapper">
-                                <img src="resources/img/portfolios/KE_moondust_01.jpg" alt="">
-                            </div>
-                        </div> -->
 
                         <div id="home-gallery">
                             <div id="home-carousel" class="carousel slide">
@@ -807,7 +788,9 @@
                     <!-- END OF BIOGRAPHY SECTION -->
 
                     <!-- PRESS/MEDIA SECTION -->
-                    <div id="content-press" class="section-content">
+                    <div id="content-press" class="section-content" data-site="press">
+
+                        <!-- Javascript will write code here  -->
 
                         <div class="row dotted-spaced-light row-press">
                             <!-- 4th row of media/press -->
@@ -1318,6 +1301,7 @@
     <!-- Web tailored Javascript -->
     <script src="resources/js/animatecss.js" type="text/javascript"></script>
     <script src="resources/js/carousel_settings.js" type="text/javascript"></script>
+    <script src="resources/js/siteinit.js" type="text/javascript"></script>
     <script src="resources/js/galleries.js" type="text/javascript"></script>
     <script src="resources/js/navigation.js" type="text/javascript"></script>
     <script src="resources/js/ajax_contact_form.js" type="text/javascript"></script>
