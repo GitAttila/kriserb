@@ -1,0 +1,233 @@
+{
+    "socialmedia": [
+        {
+            "active": "true",
+            "name":"Instagram",
+            "link":"https://instagram.com/kris_erb/",
+            "open-new-window": "true",
+            "ion-icon": "ion-logo-instagram"
+        },
+        {
+            "active": "true",
+            "name":"Facebook",
+            "link":"https://www.facebook.com/kristyna.erbenova",
+            "open-new-window": "true",
+            "ion-icon": "ion-logo-facebook"
+        },
+        {
+            "active": "true",
+            "name":"Pinterest",
+            "link":"https://www.pinterest.com/kristynaerbenova/",
+            "open-new-window": "true",
+            "ion-icon": "ion-logo-instagram"
+        },
+        {
+            "active": "true",
+            "name":"Blogspot",
+            "link":"http://deadnlovely.blogspot.cz/",
+            "open-new-window": "true",
+            "ion-icon": "ion-ios-clipboard"
+        },
+        {
+            "active": "false",
+            "name":"Twitter",
+            "link":"",
+            "open-new-window": "true",
+            "ion-icon": "ion-logo-twitter"
+        }
+    ],
+    "contact-info": 
+    {
+        "email": 
+            [
+                {
+                    "email-address": "info@kristynaerbenova.com"
+                }
+            ],
+        "phone": 
+            [
+                {
+                    "number": "+420 728 013 007",
+                    "type": "mobile"
+                },
+                {
+                    "number": "+420 222 222 222",
+                    "type": "landline"
+                }
+            ],
+        "qr-code": 
+            {
+                "path": "resources/img/kriserb_qrcode_grey.png",
+                "alt": "QR code with contact info for Kristyna Erbenova"
+            }
+    },
+    "biography": 
+    {
+        "intro": 
+            {
+                "image": 
+                {
+                    "path": "resources/img/portrait.jpg",
+                    "alt": "portrait of Kristyna"
+                },
+                "title": "kristýna erbenová",
+                "subtitle": "(1987, Czech Republic)",
+                "text": "I‘m mainly interested in art photography with a focus on people, landscapes and the relationship between them. In my photography, I‘m trying to bring together the inner world of feelings and thoughts with the outside world of appearances; to create an imaginary space of timelessness; to capture the moments which lead us to a deeper experience of ourselves and the space around us. All my personal projects are shot on medium format film. I'm interested in commissions, collaborations, exhibitions and residences."
+            },
+        "education": 
+        {
+            "title": "education",
+            "subtitle": "",
+            "record":
+                [
+                    {
+                        "record-point": "2016",
+                        "record-text": "Institute of Creative Photography, Silesian University in Opava, Master of Arts Diploma (MgA.)",
+                        "record-link": ""
+                    },
+                    {
+                        "record-point": "2015",
+                        "record-text": "Palacký University in Olomouc, Faculty of Arts: English Philology – Film Studies, Master's Diploma (Mgr.)",
+                        "record-link": ""
+                    },
+                    {
+                        "record-point": "2011",
+                        "record-text": "Institute of Creative Photography, Silesian University in Opava, Bachelor of Arts (BcA.)",
+                        "record-link": ""
+                    },
+                    {
+                        "record-point": "2010",
+                        "record-text": "Palacký University in Olomouc, Faculty of Arts: English Philology – Film Studies, Bachelor’s degree (Bc.)",
+                        "record-link": ""
+                    },
+                    {
+                        "record-point": "2008",
+                        "record-text": "Faculty of Humanities, Utrecht University, Utrecht, Netherlands, abroad study",
+                        "record-link": ""
+                    }
+                ]
+        },
+        "awards": 
+        {
+            "title": "awards",
+            "subtitle": "",
+            "record":
+                [
+                    {
+                        "record-point": "4th place",
+                        "record-text": "The international photography competition Shots: Young Photographers Competition 2011 (see here)",
+                        "record-link": ""
+                    },
+                    {
+                        "record-point": "finalist",
+                        "record-text": "Elle fashion award 2013 finalist (Mercedes-Benz Fashion Week in Prague)",
+                        "record-link": ""
+                    }
+                ]
+        },
+        "exhibitions": 
+        {
+            "title": "exhibitions",
+            "subtitle": "",
+            "record":
+                [
+                    {
+                        "record-point": "2018",
+                        "record-text": "Moondust”, solo exhibition, GASK, Kutná Hora, Czech Republic",
+                        "record-link": ""
+                    },
+                    {
+                        "record-point": "2018",
+                        "record-text": "Znejistění paměti”, group exhibition, Galerie NTK, Prague, Czech Republic",
+                        "record-link": ""
+                    }
+                ]
+        },
+        "press": 
+        {
+            "title": "",
+            "subtitle": "",
+            "record":
+                [
+                    {
+                        "media-logo": 
+                            {
+                                "path": "resources/img/press/knoviny.png",
+                                "alt": "Kulturni noviny logo"
+                            },
+                        "title": "Vzpomínky na budoucnost",
+                        "subtitle": "26.11.2018",
+                        "text": "Věčné otázky Odkud jsme přišli? Kam kráčíme? jsou znova přinášeny na pořad dne. Má člověk ještě šanci najít své čisté, prapůvodní, životodárné kořeny? Ať chtěla, nebo nechtěla, Kristýna Erbenová nám svými fotografickými pohledy do tmy otevírá i tuto sebereflexivní připomínku potlačované dimenze naší existence.",
+                        "link": 
+                            {
+                                "path": "https://www.kulturni-noviny.cz/nezavisle-vydavatelske-a-medialni-druzstvo/archiv/online/2018/48-2018/vzpominky-na-budoucnost",
+                                "type": "link"
+                            }
+                    },
+                    {
+                        "media-logo": 
+                            {
+                                "path": "resources/img/press/logokp.png",
+                                "alt": "Kolinsky pres logo"
+                            },
+                        "title": "V Austrálii jsem půl roku žila na pláži v obytné dodávce",
+                        "subtitle": "25.11.2018",
+                        "text": "Kolín je už od časů první republiky městem, v němž se rodí, žijí i tvoří výjimeční fotografové. Výrazným zástupcem nejmladší fotografické generace je jedenatřicetiletá Kristýna Erbenová.",
+                        "link": 
+                            {
+                                "path": "https://www.kolinskypres.cz/clanek-v-australii-jsem-pul-roku-zila-na-plazi-v-obytne-dodavce?fbclid=IwAR1TpiLiNCJK-zgaIZkz2KyEXAXtOQ5FsWLvL8bbbDSIX2blYCkDcN1HTMk",
+                                "type": "link"
+                            }
+                    }
+                ]
+        },
+        "publications": 
+        {
+            "title": "",
+            "subtitle": "",
+            "record":
+                [
+                    {
+                        "media-logo": 
+                            {
+                                "path": "resources/img/press/knoviny.png",
+                                "alt": "Kulturni noviny logo"
+                            },
+                        "title": "Vzpomínky na budoucnost",
+                        "subtitle": "26.11.2018",
+                        "text": "Věčné otázky Odkud jsme přišli? Kam kráčíme? jsou znova přinášeny na pořad dne. Má člověk ještě šanci najít své čisté, prapůvodní, životodárné kořeny? Ať chtěla, nebo nechtěla, Kristýna Erbenová nám svými fotografickými pohledy do tmy otevírá i tuto sebereflexivní připomínku potlačované dimenze naší existence.",
+                        "link": 
+                            {
+                                "path": "https://www.kulturni-noviny.cz/nezavisle-vydavatelske-a-medialni-druzstvo/archiv/online/2018/48-2018/vzpominky-na-budoucnost",
+                                "type": "link"
+                            },
+                        "btn": 
+                        {
+                            "link": "https://www.facebook.com/kristynaerbenova/videos/838543086478640/",
+                            "text": "order"
+                        }
+                    },
+                    {
+                        "media-logo": 
+                            {
+                                "path": "resources/img/press/logokp.png",
+                                "alt": "Kolinsky pres logo"
+                            },
+                        "title": "V Austrálii jsem půl roku žila na pláži v obytné dodávce",
+                        "subtitle": "25.11.2018",
+                        "text": "Kolín je už od časů první republiky městem, v němž se rodí, žijí i tvoří výjimeční fotografové. Výrazným zástupcem nejmladší fotografické generace je jedenatřicetiletá Kristýna Erbenová.",
+                        "link": 
+                            {
+                                "path": "https://www.kolinskypres.cz/clanek-v-australii-jsem-pul-roku-zila-na-plazi-v-obytne-dodavce?fbclid=IwAR1TpiLiNCJK-zgaIZkz2KyEXAXtOQ5FsWLvL8bbbDSIX2blYCkDcN1HTMk",
+                                "type": "link"
+                            },
+                        "btn": 
+                            {
+                                "link": "",
+                                "text": ""
+                            }
+                    }
+                ]
+        }
+    }
+}

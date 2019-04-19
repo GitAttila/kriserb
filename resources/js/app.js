@@ -1,0 +1,5 @@
+$(function () {
+    initAnimateCss();
+    GalleriesController();
+    initFormListener();
+});

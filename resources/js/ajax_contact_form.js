@@ -1,6 +1,4 @@
-function initFormListener() {
-    
-    console.log("inside of a function InitFormListener");
+var initFormListener = (function() {
     
     $(".contact-submit").on( "click", function() {
         console.log("click event: .contact-submit button")
@@ -66,4 +64,4 @@ function initFormListener() {
         })
     });
     
-}
+});

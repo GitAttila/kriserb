@@ -42,9 +42,9 @@
     .grid-item--width2 { 
         width: 66.666%; 
     }
-    #portfolio-carousel-frame {
+    /* #portfolio-carousel-gallery {
         width: 55vw;
-    }
+    } */
     .press-logo {
         width: 67%;
     }
@@ -67,9 +67,9 @@
         background-size: 5px 1px;
         background-repeat: repeat-x;
     }
-    #portfolio-carousel-frame {
+    /* #portfolio-carousel-gallery {
         width: 75vw;
-    }
+    } */
     .return-from-portfolio {
         font-size: 160%;
         margin-left: -25px;
