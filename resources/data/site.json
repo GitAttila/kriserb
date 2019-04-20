@@ -412,29 +412,29 @@
             "record":
                 [
                     {
-                        "record-point": "2016",
-                        "record-text": "Institute of Creative Photography, Silesian University in Opava, Master of Arts Diploma (MgA.)",
-                        "record-link": ""
+                        "recordpoint": "2016",
+                        "recordtext": "Institute of Creative Photography, Silesian University in Opava, Master of Arts Diploma (MgA.)",
+                        "recordlink": ""
                     },
                     {
-                        "record-point": "2015",
-                        "record-text": "Palacký University in Olomouc, Faculty of Arts: English Philology – Film Studies, Master's Diploma (Mgr.)",
-                        "record-link": ""
+                        "recordpoint": "2015",
+                        "recordtext": "Palacký University in Olomouc, Faculty of Arts: English Philology – Film Studies, Master's Diploma (Mgr.)",
+                        "recordlink": ""
                     },
                     {
-                        "record-point": "2011",
-                        "record-text": "Institute of Creative Photography, Silesian University in Opava, Bachelor of Arts (BcA.)",
-                        "record-link": ""
+                        "recordpoint": "2011",
+                        "recordtext": "Institute of Creative Photography, Silesian University in Opava, Bachelor of Arts (BcA.)",
+                        "recordlink": ""
                     },
                     {
-                        "record-point": "2010",
-                        "record-text": "Palacký University in Olomouc, Faculty of Arts: English Philology – Film Studies, Bachelor’s degree (Bc.)",
-                        "record-link": ""
+                        "recordpoint": "2010",
+                        "recordtext": "Palacký University in Olomouc, Faculty of Arts: English Philology – Film Studies, Bachelor’s degree (Bc.)",
+                        "recordlink": ""
                     },
                     {
-                        "record-point": "2008",
-                        "record-text": "Faculty of Humanities, Utrecht University, Utrecht, Netherlands, abroad study",
-                        "record-link": ""
+                        "recordpoint": "2008",
+                        "recordtext": "Faculty of Humanities, Utrecht University, Utrecht, Netherlands, abroad study",
+                        "recordlink": ""
                     }
                 ]
         },
@@ -445,14 +445,14 @@
             "record":
                 [
                     {
-                        "record-point": "4th place",
-                        "record-text": "The international photography competition Shots: Young Photographers Competition 2011 (see here)",
-                        "record-link": ""
+                        "recordpoint": "4th place",
+                        "recordtext": "The international photography competition Shots: Young Photographers Competition 2011 (see here)",
+                        "recordlink": ""
                     },
                     {
-                        "record-point": "finalist",
-                        "record-text": "Elle fashion award 2013 finalist (Mercedes-Benz Fashion Week in Prague)",
-                        "record-link": ""
+                        "recordpoint": "finalist",
+                        "recordtext": "Elle fashion award 2013 finalist (Mercedes-Benz Fashion Week in Prague)",
+                        "recordlink": ""
                     }
                 ]
         },
@@ -463,16 +463,42 @@
             "record":
                 [
                     {
-                        "record-point": "2018",
-                        "record-text": "Moondust”, solo exhibition, GASK, Kutná Hora, Czech Republic",
-                        "record-link": ""
+                        "recordpoint": "2018",
+                        "recordtext": "Moondust”, solo exhibition, GASK, Kutná Hora, Czech Republic",
+                        "recordlink": ""
                     },
                     {
-                        "record-point": "2018",
-                        "record-text": "Znejistění paměti”, group exhibition, Galerie NTK, Prague, Czech Republic",
-                        "record-link": ""
+                        "recordpoint": "2018",
+                        "recordtext": "Znejistění paměti”, group exhibition, Galerie NTK, Prague, Czech Republic",
+                        "recordlink": ""
+                    },
+                    {
+                        "recordpoint": "2017",
+                        "recordtext": "<em>&quot;Miejsczaosobiste: młoda czeska fotografia&quot;</em>, Muzeum Górnośląskie w Bytomiu",
+                        "recordlink": ""
+                    },
+                    {
+                        "recordpoint": "2017",
+                        "recordtext": "<em>&quot;Světlo jinak&quot;</em>, group exhibition, Galerie Amadeus, Olomouc, Czech Republic",
+                        "recordlink": ""
+                    },
+                    {
+                        "recordpoint": "2016",
+                        "recordtext": "<em>&quot;Private Territories&quot;</em>, solo exhibition, Galerie Chaos, Střítež, Czech Republic",
+                        "recordlink": ""
+                    },
+                    {
+                        "recordpoint": "2015",
+                        "recordtext": "<em>&quot;I, Curator&quot;</em>, OFF_festival, Pisztory palace, Bratislava, Slovakia.",
+                        "recordlink": ""
+                    },
+                    {
+                        "recordpoint": "2015",
+                        "recordtext": "&quot;In the Darkless&quot;, solo exhibition, Galerie Fotografic, Prague, Czech Republic",
+                        "recordlink": "http://www.ceskatelevize.cz/ct24/kultura/1528836-tma-je-jen-absence-svetla-erbenova-foti-v-bezetmi"
                     }
                 ]
         }
     }
 }
+

@@ -52,6 +52,9 @@
 
 /* Small phones to small tablets: from 481px to 767px */
 @media only screen and (max-width: 767px) {
+    section.main-header {
+        padding-top: 1rem;
+    }
     .grid-sizer,
     .grid-item { 
         width: 50%; 
