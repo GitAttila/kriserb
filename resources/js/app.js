@@ -1,6 +1,7 @@
 $(function () {
     initAnimateCss();
-    Site.getSiteData(function(){});
-    GalleriesController();
+    Site.getSiteData(function(){
+        GalleriesController();
+    });
     initFormListener();
 });

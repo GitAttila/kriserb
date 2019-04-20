@@ -1,5 +1,6 @@
 var GalleriesController = (function(){
 
+    console.log('gallerries data loaded successfully...');
     var galleryCode;
     var cached =[];
     var JSON_URL = "./resources/data/gallery.json";                  
@@ -30,8 +31,6 @@ var GalleriesController = (function(){
 
             thumbnailGalleryCode = buildThumbnailGallery(cached);
             $('#thumbnail-portfolio-gallery').html(thumbnailGalleryCode);
-
-            // updatePortfolioGallery(portfolioName);
             
             var navigation = Navigation(cached);
             navigation.initNavigationListeners();

@@ -890,7 +890,9 @@ div[data-error-id] {
     font-weight: 300;
     text-align: center;
 }
-
+.section-content address .icon{
+    margin-right: 0.5rem;
+}
 /* ----------------------------------------- */
 /* PUBLICATIONS                              */
 /* ----------------------------------------- */

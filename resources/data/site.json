@@ -36,30 +36,137 @@
             "ion-icon": "ion-logo-twitter"
         }
     ],
-    "contact-info": 
+    "contactinfo": 
     {
-        "email": 
+        "contactmessage": "For print sale and commission enquiries please get in touch.",
+        "email":
             [
                 {
-                    "email-address": "info@kristynaerbenova.com"
+                    "icon": "ion-ios-mail",
+                    "emailaddress": "info@kristynaerbenova.com"
                 }
             ],
         "phone": 
             [
                 {
-                    "number": "+420 728 013 007",
-                    "type": "mobile"
+                    "icon": "ion-ios-phone-portrait",
+                    "number": "+420 728 013 007"
+                    
                 },
                 {
-                    "number": "+420 222 222 222",
-                    "type": "landline"
+                    "icon": "ion-ios-phone-portrait",
+                    "number": "+420 222 222 222"
                 }
             ],
-        "qr-code": 
+        "qrcode": 
             {
                 "path": "resources/img/kriserb_qrcode_grey.png",
                 "alt": "QR code with contact info for Kristyna Erbenova"
             }
+    },
+    "press": 
+    {
+        "title": "",
+        "subtitle": "",
+        "record":
+            [
+                {
+                    "medialogo": 
+                        {
+                            "path": "resources/img/press/knoviny.png",
+                            "alt": "Kulturni noviny logo"
+                        },
+                    "title": "Vzpomínky na budoucnost",
+                    "subtitle": "26.11.2018",
+                    "text": "Věčné otázky Odkud jsme přišli? Kam kráčíme? jsou znova přinášeny na pořad dne. Má člověk ještě šanci najít své čisté, prapůvodní, životodárné kořeny? Ať chtěla, nebo nechtěla, Kristýna Erbenová nám svými fotografickými pohledy do tmy otevírá i tuto sebereflexivní připomínku potlačované dimenze naší existence.",
+                    "link": 
+                        {
+                            "path": "https://www.kulturni-noviny.cz/nezavisle-vydavatelske-a-medialni-druzstvo/archiv/online/2018/48-2018/vzpominky-na-budoucnost",
+                            "icon": "ion-ios-open",
+                            "text": "visit"
+                        }
+                },
+                {
+                    "medialogo": 
+                        {
+                            "path": "resources/img/press/logokp.png",
+                            "alt": "Kolinsky pres logo"
+                        },
+                    "title": "V Austrálii jsem půl roku žila na pláži v obytné dodávce",
+                    "subtitle": "25.11.2018",
+                    "text": "Kolín je už od časů první republiky městem, v němž se rodí, žijí i tvoří výjimeční fotografové. Výrazným zástupcem nejmladší fotografické generace je jedenatřicetiletá Kristýna Erbenová.",
+                    "link": 
+                        {
+                            "path": "https://www.kolinskypres.cz/clanek-v-australii-jsem-pul-roku-zila-na-plazi-v-obytne-dodavce?fbclid=IwAR1TpiLiNCJK-zgaIZkz2KyEXAXtOQ5FsWLvL8bbbDSIX2blYCkDcN1HTMk",
+                            "icon": "ion-ios-open",
+                            "text": "visit"
+                        }
+                },
+                {
+                    "medialogo": 
+                        {
+                            "path": "resources/img/press/logo_gask.png",
+                            "alt": "Lidove Noviny logo"
+                        },
+                    "title": "GASK: Kristýna Erbenová - MOONDUST",
+                    "subtitle": "29.10.2018",
+                    "text": "&quot;Mysteriózní a tajemné série nočních snímků za svitu měsíce zachycující krajinu i blízké přátele odkrývají další poetické roviny naší existence. Australská intimní tvorba je pokračováním fotografické cesty Kristýny Erbenové. Přináší kontemplativní a rozjímavé záběry jako protiváhu k reportážním či dokumentárním záznamům. V souvztažnosti s nalezenými objekty, strukturami nebo krajinnými motivy vytváří osobní reflexi tamní atmosféry.&quot;",
+                    "link": 
+                        {
+                            "path": "https://www.youtube.com/watch?v=D_hoD3-BBLI",
+                            "icon": "ion-ios-open",
+                            "text": "visit"
+                        }
+                }
+            ]
+    },
+    "publications": 
+    {
+        "title": "",
+        "subtitle": "",
+        "record":
+            [
+                {
+                    "medialogo": 
+                        {
+                            "path": "resources/img/press/knoviny.png",
+                            "alt": "Kulturni noviny logo"
+                        },
+                    "title": "Vzpomínky na budoucnost",
+                    "subtitle": "26.11.2018",
+                    "text": "Věčné otázky Odkud jsme přišli? Kam kráčíme? jsou znova přinášeny na pořad dne. Má člověk ještě šanci najít své čisté, prapůvodní, životodárné kořeny? Ať chtěla, nebo nechtěla, Kristýna Erbenová nám svými fotografickými pohledy do tmy otevírá i tuto sebereflexivní připomínku potlačované dimenze naší existence.",
+                    "link": 
+                        {
+                            "path": "https://www.kulturni-noviny.cz/nezavisle-vydavatelske-a-medialni-druzstvo/archiv/online/2018/48-2018/vzpominky-na-budoucnost",
+                            "type": "link"
+                        },
+                    "btn": 
+                    {
+                        "link": "https://www.facebook.com/kristynaerbenova/videos/838543086478640/",
+                        "text": "order"
+                    }
+                },
+                {
+                    "medialogo": 
+                        {
+                            "path": "resources/img/press/logokp.png",
+                            "alt": "Kolinsky pres logo"
+                        },
+                    "title": "V Austrálii jsem půl roku žila na pláži v obytné dodávce",
+                    "subtitle": "25.11.2018",
+                    "text": "Kolín je už od časů první republiky městem, v němž se rodí, žijí i tvoří výjimeční fotografové. Výrazným zástupcem nejmladší fotografické generace je jedenatřicetiletá Kristýna Erbenová.",
+                    "link": 
+                        {
+                            "path": "https://www.kolinskypres.cz/clanek-v-australii-jsem-pul-roku-zila-na-plazi-v-obytne-dodavce?fbclid=IwAR1TpiLiNCJK-zgaIZkz2KyEXAXtOQ5FsWLvL8bbbDSIX2blYCkDcN1HTMk",
+                            "type": "link"
+                        },
+                    "btn": 
+                        {
+                            "link": "",
+                            "text": ""
+                        }
+                }
+            ]
     },
     "biography": 
     {
@@ -140,92 +247,6 @@
                         "record-point": "2018",
                         "record-text": "Znejistění paměti”, group exhibition, Galerie NTK, Prague, Czech Republic",
                         "record-link": ""
-                    }
-                ]
-        },
-        "press": 
-        {
-            "title": "",
-            "subtitle": "",
-            "record":
-                [
-                    {
-                        "media-logo": 
-                            {
-                                "path": "resources/img/press/knoviny.png",
-                                "alt": "Kulturni noviny logo"
-                            },
-                        "title": "Vzpomínky na budoucnost",
-                        "subtitle": "26.11.2018",
-                        "text": "Věčné otázky Odkud jsme přišli? Kam kráčíme? jsou znova přinášeny na pořad dne. Má člověk ještě šanci najít své čisté, prapůvodní, životodárné kořeny? Ať chtěla, nebo nechtěla, Kristýna Erbenová nám svými fotografickými pohledy do tmy otevírá i tuto sebereflexivní připomínku potlačované dimenze naší existence.",
-                        "link": 
-                            {
-                                "path": "https://www.kulturni-noviny.cz/nezavisle-vydavatelske-a-medialni-druzstvo/archiv/online/2018/48-2018/vzpominky-na-budoucnost",
-                                "type": "link"
-                            }
-                    },
-                    {
-                        "media-logo": 
-                            {
-                                "path": "resources/img/press/logokp.png",
-                                "alt": "Kolinsky pres logo"
-                            },
-                        "title": "V Austrálii jsem půl roku žila na pláži v obytné dodávce",
-                        "subtitle": "25.11.2018",
-                        "text": "Kolín je už od časů první republiky městem, v němž se rodí, žijí i tvoří výjimeční fotografové. Výrazným zástupcem nejmladší fotografické generace je jedenatřicetiletá Kristýna Erbenová.",
-                        "link": 
-                            {
-                                "path": "https://www.kolinskypres.cz/clanek-v-australii-jsem-pul-roku-zila-na-plazi-v-obytne-dodavce?fbclid=IwAR1TpiLiNCJK-zgaIZkz2KyEXAXtOQ5FsWLvL8bbbDSIX2blYCkDcN1HTMk",
-                                "type": "link"
-                            }
-                    }
-                ]
-        },
-        "publications": 
-        {
-            "title": "",
-            "subtitle": "",
-            "record":
-                [
-                    {
-                        "media-logo": 
-                            {
-                                "path": "resources/img/press/knoviny.png",
-                                "alt": "Kulturni noviny logo"
-                            },
-                        "title": "Vzpomínky na budoucnost",
-                        "subtitle": "26.11.2018",
-                        "text": "Věčné otázky Odkud jsme přišli? Kam kráčíme? jsou znova přinášeny na pořad dne. Má člověk ještě šanci najít své čisté, prapůvodní, životodárné kořeny? Ať chtěla, nebo nechtěla, Kristýna Erbenová nám svými fotografickými pohledy do tmy otevírá i tuto sebereflexivní připomínku potlačované dimenze naší existence.",
-                        "link": 
-                            {
-                                "path": "https://www.kulturni-noviny.cz/nezavisle-vydavatelske-a-medialni-druzstvo/archiv/online/2018/48-2018/vzpominky-na-budoucnost",
-                                "type": "link"
-                            },
-                        "btn": 
-                        {
-                            "link": "https://www.facebook.com/kristynaerbenova/videos/838543086478640/",
-                            "text": "order"
-                        }
-                    },
-                    {
-                        "media-logo": 
-                            {
-                                "path": "resources/img/press/logokp.png",
-                                "alt": "Kolinsky pres logo"
-                            },
-                        "title": "V Austrálii jsem půl roku žila na pláži v obytné dodávce",
-                        "subtitle": "25.11.2018",
-                        "text": "Kolín je už od časů první republiky městem, v němž se rodí, žijí i tvoří výjimeční fotografové. Výrazným zástupcem nejmladší fotografické generace je jedenatřicetiletá Kristýna Erbenová.",
-                        "link": 
-                            {
-                                "path": "https://www.kolinskypres.cz/clanek-v-australii-jsem-pul-roku-zila-na-plazi-v-obytne-dodavce?fbclid=IwAR1TpiLiNCJK-zgaIZkz2KyEXAXtOQ5FsWLvL8bbbDSIX2blYCkDcN1HTMk",
-                                "type": "link"
-                            },
-                        "btn": 
-                            {
-                                "link": "",
-                                "text": ""
-                            }
                     }
                 ]
         }
