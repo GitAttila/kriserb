@@ -15,11 +15,11 @@
             "ion-icon": "ion-logo-facebook"
         },
         {
-            "active": "true",
+            "active": "false",
             "name":"Pinterest",
             "link":"https://www.pinterest.com/kristynaerbenova/",
             "open-new-window": "true",
-            "ion-icon": "ion-logo-instagram"
+            "ion-icon": "ion-logo-pinterst"
         },
         {
             "active": "true",
@@ -55,7 +55,7 @@
                 },
                 {
                     "icon": "ion-ios-phone-portrait",
-                    "number": "+420 222 222 222"
+                    "number": "+61 477 233 145"
                 }
             ],
         "qrcode": 
@@ -70,6 +70,22 @@
         "subtitle": "",
         "record":
             [
+                {
+                    "medialogo": 
+                        {
+                            "path": "resources/img/press/logo_informuji.png",
+                            "alt": "Informuji logo"
+                        },
+                    "title": "#NováGenerace: Orientuji se podle intuice",
+                    "subtitle": "4.4.2019",
+                    "text": "Jako při vstupu do mystického ráje si připadáte při prohlídce fotografií autorky Kristýny Erbenové. Svou technikou se snaží nahlížet na objekty odlišným způsobem, vnímá přírodu i figury ve svém přirozeném prostředí, v pohybu. Snímá převážně v noci během úplňku, a tím dodává svým dílům zvláštní přidanou hodnotu, díky níž působí tajuplně a záhadně. Výstava Hranice modré v Galerii České spořitelny představuje tvůrčí svět očima této nadané fotografky, jež pendluje mezi Českou republikou a Austrálií.",
+                    "link": 
+                        {
+                            "path": "https://www.informuji.cz/clanky/6345-novagenerace-orientuji-se-hlavne-podle-intuice-jsem-jako-lovec-ktery-ciha-rika-fotografka-kristyna-erbenova/",
+                            "icon": "ion-ios-open",
+                            "text": "visit"
+                        }
+                },
                 {
                     "medialogo": 
                         {
@@ -106,7 +122,7 @@
                     "medialogo": 
                         {
                             "path": "resources/img/press/logo_gask.png",
-                            "alt": "Lidove Noviny logo"
+                            "alt": "GASK logo"
                         },
                     "title": "GASK: Kristýna Erbenová - MOONDUST",
                     "subtitle": "29.10.2018",
@@ -116,6 +132,214 @@
                             "path": "https://www.youtube.com/watch?v=D_hoD3-BBLI",
                             "icon": "ion-ios-open",
                             "text": "visit"
+                        }
+                },
+                {
+                    "medialogo": 
+                        {
+                            "path": "resources/img/press/LN_logo.png",
+                            "alt": "Lidove Noviny logo"
+                        },
+                    "title": "OBRAZEM",
+                    "subtitle": "29.10.2018",
+                    "text": "&quot;Moondust Kristýny Erbenové. Cesta do bezčasí australské buše&quot;. &quot;Fotografka Kristýna Erbenová prozkoumává různé formy samoty. V předchozích souborech nahlížela do světa dospívajících. Nyní v kutnohorské galerii GASK představuje sérii Moondust, která ukazuje její noční putování australskou krajinou. Nejsou to však líbivé přírodní scenerie, ale intimní pohledy do nitra člověka, který je sám uprostřed nedotčené přírody.&quot;",
+                    "link": 
+                        {
+                            "path": "https://www.lidovky.cz/kultura/obrazem-moondust-kristyny-erbenove-cesta-do-bezcasi-australske-buse.A181029_102219_ln_kultura_jto",
+                            "icon": "ion-ios-open",
+                            "text": "visit"
+                        }
+                },
+                {
+                    "medialogo": 
+                        {
+                            "path": "resources/img/press/CT_logo.png",
+                            "alt": "Ceska Televize logo"
+                        },
+                    "title": "Události v kultuře",
+                    "subtitle": "23.9.2018",
+                    "text": "&quot;Absolventka Tvůrčí fotografie Slezské univerzity v Opavě a Univerzity Palackého v Olomouci vychází ve své práci z čerstvě nabyté zkušenosti ze zahraničního pobytu v Austrálii, kde strávila více než rok. Autorka pochází z nedalekého Kolína, který je proslulý modernistickou fotografickou tradicí díky světově uznávaným osobnostem, jako byl Jaromír Funke, Josef Sudek či Eugen Wiškovský. Mladá fotografka neotřele navazuje na tuto silnou uměleckou linii experimentálním přístupem a svěžím, neotřelým a snivým nazíráním na realitu. Její mysteriózní a tajemné série nočních snímků za svitu měsíce zachycující krajinu i blízké přátele odkrývají další poetické roviny naší existence. Australská intimní tvorba je pokračováním její fotografické cesty. Přináší kontemplativní a rozjímavé záběry jako protiváhu k reportážním či dokumentárním záznamům. V souvztažnosti s nalezenými objekty, strukturami nebo krajinnými motivy vytváří osobní reflexi tamní atmosféry. &quot;",
+                    "link": 
+                        {
+                            "path": "https://www.ceskatelevize.cz/porady/1097206490-udalosti-v-kulture/218411000120923/video/645682",
+                            "icon": "ion-ios-open",
+                            "text": "visit"
+                        }
+                },
+                {
+                    "medialogo": 
+                        {
+                            "path": "resources/img/press/atelier_logo_black.png",
+                            "alt": "Atelier logo"
+                        },
+                    "title": "Ateliér",
+                    "subtitle": "11.6.2015",
+                    "text": "&quot;V bezetmí&quot;.&quot;Z hluboké tmy stoupá načekaná záře, která nás nutí uvažovat o fyziologických limitech našeho vnímání stejně jako o poznávacích schopnostech člověka. Implicitně je zde naznačeno, jak rozlehlá mohou být tajemství „za“ naším zřením, které jsme si tak samozřejmě zvykli pokládat za komplexní a vyčerpávající. Další otázkou, která v úvaze diváka tvoří stupňující se napětí, je rozměr a plynutí času. Jsou-li fyzikální danosti relativní, je fyzika v podání Kristýny Erbenové protnuta samou metafyzikou.&quot;",
+                    "link": 
+                        {
+                            "path": "resources/img/press/ATELIER_11062015.jpg",
+                            "icon": "ion-ios-paper",
+                            "text": "view article"
+                        }
+                },
+                {
+                    "medialogo": 
+                        {
+                            "path": "resources/img/press/CR_Vltava_logo.png",
+                            "alt": "CR Vltava logo"
+                        },
+                    "title": "Tma je jen málem světla",
+                    "subtitle": "21.5.2015",
+                    "text": "&quot;Mladá fotografka Kristýna Erbenová vystavuje v Galerii Fotografic cyklus nazvaný „V bezetmí“. Barevné snímky zachycují noční krajiny. Fantazie dostává podněty jako překvapení a novou dimenzi reálného světa.&quot;",
+                    "link": 
+                        {
+                            "path": "http://www.rozhlas.cz/mozaika/vytvarne/_zprava/tma-je-jen-malem-svetla--1492577",
+                            "icon": "ion-ios-open",
+                            "text": "visit"
+                        }
+                },
+                {
+                    "medialogo": 
+                        {
+                            "path": "resources/img/press/CT_logo.png",
+                            "alt": "Ceska Televize logo"
+                        },
+                    "title": "Události v kultuře",
+                    "subtitle": "16.5.2015",
+                    "text": "&quot;Místo ve dne začala fotit v noci. Od té doby fotí při každém úplňku. Kristýna Erbenová patří k nejmladší generaci českých fotografů a už má za sebou desítky výstav u nás i v zahraničí.&quot;",
+                    "link": 
+                        {
+                            "path": "http://www.ceskatelevize.cz/porady/1097206490-udalosti-v-kulture/215411000120516/video/400933",
+                            "icon": "ion-ios-open",
+                            "text": "visit"
+                        }
+                },
+                {
+                    "medialogo": 
+                        {
+                            "path": "resources/img/press/vice-logo.png",
+                            "alt": "Vice Maagzine logo"
+                        },
+                    "title": "Fotím v noci",
+                    "subtitle": "11.5.2015",
+                    "text": "&quot;Noc, ticho, tma, stříbrné stíny, dobrodružství, strach, zvuky noci, zvířata, návštěvníci, zastavit se, nehýbat, vnímat, propojit se. Tady a teď, v tichosti, sdílet čas a prostor, klid i vnitřní napětí.&quot;",
+                    "link": 
+                        {
+                            "path": "http://www.vice.com/cs/read/fotim-v-noci",
+                            "icon": "ion-ios-open",
+                            "text": "visit"
+                        }
+                },
+                {
+                    "medialogo": 
+                        {
+                            "path": "resources/img/press/LN_logo.png",
+                            "alt": "Lidove Noviny logo "
+                        },
+                    "title": "Lidové noviny / Orientace",
+                    "subtitle": "2.5.2015",
+                    "text": "&quot;Krajiny v souboru Soukromá území Kristýny Erbenové zvou k putování. Nevíme, kdy se vydáme na cestu a kde skončíme. Není důležité, kde jsme. Je to stále jeden a tentýž klidný svět…Úplně jiné je to ve světě lidí. Tam je klid jen zdánlivý. V souboru Somewhere Inside Kristýna Erbenová pomalu otevírá pomyslné dveře do nejrůznějších životních příběhů. ‚Fotím různé lidi, ale vlastně nejde o jejich konkrétní osudy, ale o stále stejný příběh. O jednotlivé životní kapitoly, které známe všichni. Říkám tomu bezčasí a bezprostor.‘&quot;",
+                    "link": 
+                        {
+                            "path": "resources/img/press/LN_Orientace02052015.jpg",
+                            "icon": "ion-ios-paper",
+                            "text": "view article"
+                        }
+                },
+                {
+                    "medialogo": 
+                        {
+                            "path": "resources/img/press/HN_logo.png",
+                            "alt": "Hospodarske Noviny logo "
+                        },
+                    "title": "Mladé naděje české fotografie: Kristýna Erbenová a její soukromé vlastnictví",
+                    "subtitle": "31.1.2014",
+                    "text": "&quot;Série Soukromá území je mapou míst, která si Kristýna Erbenová přivlastnila. Důsledně tak pokračuje ve vlastní hlubinné terapii, ve vhledu do a za obecně vnímanou skutečnost. Soukromá území jsou vždy intimní a jemná místa, důležitá a viditelná hlavně pro jejich majitele.‘&quot;",
+                    "link": 
+                        {
+                            "path": "http://art.ihned.cz/c1-61569020-mlade-nadeje-ceske-fotografie",
+                            "icon": "ion-ios-open",
+                            "text": "visit"
+                        }
+                },
+                {
+                    "medialogo": 
+                        {
+                            "path": "resources/img/press/casopis-foto-logo.png",
+                            "alt": "FOTO magazine logo "
+                        },
+                    "title": "FOTO magazine",
+                    "subtitle": "February 2013",
+                    "text": "&quot;Když se do nich ponoříte, jsou fotografie svou výpovědí opravdu silné, a to i přesto, že jsou vlastně velmi jemné, křehké a poetické. Autorka potvrzuje, že má dar nacházet poetické obrazy na zdánlivě nudných místech a svébytným vizuálním jazykem je s pokorou posílat dál divákovi. Kristýniny fotografie jsou básně, ke kterým si musí najít cestu divák sám – a v jejím případě to vůbec není těžké.&quot;",
+                    "link": 
+                        {
+                            "path": "resources/img/press/FOTO_unor_2013a.jpg",
+                            "icon": "ion-ios-paper",
+                            "text": "view article"
+                        }
+                },
+                {
+                    "medialogo": 
+                        {
+                            "path": "resources/img/press/CT_logo.png",
+                            "alt": "Ceska Televize logo "
+                        },
+                    "title": "Kultura v regionech",
+                    "subtitle": "17.11.2012",
+                    "text": "(od času 10:45)<br />&quot;Melancholická atmosféra bezčasí, schopnost zachytit skryté napětí v na první pohled banálních situacích a dokonalé technické vybavení. To všechno charakterizuje fotografie Kristýny Erbenové.&quot;",
+                    "link": 
+                        {
+                            "path": "http://www.ceskatelevize.cz/ivysilani/10099403120-kultura-v-regionech/312281381931117/",
+                            "icon": "ion-ios-open",
+                            "text": "visit"
+                        }
+                },
+                {
+                    "medialogo": 
+                        {
+                            "path": "resources/img/press/CT_logo.png",
+                            "alt": "Ceska Televize logo "
+                        },
+                    "title": "Kultura.cz",
+                    "subtitle": "23.6.2012",
+                    "text": "&quot;Mým hlavním tématem je člověk a krajina a člověk v krajině. Být sám, uvnitř sebe. Momenty, které nás vedou k hlubšímu prožití místa a prostoru kolem nás i sebe sama.&quot;",
+                    "link": 
+                        {
+                            "path": "http://www.ceskatelevize.cz/ivysilani/1183619616-kultura-cz/312295350090013/obsah/208667-portret-fotografka-kristyna-erbenova/",
+                            "icon": "ion-ios-open",
+                            "text": "visit"
+                        }
+                },
+                {
+                    "medialogo": 
+                        {
+                            "path": "resources/img/press/atelier_logo_black.png",
+                            "alt": "ATELIER magazine logo "
+                        },
+                    "title": "Ateliér",
+                    "subtitle": "3.5.2012",
+                    "text": "&quot;Zamlklá zastavení&quot;&quot;</br>&quot;Erbenová nepodléhá krátkodechým trendům, jimiž je fotografická scéna zaplavena. Přes riziko, že bude nařčena z patosu a prvoplánové emocionality, komponuje své fotografie s velkou mírou jistoty a čitelného talentu, jenž je zjevně vytříben obsáhlou znalostí (nejen) výtvarného umění. Tvoří tak čisté a univerzální artefakty, s nimiž může na první pohled stejně jako po delší zkušenosti komunikovat ten, komu není cizí jeden z prvotních účelů umění, jímž je rozhovor se sebou samým a formálně rafinované ztvárnění emocí.&quot;",
+                    "link": 
+                        {
+                            "path": "resources/img/press/ATELIER_03052012.jpg",
+                            "icon": "ion-ios-paper",
+                            "text": "view article"
+                        }
+                },
+                {
+                    "medialogo": 
+                        {
+                            "path": "resources/img/press/shots_logo.png",
+                            "alt": "Shots magazine logo "
+                        },
+                    "title": "Shots Magazine",
+                    "subtitle": "December 2010",
+                    "text": "&quot;Fragile Moments' depicts a series of restful, serene images, suspended - often in water, but mostly in time - each in some private ecstasy of solitude. The final image in the series, an old man gazing at the portrait of maybe a lost love, is a beautiful essay in a limited and carefully orchestrated colour palatte, which uses light and shade to create infinite depth.&quot;",
+                    "link": 
+                        {
+                            "path": "resources/img/press/Shots_dec_2010.png",
+                            "icon": "ion-ios-paper",
+                            "text": "view article"
                         }
                 }
             ]

@@ -7,7 +7,7 @@ var Site = (function () {
         $.getJSON( URL)
         .done(function (data) {
             console.log('site data loaded succesfully...');
-            // console.log(data);
+            console.log(data);
 
             socmediaHTML = getSocialMediaSnippet(data);
             $('[data-site="socialmedia"]').html(socmediaHTML);
@@ -107,6 +107,7 @@ var Site = (function () {
         function buildPressSnippet(jsonRecord) {
             var html = '';
             var link = '';
+            var img = '';
             if (jsonRecord.link) {
                 jsonRecord.link.path = jsonRecord.link.path.trim();
                 jsonRecord.link.icon = (jsonRecord.link.icon || 'ion-ios-open').trim().toLowerCase();
@@ -115,15 +116,27 @@ var Site = (function () {
                     link = '<a class="press-link" href="' + jsonRecord.link.path + '" target="_blank">';
                     link += '<i class="icon ' + jsonRecord.link.icon +'"></i> ' + jsonRecord.link.text +' </a>';
                 }
+
+            }
+            // if logo path is empty, than choose a suplamentary icon instead of an image
+            if (jsonRecord.medialogo) {
+                img = '<i class="icon icon-press ion-ios-paper"></i>';
+                if (jsonRecord.medialogo.path) {
+                    jsonRecord.medialogo.path = jsonRecord.medialogo.path.trim();
+                    console.log(img);
+                    if (jsonRecord.medialogo.path.length !== 0) {
+                        img = '<img class="press-logo" src="' + jsonRecord.medialogo.path + '" alt="' + jsonRecord.medialogo.alt + '">';
+                    }
+                }
             }
             jsonRecord.text = jsonRecord.text.trim();
             jsonRecord.title = jsonRecord.title.trim();
             if (jsonRecord.title!=='' && jsonRecord.text!=='') {
                 html += '<div class="col-xs-12 col-sm-6"><div class="row"><div class="col-xs-12 col-lg-4">';
-                html += '<img class="press-logo" src="' + jsonRecord.medialogo.path + '" alt="' + jsonRecord.medialogo.alt + '">';
+                html += img;
                 html += '</div><div class="col-xs-12 col-lg-8">';
                 html += '<h3>' + jsonRecord.title  + '</h3>';
-                html += '<h4' + jsonRecord.subtitle  + '</h4>';
+                html += '<h4>' + jsonRecord.subtitle  + '</h4>';
                 html += '<p>' + jsonRecord.text  + '</p>';
                 html += '<p class="font-title">';
                 html += link + '</p></div></div></div>';
@@ -137,4 +150,3 @@ var Site = (function () {
     }
 
 })();
-

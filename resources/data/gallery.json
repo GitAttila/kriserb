@@ -15,7 +15,7 @@
             "image_description_cz": "",
             "image_description_en": "",
             "lead_photo": "true",
-            "home_carousel": "false"
+            "home_carousel": "true"
             },
             {
             "image_path":"resources/img/portfolios/KE_moondust_02.jpg",
