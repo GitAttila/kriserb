@@ -70,9 +70,6 @@
         background-size: 5px 1px;
         background-repeat: repeat-x;
     }
-    /* #portfolio-carousel-gallery {
-        width: 75vw;
-    } */
     .return-from-portfolio {
         font-size: 160%;
         margin-left: -25px;
@@ -96,9 +93,14 @@
 
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 576px) {  
-    /* .hamburger-wrapper {
-        display:inline-block;
-    } */
+    nav.navbar {
+        width: 100%;
+        background-color: rgba(252,252,252,0.95);
+        z-index: 1000;
+        margin-left: -15px;
+        padding-right: 0;
+        top: 151px;
+    }
     .navbar-nav {
         text-align: center;
     }

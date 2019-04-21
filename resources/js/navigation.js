@@ -68,6 +68,7 @@ var Navigation = (function(imgs){
         });
 
         $('.grid').on( 'click','.grid-item', function() {
+            var _self = this;
             strToParse = $(this).data('tag');
             slideNum = Number(strToParse.replace(/[^0-9]/g,''));
 
@@ -84,10 +85,14 @@ var Navigation = (function(imgs){
                 );
 
             } else {
-                $( "#main-gallery" ).hide();
-                $( "#portfolio-carousel-gallery" ).show();
-                updatePortfolioGallery(cachedImages , getActivePortfolioName());                    
-                $( "#portfolio-carousel" ).carousel(slideNum-1);
+                $(this).addClass("grid-size-animation");
+                setTimeout(function(){
+                    $(_self).removeClass("grid-size-animation");
+                    $( "#main-gallery" ).hide();
+                    $( "#portfolio-carousel-gallery" ).show();
+                    updatePortfolioGallery(cachedImages , getActivePortfolioName());                    
+                    $( "#portfolio-carousel" ).carousel(slideNum-1);
+                },350);
             }
         });
     

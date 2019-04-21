@@ -351,44 +351,184 @@
         "record":
             [
                 {
-                    "medialogo": 
-                        {
-                            "path": "resources/img/press/knoviny.png",
-                            "alt": "Kulturni noviny logo"
-                        },
-                    "title": "Vzpomínky na budoucnost",
-                    "subtitle": "26.11.2018",
-                    "text": "Věčné otázky Odkud jsme přišli? Kam kráčíme? jsou znova přinášeny na pořad dne. Má člověk ještě šanci najít své čisté, prapůvodní, životodárné kořeny? Ať chtěla, nebo nechtěla, Kristýna Erbenová nám svými fotografickými pohledy do tmy otevírá i tuto sebereflexivní připomínku potlačované dimenze naší existence.",
-                    "link": 
-                        {
-                            "path": "https://www.kulturni-noviny.cz/nezavisle-vydavatelske-a-medialni-druzstvo/archiv/online/2018/48-2018/vzpominky-na-budoucnost",
-                            "type": "link"
-                        },
+                    "title": "Kristýna Erbenová",
+                    "subtitle": "Moondust",
+                    "text": "Moondust exhibition photobook from 2018. Night medium format photography of the Australian landscape accompanied by original texts by three different authors: curatorial, literary critical and philosophical. Both in Czech and English.",
                     "btn": 
-                    {
-                        "link": "https://www.facebook.com/kristynaerbenova/videos/838543086478640/",
-                        "text": "order"
-                    }
+                        {
+                            "link": "https://www.facebook.com/kristynaerbenova/videos/838543086478640/",
+                            "text": "order"
+                        },
+                    "carousel":
+                        {
+                            "options": 
+                                {
+                                    "interval": 5000
+                                },
+                            "images":
+                                [
+                                    {
+                                        "path": "resources/img/KE_pub_moondust01.png",
+                                        "alt": "Kristyna Erbenova - moondust publication"
+                                    },
+                                    {
+                                        "path": "resources/img/KE_pub_moondust02.png",
+                                        "alt": "Kristyna Erbenova - moondust publication"
+                                    },
+                                    {
+                                        "path": "resources/img/KE_pub_moondust03.png",
+                                        "alt": "Kristyna Erbenova - moondust publication"
+                                    },
+                                    {
+                                        "path": "resources/img/KE_pub_moondust04.png",
+                                        "alt": "Kristyna Erbenova - moondust publication"
+                                    },
+                                    {
+                                        "path": "resources/img/KE_pub_moondust05.png",
+                                        "alt": "Kristyna Erbenova - moondust publication"
+                                    },
+                                    {
+                                        "path": "resources/img/KE_pub_moondust06.png",
+                                        "alt": "Kristyna Erbenova - moondust publication"
+                                    },
+                                    {
+                                        "path": "resources/img/KE_pub_moondust07.png",
+                                        "alt": "Kristyna Erbenova - moondust publication"
+                                    },
+                                    {
+                                        "path": "resources/img/KE_pub_moondust08.png",
+                                        "alt": "Kristyna Erbenova - moondust publication"
+                                    }
+                                ] 
+                        }
                 },
                 {
-                    "medialogo": 
-                        {
-                            "path": "resources/img/press/logokp.png",
-                            "alt": "Kolinsky pres logo"
-                        },
-                    "title": "V Austrálii jsem půl roku žila na pláži v obytné dodávce",
-                    "subtitle": "25.11.2018",
-                    "text": "Kolín je už od časů první republiky městem, v němž se rodí, žijí i tvoří výjimeční fotografové. Výrazným zástupcem nejmladší fotografické generace je jedenatřicetiletá Kristýna Erbenová.",
-                    "link": 
-                        {
-                            "path": "https://www.kolinskypres.cz/clanek-v-australii-jsem-pul-roku-zila-na-plazi-v-obytne-dodavce?fbclid=IwAR1TpiLiNCJK-zgaIZkz2KyEXAXtOQ5FsWLvL8bbbDSIX2blYCkDcN1HTMk",
-                            "type": "link"
-                        },
+                    "title": "Kristýna Erbenová",
+                    "subtitle": "In the darkless",
+                    "text": "<p><em>&quot;limited photobook edition from 2014.&quot;</em></p><p>All photographs in this book were taken exclusively at night, using only the moonlight and medium format film material. The series “In the Darkless” is an ongoing project. The author has been shooting every month around the time of the full moon, since October 2013. The book contains excerpts from the book “Loď” (Ship) by Marek Orko Vácha. 2nd version of the book is currently in progress, coming in 2016.</p>",
                     "btn": 
                         {
                             "link": "",
                             "text": ""
-                        }
+                        },
+                    "carousel":
+                    {
+                        "options": 
+                            {
+                                "interval": 5000
+                            },
+                        "images":
+                            [
+                                {
+                                    "path": "resources/img/KE_pub_darkless01.png",
+                                    "alt": "Kristyna Erbenova - In the Darkless publication"
+                                },
+                                {
+                                    "path": "resources/img/KE_pub_darkless02.png",
+                                    "alt": "Kristyna Erbenova - In the Darkless publication"
+                                },
+                                {
+                                    "path": "resources/img/KE_pub_darkless03.png",
+                                    "alt": "Kristyna Erbenova - In the Darkless publication"
+                                },
+                                {
+                                    "path": "resources/img/KE_pub_darkless04.png",
+                                    "alt": "Kristyna Erbenova - In the Darkless publication"
+                                },
+                                {
+                                    "path": "resources/img/KE_pub_darkless05.png",
+                                    "alt": "Kristyna Erbenova - In the Darkless publication"
+                                },
+                                {
+                                    "path": "resources/img/KE_pub_darkless06.png",
+                                    "alt": "Kristyna Erbenova -  In the Darkless publication"
+                                },
+                                {
+                                    "path": "resources/img/KE_pub_darkless07.png",
+                                    "alt": "Kristyna Erbenova - In the Darkless publication"
+                                }
+                            ] 
+                    }
+                },
+                {
+                    "title": "petr bilík, kristýna erbenová",
+                    "subtitle": "Paul Fierlinger",
+                    "text": "<p>Biografie, Olomouc: UP, 2014</p><p>The book applies a biographical method on the life story and the filmography of one of the currenťs most significant animators. Fierlinger's professional career and filmography is reconstructed with the help of archive materials, databases and biographical sources. A great part of the publication is comprised of a narrative interview; a unique source to the post-war history of Czechoslovakia, the exile studies and to the independent production culture of the second part of the 20th century.</p>",
+                    "btn": 
+                        {
+                            "link": "",
+                            "text": ""
+                        },
+                    "carousel":
+                    {
+                        "options": 
+                            {
+                                "interval": 5000
+                            },
+                        "images":
+                            [
+                                {
+                                    "path": "resources/img/KE_pub_Fierlinger01.png",
+                                    "alt": "Kristyna Erbenova - Kubicek publication"
+                                },
+                                {
+                                    "path": "resources/img/KE_pub_Fierlinger02.png",
+                                    "alt": "Kristyna Erbenova - Kubicek publication"
+                                },
+                                {
+                                    "path": "resources/img/KE_pub_Fierlinger03.png",
+                                    "alt": "Kristyna Erbenova - Kubicek publication"
+                                },
+                                {
+                                    "path": "resources/img/KE_pub_Fierlinger04.png",
+                                    "alt": "Kristyna Erbenova - Kubicek publication"
+                                },
+                                {
+                                    "path": "resources/img/KE_pub_Fierlinger05.png",
+                                    "alt": "Kristyna Erbenova - Kubicek publication"
+                                }
+                            ] 
+                    }
+                },
+                {
+                    "title": "kristýna erbenová",
+                    "subtitle": "Malíř a fotografie",
+                    "text": "<p>In: Riese, Hans Peter: Jan Kubíček, Praha: KANT, 2014.</p><p>The article in the biographical book outlines and describes the photography work of Jan Kubíček as an important part of his painting and graphic production, and also as a means of his thinking about art and perceiving the world.</p>",
+                    "btn": 
+                        {
+                            "link": "",
+                            "text": ""
+                        },
+                    "carousel":
+                    {
+                        "options": 
+                            {
+                                "interval": 5000
+                            },
+                        "images":
+                            [
+                                {
+                                    "path": "resources/img/KE_pub_Kubicek01.png",
+                                    "alt": "Kristyna Erbenova - Kubicek publication"
+                                },
+                                {
+                                    "path": "resources/img/KE_pub_Kubicek02.png",
+                                    "alt": "Kristyna Erbenova - Kubicek publication"
+                                },
+                                {
+                                    "path": "resources/img/KE_pub_Kubicek03.png",
+                                    "alt": "Kristyna Erbenova - Kubicek publication"
+                                },
+                                {
+                                    "path": "resources/img/KE_pub_Kubicek04.png",
+                                    "alt": "Kristyna Erbenova - Kubicek publication"
+                                },
+                                {
+                                    "path": "resources/img/KE_pub_Kubicek05.png",
+                                    "alt": "Kristyna Erbenova - Kubicek publication"
+                                }
+                            ] 
+                    }
                 }
             ]
     },
@@ -496,9 +636,113 @@
                         "recordpoint": "2015",
                         "recordtext": "&quot;In the Darkless&quot;, solo exhibition, Galerie Fotografic, Prague, Czech Republic",
                         "recordlink": "http://www.ceskatelevize.cz/ct24/kultura/1528836-tma-je-jen-absence-svetla-erbenova-foti-v-bezetmi"
+                    },
+                    {
+                        "recordpoint": "2015",
+                        "recordtext": "&quot;V kupce vesmíru&quot;, Galerie Opera, Ostrava, Czech Republic",
+                        "recordlink": "http://www.lidovky.cz/sam-za-sebe-sam-ve-dvou-dve-fotografky-v-kupce-vesmiru-pda-/kultura.aspx?c=A150505_121042_ln_kultura_hep"
+                    },
+                    {
+                        "recordpoint": "2015",
+                        "recordtext": "&quot;This Place – My Place&quot;, visual storytelling workshop by PanAut collective, DOX, Prague, Czech Republic",
+                        "recordlink": "http://thisplacemyplace.tumblr.com"
+                    },
+                    {
+                        "recordpoint": "2014",
+                        "recordtext": "Les Boutographies: Rencontres Photographiques de Montpellier, France",
+                        "recordlink": ""
+                    },
+                    {
+                        "recordpoint": "2014",
+                        "recordtext": "&quot;Young Czech Photographers&quot;, Fotofestiwal Łódź, Poland",
+                        "recordlink": ""
+                    },
+                    {
+                        "recordpoint": "2013",
+                        "recordtext": "&quot;Private Territories&quot;, solo exhibition, Light Cube Gallery, Brno, Czech Republic",
+                        "recordlink": ""
+                    },
+                    {
+                        "recordpoint": "2013",
+                        "recordtext": "Prague Photo festival, Kafkův dům, Prague, Czech Republic",
+                        "recordlink": ""
+                    },
+                    {
+                        "recordpoint": "2013",
+                        "recordtext": "&quot;Jeunes Photographes&quot;, Galerie Le Lac Gelé, Nimes, France",
+                        "recordlink": ""
+                    },
+                    {
+                        "recordpoint": "2012",
+                        "recordtext": "&quot;Private Territories&quot;, solo exhibition, Galerie Amadeus, Olomouc, Czech Republic",
+                        "recordlink": "http://www.ceskatelevize.cz/ct24/kultura/1134361-soukroma-uzemi-zverejnuje-fotografka-kristyna-erbenova"
+                    },
+                    {
+                        "recordpoint": "2012",
+                        "recordtext": "&quot;The Censored Exhibition&quot;, Copenhagen Photo Festival 2012, Copenhagen, Denmark",
+                        "recordlink": ""
+                    },
+                    {
+                        "recordpoint": "2012",
+                        "recordtext": "&quot;I, You, We&quot;, group exhibition, Fotofestiwal Łódź, Poland",
+                        "recordlink": "http://www.itf.cz/index.php?text=144-i-you-we"
+                    },
+                    {
+                        "recordpoint": "2012",
+                        "recordtext": "&quot;Prague Photo 2012&quot;, Prague House, Brussels, Belgium, and Czech House, London, UK",
+                        "recordlink": ""
+                    },
+                    {
+                        "recordpoint": "2012",
+                        "recordtext": "Prague Photo festival, DOX, Prague, Czech Republic",
+                        "recordlink": ""
+                    },
+                    {
+                        "recordpoint": "2012",
+                        "recordtext": "&quot;Being Alone&quot;, solo exhibition, Krásný ztráty gallery, Prague, Czech Republic",
+                        "recordlink": ""
+                    },
+                    {
+                        "recordpoint": "2012",
+                        "recordtext": "&quot;Like a nowhere&quot;, solo exhibition, Hodonín, Czech Republic",
+                        "recordlink": "http://www.young-fresh.eu/index.php/cs/tipynavystavy/483-kristyna-erbenova-jako-nikde"
+                    },
+                    {
+                        "recordpoint": "2011",
+                        "recordtext": "The World Biennial of Student Photography 2011, Novi Sad, Serbia",
+                        "recordlink": "http://www.polovina73.0fees.net/bijenale/3rdWorldBiennialOfStudentPhotography2011-Catalog.pdf?ckattempt=1"
+                    },
+                    {
+                        "recordpoint": "2011",
+                        "recordtext": "Young Czech Photography”, Prospekto galerija, Vilnius, Lithuania",
+                        "recordlink": ""
+                    },
+                    {
+                        "recordpoint": "2011",
+                        "recordtext": "Prague Photo festival, Mánes gallery, Prague, Czech Republic",
+                        "recordlink": ""
+                    },
+                    {
+                        "recordpoint": "2010",
+                        "recordtext": "&quot;Twenty years of the Institute of Creative Photography&quot;, Month of photography, Bratislava, Slovakia",
+                        "recordlink": "http://www.itf.cz/dokumenty/01_katalogitf.pdf"
+                    },
+                    {
+                        "recordpoint": "2009",
+                        "recordtext": "&quot;workshop with Jiří Šigut&quot;, group exhibition, photography festival Funkeho Kolín, Malá Galerie Na Hradbách, Kolín, Czech Republic",
+                        "recordlink": "http://www.itf.cz/dokumenty/01_katalogitf.pdf"
+                    },
+                    {
+                        "recordpoint": "2007",
+                        "recordtext": "&quot;Landscape&quot;, group exhibition, Galerie v zahradě, Kolín, Czech Republic",
+                        "recordlink": ""
+                    },
+                    {
+                        "recordpoint": "2006",
+                        "recordtext": "&quot;Me, him, her…you&quot;, group exhibition, Galerie v Zahradě, Kolín, Czech Republic",
+                        "recordlink": ""
                     }
                 ]
         }
     }
 }
-

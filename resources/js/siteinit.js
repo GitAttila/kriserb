@@ -9,7 +9,7 @@ var Site = (function() {
 		$.getJSON(URL)
 			.done(function(data) {
 				console.log('site data loaded succesfully...');
-				console.log(data);
+				//console.log(data);
 
 				socmediaHTML = getSocialMediaSnippet(data);
 				$('[data-site="socialmedia"]').html(socmediaHTML);
@@ -19,6 +19,8 @@ var Site = (function() {
 				$('[data-site="press"]').html(pressHTML);
 				bioHTML = getBioSnippet(data);
 				$('[data-site="biography"]').html(bioHTML);
+				publicationsHTML = getPublicationsSnippet(data);
+				$('[data-site="publications"]').html(publicationsHTML);
 
 				funcCB();
 			})
@@ -126,7 +128,6 @@ var Site = (function() {
 				img = '<i class="icon icon-press ion-ios-paper"></i>';
 				if (jsonRecord.medialogo.path) {
 					jsonRecord.medialogo.path = jsonRecord.medialogo.path.trim();
-					console.log(img);
 					if (jsonRecord.medialogo.path.length !== 0) {
 						img =
 							'<img class="press-logo" src="' +
@@ -218,8 +219,46 @@ var Site = (function() {
 		return htmlCode;
 	}
 
+	function getPublicationsSnippet(data) {
+		var htmlCode = '';
+		if (data.publications) {
+			if (data.publications.record) {
+				$(data.publications.record).each(function(key, val) {
+					htmlCode += '<div class="row dotted-spaced-light pub-item"><div class="col-12 col-sm-5">';
+					htmlCode += '<div id="publication-carousel_' + key + '" class="carousel carousel-pub slide data-ride="carousel">';
+					htmlCode += '<div class="carousel-inner">';
+					if (val.carousel.images) { 
+						$(val.carousel.images).each(function(key, val) {
+							let classActive = '';
+							key === 0 ? classActive = 'active' : classActive = '';
+							htmlCode += '<div class="carousel-item ' + classActive + '">';
+							htmlCode += '<img class="d-block w-100" src="' + val.path + '" alt="' + val.alt + '">';
+							htmlCode += '</div>';
+						});
+					}
+					htmlCode += '</div>';
+					htmlCode += '<a class="carousel-control-prev" href="#publication-carousel_' + key + '" role="button" data-slide="prev">';
+					htmlCode += '<span aria-hidden="true"><i class="icon ion-ios-arrow-back"></i></span><span class="sr-only">Previous</span></a>';
+					htmlCode += '<a class="carousel-control-next" href="#publication-carousel_' + key + '" role="button" data-slide="next">';
+					htmlCode += '<span aria-hidden="true"><i class="icon ion-ios-arrow-forward"></i></span><span class="sr-only">Next</span></a>';
+					htmlCode += '</div></div>';
+					htmlCode += '<div class="col-12 col-sm-7">';
+					htmlCode += '<h3>' + val.title.toLowerCase() + '</h3>';
+					htmlCode += '<h4>' + val.subtitle.toLowerCase() + '</h4>';
+					htmlCode += '<p>' + val.text + '</p>';
+					if (val.btn && val.btn.link !== '' ) {
+						htmlCode += '<a href="' + val.btn.link + '" target="_blank" class="btn-site" role="button">'
+						htmlCode += '<span>' + val.btn.text.toUpperCase() + '</span></a>';
+					}
+					htmlCode += '</div></div>';
+				});
+			}
+		}
+
+		return htmlCode;
+	}
+
 	return {
 		getSiteData: getSiteData
 	};
 })();
-

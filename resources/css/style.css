@@ -160,7 +160,10 @@ section {
 .section-content.active {
     display: block
 }
-
+#content-container {
+    padding-top: 0;
+    padding-bottom:0;
+}
 /* ----------------------------------------- */
 /* PAGE HEADER                               */
 /* ----------------------------------------- */
@@ -245,10 +248,11 @@ section.hidden {
 .main-logo-wrapper a:hover .logo-blur {
     -webkit-filter: blur(0px);
     filter: blur(0px);
+    color: rgba(52, 152, 219,1); 
 }
 
 .main-logo-wrapper a:hover .main-logo-frame {
-    border-color: rgba(128, 128, 128, 1);
+    border-color: rgba(52, 152, 219,1); 
 }
 
 .dotted-spaced {
@@ -325,10 +329,13 @@ section.hidden {
 /* ----------------------------------------- */
 
 section.main-view {
-    padding-top: 1rem;
     top: 167px; /*offsetting section header */
 }
-
+nav.navbar {
+    position: fixed;
+    width:25%;
+    padding-right: 15px;
+}
 .navbar {
     background-color: transparent;
     padding: 0;
@@ -371,7 +378,6 @@ section.main-view {
     padding-left: 1rem;
     font-style: italic;
 }
-
 .icon-menu-up,
 .icon-menu-down {
     color: rgb(222, 222, 222);
@@ -381,7 +387,7 @@ section.main-view {
     display: none;
 }
 
-.navbar-nav .nav-item.active>.nav-link {
+.navbar-nav .nav-item.active>.nav-link>span {
     background-image: -webkit-linear-gradient(left, rgb(192, 192, 192) 40%, rgba(255, 255, 255, 0) 20%);
     background-image: -webkit-linear-gradient(left, rgb(192, 192, 192) 25%, rgba(255, 255, 255, 0) 0%);
     background-image: linear-gradient(to right, rgb(192, 192, 192) 25%, rgba(255, 255, 255, 0) 0%);
@@ -398,7 +404,6 @@ section.main-view {
 .navbar-menu-collapsed {
     max-width: 0%;
     flex: 0 0 0%;
-    padding: 0;
 }
 
 .icon-home-wrapper {
@@ -512,7 +517,7 @@ section.main-view {
 
 #home-gallery {
     position: relative;
-    width: calc(100vh - 200px);
+    width: calc(100vh - 200px - 1rem);
     max-width: 100%;
     margin: 0 auto;
     overflow: hidden;
@@ -612,14 +617,17 @@ section.main-view {
 .max-min-button>.ion-ios-contract {
     display: none;
 }
-
+.grid-item.grid-size-animation {
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out, top 0.3s ease-in-out;
+    left: 0!important;
+    top: 0!important;
+    width: 100%!important;
+    height: auto!important;
+    z-index: 1000;
+}
 /* ----------------------------------------- */
 /* THUMBNAIL PORTFOLIO GALLERY               */
 /* ----------------------------------------- */
-
-#thumbnail-portfolio-gallery {
-    /* display: none; */
-}
 
 .content-text-box h3 {
     text-transform: lowercase;
@@ -685,9 +693,6 @@ section.main-view {
 
 #portfolio-carousel-gallery {
     display: none;
-    /* position: relative;
-    width: 40vw;
-    margin: 0 auto; */
 }
 #portfolio-carousel {
     position: relative;
@@ -897,15 +902,11 @@ div[data-error-id] {
 /* PUBLICATIONS                              */
 /* ----------------------------------------- */
 
-#pub-content p {
+#content-publications p {
     line-height: 1.33;
 }
 
-#publication-carousel_01 {
-    margin-bottom: 1rem;
-}
-
-#pub-content>.pub-item {
+#content-publications .pub-item {
     margin-bottom: 1rem;
     padding-bottom: 1rem;
 }
@@ -915,12 +916,12 @@ div[data-error-id] {
 /* ----------------------------------------- */
 
 .row-press {
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
 
 .press-logo {
     width: 100%;
-    margin: 30px auto;
+    margin: 1rem auto;
     display: block;
 }
 .icon-press {
@@ -938,41 +939,15 @@ div[data-error-id] {
 }
 
 /* ----------------------------------------- */
-/* COMMISIONS                                */
-/* ----------------------------------------- */
-
-.img-lead-commissions {
-    overflow: hidden;
-    padding-bottom: 10px;
-}
-
-.img-lead-commissions img {
-    width: 100%;
-    height: auto;
-}
-
-.caption-commissions {}
-
-.lightboxOverlay {
-    background-color: #fff;
-}
-
-.lb-container {
-    box-shadow: 0 0 20px rgba(85, 85, 85, 0.8);
-}
-
-.thumbnail {
-    background-color: rgb(252, 252, 252);
-    border: none;
-    border-radius: none;
-}
-
-/* ----------------------------------------- */
 /* HAMBURGER                                 */
 /* ----------------------------------------- */
 
+button[data-target='#navbar'] {
+    --webkit-appearance: none;
+    border: none;
+    outline: 0;
+}
 .hamburger-wrapper {
-    /* display:none; */
     background-color: transparent;
     z-index: 1010;
     -webkit-transform: translate3d(0, 0, 0);
@@ -980,8 +955,7 @@ div[data-error-id] {
     transition: 0.3s background-color ease-in-out;
     border: none;
     padding: 0;
-    margin-right: 15px;
-    /*offset becasue of the boostrap padding class*/
+    position: relative;
 }
 
 .hamburger-wrapper:focus {
