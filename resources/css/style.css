@@ -186,6 +186,7 @@ section.hidden {
     letter-spacing: 0.2rem;
     margin-bottom: 0;
     padding-bottom: 0.6rem;
+    width: 100%;
 }
 .main-logo-wrapper a {
     position: relative;
@@ -430,6 +431,7 @@ nav.navbar {
 /* GENERAL CAROUSEL STYLES                   */
 /* ----------------------------------------- */
 
+.carousel-indicators,
 .carousel-control-prev,
 .carousel-control-next {
     filter: alpha(opacity=0);
@@ -443,8 +445,10 @@ nav.navbar {
     font-size: 2rem;
 }
 
+.carousel:hover .carousel-indicators,
 .carousel:hover .carousel-control-prev,
 .carousel:hover .carousel-control-next,
+.carousel:focus .carousel-indicators,
 .carousel:focus .carousel-control-prev,
 .carousel:focus .carousel-control-next {
     filter: alpha(opacity=50);
@@ -454,6 +458,12 @@ nav.navbar {
 .carousel-pub .carousel-control-prev .icon,
 .carousel-pub .carousel-control-next .icon {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+.carousel-pub .carousel-indicators,
+.carousel-pub .carousel-control-prev,
+.carousel-pub .carousel-control-next {
+    filter: alpha(opacity=50);
+    opacity: 0.5;
 }
 
 /* ------------ LOADING SPINNER ------------ */
@@ -942,7 +952,8 @@ div[data-error-id] {
 /* HAMBURGER                                 */
 /* ----------------------------------------- */
 
-button[data-target='#navbar'] {
+button.hamburger-wrapper {
+    width: 23px;
     --webkit-appearance: none;
     border: none;
     outline: 0;

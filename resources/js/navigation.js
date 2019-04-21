@@ -2,12 +2,39 @@ var Navigation = (function(imgs){
     var lastNavLinkClicked = 'home';
     var cachedImages = imgs;
 
+    var isMobile = {
+        Android: function() {
+            return navigator.userAgent.match(/Android/i);
+        },
+        BlackBerry: function() {
+            return navigator.userAgent.match(/BlackBerry/i);
+        },
+        iOS: function() {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+        Opera: function() {
+            return navigator.userAgent.match(/Opera Mini/i);
+        },
+        Windows: function() {
+            return navigator.userAgent.match(/IEMobile/i);
+        },
+        any: function() {
+            return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+        }
+    };
+
     function initNavigationListeners(){
+
+        isMobileFlag = this.isMobile.any() || false;
 
         $('[data-menulink].nav-link').on( 'click', function(e) {
             e.preventDefault();        
             var linkTo = $(this).data('menulink');
-    
+            // autoclose the navbar manu after the selection has been made
+            if (linkTo !=='about' && linkTo !== 'gallerries' && isMobileFlag) {
+                $('#navbar').collapse('hide');
+            }
+
             if (lastNavLinkClicked === linkTo && $(this).siblings('.submenu').length === 0) {
                 return;
             }
@@ -43,7 +70,11 @@ var Navigation = (function(imgs){
     
         $('[data-thumbnailportfolio]').on( 'click', function(e) {
             filterTag = $(this).data('thumbnailportfolio');
-    
+            // autoclose the navbar manu after the selection has been made
+            if (isMobileFlag) {
+                $('#navbar').collapse('hide');
+            }
+
             if (!$("#main-gallery" ).is(':visible')) {
                 linkFrom = $('.section-content.active').attr("id").split('-')[1];
                 if (linkFrom!=='gallerries') {
@@ -191,6 +222,7 @@ var Navigation = (function(imgs){
     }
 
     return {
+        isMobile: isMobile,
         getActivePortfolioName: getActivePortfolioName,
         makeSectionTransition: makeSectionTransition,
         updateGrids: updateGrids,
