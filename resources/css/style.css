@@ -467,6 +467,9 @@ nav.navbar {
 }
 
 /* ------------ LOADING SPINNER ------------ */
+.container-spinner {
+    position: relative;
+}
 .section-spinner {
     position: absolute;
     padding: 0;
@@ -520,6 +523,41 @@ nav.navbar {
         transform: rotate(180deg);
     }
 }
+
+/* ----------------------------------------- */
+/* PROGRESS BAR                              */
+/* ----------------------------------------- */
+.progress-bar-wrapper {
+    position: relative;
+    width: 50%;
+    min-width: 10rem;
+    max-width: 40rem; 
+    margin: 0 auto;
+    display: none;
+}
+.progress-bar-wrapper .progress-bar {
+    position: absolute;
+    z-index: 1;
+    width: 0;
+    height: 1rem;
+    background: -webkit-linear-gradient(rgba(44, 62, 80, 1), rgba(52, 152, 219, 1));
+    background: linear-gradient(rgba(44, 62, 80, 1), rgba(52, 152, 219, 1));
+    background-color: rgb(52, 152, 219);
+    transition: 0.5s width ease-in-out;
+    -webkit-transition: 0.5s width ease-in-out;
+}
+.progress-bar-wrapper .progress-bar-bg {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 1rem;
+    background-color: rgba(222,222,222,1);
+    -webkit-transition: 0.5s width ease-in-out;
+    transition: 0.5s width ease-in-out;
+}
+
 
 /* ----------------------------------------- */
 /* HOME GALLERY                              */
