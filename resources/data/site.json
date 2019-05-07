@@ -73,12 +73,28 @@
                 {
                     "medialogo": 
                         {
+                            "path": "resources/img/press/CR_Vltava_logo.png",
+                            "alt": "CR Vltava logo"
+                        },
+                    "title": "Své snímky lovím v australské noci",
+                    "subtitle": "16.4.2019",
+                    "text": "Australská noc má úplně jiné barvy než česká… Kristýna Erbenová na své výstavě Hranice modré navazuje na svou loňskou samostatnou expozici Moondust v Galerii Středočeského kraje, kde představila noční fotografie australské krajiny.",
+                    "link": 
+                        {
+                            "path": "https://vltava.rozhlas.cz/sve-snimky-lovim-v-australske-noci-rika-fotografka-kristyna-erbenova-7895577",
+                            "icon": "ion-ios-open",
+                            "text": "visit"
+                        }
+                },
+                {
+                    "medialogo": 
+                        {
                             "path": "resources/img/press/logo_informuji.png",
                             "alt": "Informuji logo"
                         },
                     "title": "#NováGenerace: Orientuji se podle intuice",
                     "subtitle": "4.4.2019",
-                    "text": "Jako při vstupu do mystického ráje si připadáte při prohlídce fotografií autorky Kristýny Erbenové. Svou technikou se snaží nahlížet na objekty odlišným způsobem, vnímá přírodu i figury ve svém přirozeném prostředí, v pohybu. Snímá převážně v noci během úplňku, a tím dodává svým dílům zvláštní přidanou hodnotu, díky níž působí tajuplně a záhadně. Výstava Hranice modré v Galerii České spořitelny představuje tvůrčí svět očima této nadané fotografky, jež pendluje mezi Českou republikou a Austrálií.",
+                    "text": "Jako při vstupu do mystického ráje si připadáte při prohlídce fotografií autorky Kristýny Erbenové. Svou technikou se snaží nahlížet na objekty odlišným způsobem, vnímá přírodu i figury ve svém přirozeném prostředí, v pohybu. Snímá převážně v noci během úplňku, a tím dodává svým dílům zvláštní přidanou hodnotu, díky níž působí tajuplně a záhadně.",
                     "link": 
                         {
                             "path": "https://www.informuji.cz/clanky/6345-novagenerace-orientuji-se-hlavne-podle-intuice-jsem-jako-lovec-ktery-ciha-rika-fotografka-kristyna-erbenova/",
@@ -108,7 +124,7 @@
                             "path": "resources/img/press/logokp.png",
                             "alt": "Kolinsky pres logo"
                         },
-                    "title": "V Austrálii jsem půl roku žila na pláži v obytné dodávce",
+                    "title": "Rozhovor pro Kolínský PRES",
                     "subtitle": "25.11.2018",
                     "text": "Kolín je už od časů první republiky městem, v němž se rodí, žijí i tvoří výjimeční fotografové. Výrazným zástupcem nejmladší fotografické generace je jedenatřicetiletá Kristýna Erbenová.",
                     "link": 
@@ -158,7 +174,7 @@
                         },
                     "title": "Události v kultuře",
                     "subtitle": "23.9.2018",
-                    "text": "&quot;Absolventka Tvůrčí fotografie Slezské univerzity v Opavě a Univerzity Palackého v Olomouci vychází ve své práci z čerstvě nabyté zkušenosti ze zahraničního pobytu v Austrálii, kde strávila více než rok. Autorka pochází z nedalekého Kolína, který je proslulý modernistickou fotografickou tradicí díky světově uznávaným osobnostem, jako byl Jaromír Funke, Josef Sudek či Eugen Wiškovský. Mladá fotografka neotřele navazuje na tuto silnou uměleckou linii experimentálním přístupem a svěžím, neotřelým a snivým nazíráním na realitu. Její mysteriózní a tajemné série nočních snímků za svitu měsíce zachycující krajinu i blízké přátele odkrývají další poetické roviny naší existence. Australská intimní tvorba je pokračováním její fotografické cesty. Přináší kontemplativní a rozjímavé záběry jako protiváhu k reportážním či dokumentárním záznamům. V souvztažnosti s nalezenými objekty, strukturami nebo krajinnými motivy vytváří osobní reflexi tamní atmosféry. &quot;",
+                    "text": "Mladá fotografka neotřele navazuje na silnou uměleckou linii kolínské fotografické tradice experimentálním přístupem a svěžím, neotřelým a snivým nazíráním na realitu. Její mysteriózní a tajemné série nočních snímků za svitu měsíce zachycující krajinu i blízké přátele odkrývají další poetické roviny naší existence. Australská intimní tvorba je pokračováním její fotografické cesty. Přináší kontemplativní a rozjímavé záběry jako protiváhu k reportážním či dokumentárním záznamům. V souvztažnosti s nalezenými objekty, strukturami nebo krajinnými motivy vytváří osobní reflexi tamní atmosféry. &quot;",
                     "link": 
                         {
                             "path": "https://www.ceskatelevize.cz/porady/1097206490-udalosti-v-kulture/218411000120923/video/645682",
@@ -238,7 +254,7 @@
                         },
                     "title": "Lidové noviny / Orientace",
                     "subtitle": "2.5.2015",
-                    "text": "&quot;Krajiny v souboru Soukromá území Kristýny Erbenové zvou k putování. Nevíme, kdy se vydáme na cestu a kde skončíme. Není důležité, kde jsme. Je to stále jeden a tentýž klidný svět…Úplně jiné je to ve světě lidí. Tam je klid jen zdánlivý. V souboru Somewhere Inside Kristýna Erbenová pomalu otevírá pomyslné dveře do nejrůznějších životních příběhů. ‚Fotím různé lidi, ale vlastně nejde o jejich konkrétní osudy, ale o stále stejný příběh. O jednotlivé životní kapitoly, které známe všichni. Říkám tomu bezčasí a bezprostor.‘&quot;",
+                    "text": "V souboru Somewhere Inside Kristýna Erbenová pomalu otevírá pomyslné dveře do nejrůznějších životních příběhů. ‚Fotím různé lidi, ale vlastně nejde o jejich konkrétní osudy, ale o stále stejný příběh. O jednotlivé životní kapitoly, které známe všichni. Říkám tomu bezčasí a bezprostor.‘&quot;",
                     "link": 
                         {
                             "path": "resources/img/press/LN_Orientace02052015.jpg",
@@ -353,7 +369,7 @@
                 {
                     "title": "Kristýna Erbenová",
                     "subtitle": "Moondust",
-                    "text": "Moondust exhibition photobook from 2018. Night medium format photography of the Australian landscape accompanied by original texts by three different authors: curatorial, literary critical and philosophical. Both in Czech and English.",
+                    "text": "<p>Moondust exhibition photobook from 2018.</p><p> Night medium format photography of the Australian landscape accompanied by original texts by three different authors: curatorial, literary critical and philosophical. Both in Czech and English.",
                     "btn": 
                         {
                             "link": "https://www.facebook.com/kristynaerbenova/videos/838543086478640/",
@@ -405,7 +421,7 @@
                 {
                     "title": "Kristýna Erbenová",
                     "subtitle": "In the darkless",
-                    "text": "<p><em>&quot;limited photobook edition from 2014.&quot;</em></p><p>All photographs in this book were taken exclusively at night, using only the moonlight and medium format film material. The series “In the Darkless” is an ongoing project. The author has been shooting every month around the time of the full moon, since October 2013. The book contains excerpts from the book “Loď” (Ship) by Marek Orko Vácha. 2nd version of the book is currently in progress, coming in 2016.</p>",
+                    "text": "<p>Limited photobook edition from 2014.</p><p>All photographs in this book were taken exclusively at night, using only the moonlight and medium format film material. The series “In the Darkless” is an ongoing project. The author has been shooting every month around the time of the full moon, since October 2013. The book contains excerpts from the book “Loď” (Ship) by Marek Orko Vácha.<p> 2nd version of the book is currently in progress.</p></p>",
                     "btn": 
                         {
                             "link": "",
@@ -539,11 +555,11 @@
                 "image": 
                 {
                     "path": "resources/img/portrait.jpg",
-                    "alt": "portrait of Kristyna"
+                    "alt": "portrait of Kristyna Erbenova"
                 },
                 "title": "kristýna erbenová",
-                "subtitle": "(1987, Czech Republic)",
-                "text": "I‘m mainly interested in art photography with a focus on people, landscapes and the relationship between them. In my photography, I‘m trying to bring together the inner world of feelings and thoughts with the outside world of appearances; to create an imaginary space of timelessness; to capture the moments which lead us to a deeper experience of ourselves and the space around us. All my personal projects are shot on medium format film. I'm interested in commissions, collaborations, exhibitions and residences."
+                "subtitle": "",
+                "text": "I‘m mainly interested in art photography with a focus on people, landscapes and the relationship between them. In my photography, I‘m trying to bring together the inner world of feelings and thoughts with the outside world of appearances; to create an imaginary space of timelessness; to capture the moments which lead us to a deeper experience of ourselves and the space around us.<p> All my personal projects are shot on medium format film.</p><p> I'm interested in commissions, collaborations, exhibitions and residences.</p>"
             },
         "education": 
         {
@@ -562,18 +578,8 @@
                         "recordlink": ""
                     },
                     {
-                        "recordpoint": "2011",
-                        "recordtext": "Institute of Creative Photography, Silesian University in Opava, Bachelor of Arts (BcA.)",
-                        "recordlink": ""
-                    },
-                    {
-                        "recordpoint": "2010",
-                        "recordtext": "Palacký University in Olomouc, Faculty of Arts: English Philology – Film Studies, Bachelor’s degree (Bc.)",
-                        "recordlink": ""
-                    },
-                    {
                         "recordpoint": "2008",
-                        "recordtext": "Faculty of Humanities, Utrecht University, Utrecht, Netherlands, abroad study",
+                        "recordtext": "Faculty of Humanities, Utrecht University, Utrecht, Netherlands",
                         "recordlink": ""
                     }
                 ]
@@ -586,12 +592,17 @@
                 [
                     {
                         "recordpoint": "4th place",
-                        "recordtext": "The international photography competition Shots: Young Photographers Competition 2011 (see here)",
+                        "recordtext": "The international photography competition Shots: Young Photographers Competition 2011",
                         "recordlink": ""
                     },
                     {
                         "recordpoint": "finalist",
                         "recordtext": "Elle fashion award 2013 finalist (Mercedes-Benz Fashion Week in Prague)",
+                        "recordlink": ""
+                    },
+                    {
+                        "recordpoint": "finalist",
+                        "recordtext": "Head On Photo festival 2019 finalist (Landscape Prize)",
                         "recordlink": ""
                     }
                 ]
@@ -603,49 +614,59 @@
             "record":
                 [
                     {
-                        "recordpoint": "2018",
-                        "recordtext": "Moondust”, solo exhibition, GASK, Kutná Hora, Czech Republic",
+                        "recordpoint": "2019",
+                        "recordtext": "<em>Head On Landscape Prize</em>, group exhibition, Parliament of NSW, Sydney, Australia",
+                        "recordlink": ""
+                    },
+                    {
+                        "recordpoint": "2019",
+                        "recordtext": "<em>The Limit of Blue</em>, solo exhibition, Galerie České Spořitelny, Prague, Czech Republic",
                         "recordlink": ""
                     },
                     {
                         "recordpoint": "2018",
-                        "recordtext": "Znejistění paměti”, group exhibition, Galerie NTK, Prague, Czech Republic",
+                        "recordtext": "<em>Moondust</em>, solo exhibition, GASK, Kutná Hora, Czech Republic",
+                        "recordlink": ""
+                    },
+                    {
+                        "recordpoint": "2018",
+                        "recordtext": "<em>Znejistění paměti</em>, group exhibition, Galerie NTK, Prague, Czech Republic",
                         "recordlink": ""
                     },
                     {
                         "recordpoint": "2017",
-                        "recordtext": "<em>&quot;Miejsczaosobiste: młoda czeska fotografia&quot;</em>, Muzeum Górnośląskie w Bytomiu",
+                        "recordtext": "<em>Miejsczaosobiste: młoda czeska fotografia&quot</em>, Muzeum Górnośląskie w Bytomiu",
                         "recordlink": ""
                     },
                     {
                         "recordpoint": "2017",
-                        "recordtext": "<em>&quot;Světlo jinak&quot;</em>, group exhibition, Galerie Amadeus, Olomouc, Czech Republic",
+                        "recordtext": "<em>Světlo jinak&quot</em>, group exhibition, Galerie Amadeus, Olomouc, Czech Republic",
                         "recordlink": ""
                     },
                     {
                         "recordpoint": "2016",
-                        "recordtext": "<em>&quot;Private Territories&quot;</em>, solo exhibition, Galerie Chaos, Střítež, Czech Republic",
+                        "recordtext": "<em>Private Territories&quot</em>, solo exhibition, Galerie Chaos, Střítež, Czech Republic",
                         "recordlink": ""
                     },
                     {
                         "recordpoint": "2015",
-                        "recordtext": "<em>&quot;I, Curator&quot;</em>, OFF_festival, Pisztory palace, Bratislava, Slovakia.",
+                        "recordtext": "<em>I, Curator&quot</em>, OFF_festival, Pisztory palace, Bratislava, Slovakia.",
                         "recordlink": ""
                     },
                     {
                         "recordpoint": "2015",
-                        "recordtext": "&quot;In the Darkless&quot;, solo exhibition, Galerie Fotografic, Prague, Czech Republic",
+                        "recordtext": "<em>In the Darkless</em>, solo exhibition, Galerie Fotografic, Prague, Czech Republic",
                         "recordlink": "http://www.ceskatelevize.cz/ct24/kultura/1528836-tma-je-jen-absence-svetla-erbenova-foti-v-bezetmi"
                     },
                     {
                         "recordpoint": "2015",
-                        "recordtext": "&quot;V kupce vesmíru&quot;, Galerie Opera, Ostrava, Czech Republic",
+                        "recordtext": "<em>V kupce vesmíru</em>, Galerie Opera, Ostrava, Czech Republic",
                         "recordlink": "http://www.lidovky.cz/sam-za-sebe-sam-ve-dvou-dve-fotografky-v-kupce-vesmiru-pda-/kultura.aspx?c=A150505_121042_ln_kultura_hep"
                     },
                     {
                         "recordpoint": "2015",
-                        "recordtext": "&quot;This Place – My Place&quot;, visual storytelling workshop by PanAut collective, DOX, Prague, Czech Republic",
-                        "recordlink": "http://thisplacemyplace.tumblr.com"
+                        "recordtext": "<em>This Place – My Place</em>, visual storytelling workshop by PanAut collective, DOX, Prague, Czech Republic",
+                        "recordlink": ""
                     },
                     {
                         "recordpoint": "2014",
@@ -654,12 +675,12 @@
                     },
                     {
                         "recordpoint": "2014",
-                        "recordtext": "&quot;Young Czech Photographers&quot;, Fotofestiwal Łódź, Poland",
+                        "recordtext": "<em>Young Czech Photographers</em>, Fotofestiwal Łódź, Poland",
                         "recordlink": ""
                     },
                     {
                         "recordpoint": "2013",
-                        "recordtext": "&quot;Private Territories&quot;, solo exhibition, Light Cube Gallery, Brno, Czech Republic",
+                        "recordtext": "<em>Private Territories</em>, solo exhibition, Light Cube Gallery, Brno, Czech Republic",
                         "recordlink": ""
                     },
                     {
@@ -669,27 +690,27 @@
                     },
                     {
                         "recordpoint": "2013",
-                        "recordtext": "&quot;Jeunes Photographes&quot;, Galerie Le Lac Gelé, Nimes, France",
+                        "recordtext": "<em>Jeunes Photographes</em>, Galerie Le Lac Gelé, Nimes, France",
                         "recordlink": ""
                     },
                     {
                         "recordpoint": "2012",
-                        "recordtext": "&quot;Private Territories&quot;, solo exhibition, Galerie Amadeus, Olomouc, Czech Republic",
+                        "recordtext": "<em>Private Territories&quot</em>, solo exhibition, Galerie Amadeus, Olomouc, Czech Republic",
                         "recordlink": "http://www.ceskatelevize.cz/ct24/kultura/1134361-soukroma-uzemi-zverejnuje-fotografka-kristyna-erbenova"
                     },
                     {
                         "recordpoint": "2012",
-                        "recordtext": "&quot;The Censored Exhibition&quot;, Copenhagen Photo Festival 2012, Copenhagen, Denmark",
+                        "recordtext": "<em>The Censored Exhibition</em>, Copenhagen Photo Festival 2012, Copenhagen, Denmark",
                         "recordlink": ""
                     },
                     {
                         "recordpoint": "2012",
-                        "recordtext": "&quot;I, You, We&quot;, group exhibition, Fotofestiwal Łódź, Poland",
+                        "recordtext": "<em>I, You, We</em>, group exhibition, Fotofestiwal Łódź, Poland",
                         "recordlink": "http://www.itf.cz/index.php?text=144-i-you-we"
                     },
                     {
                         "recordpoint": "2012",
-                        "recordtext": "&quot;Prague Photo 2012&quot;, Prague House, Brussels, Belgium, and Czech House, London, UK",
+                        "recordtext": "<em>Prague Photo 2012</em>, Prague House, Brussels, Belgium, and Czech House, London, UK",
                         "recordlink": ""
                     },
                     {
@@ -699,12 +720,12 @@
                     },
                     {
                         "recordpoint": "2012",
-                        "recordtext": "&quot;Being Alone&quot;, solo exhibition, Krásný ztráty gallery, Prague, Czech Republic",
+                        "recordtext": "<em>Being Alone</em>, solo exhibition, Krásný ztráty gallery, Prague, Czech Republic",
                         "recordlink": ""
                     },
                     {
                         "recordpoint": "2012",
-                        "recordtext": "&quot;Like a nowhere&quot;, solo exhibition, Hodonín, Czech Republic",
+                        "recordtext": "<em>Like a nowhere&quot</em>, solo exhibition, Hodonín, Czech Republic",
                         "recordlink": "http://www.young-fresh.eu/index.php/cs/tipynavystavy/483-kristyna-erbenova-jako-nikde"
                     },
                     {
@@ -714,7 +735,7 @@
                     },
                     {
                         "recordpoint": "2011",
-                        "recordtext": "Young Czech Photography”, Prospekto galerija, Vilnius, Lithuania",
+                        "recordtext": "<em>Young Czech Photography</em>, Prospekto galerija, Vilnius, Lithuania",
                         "recordlink": ""
                     },
                     {
@@ -724,23 +745,13 @@
                     },
                     {
                         "recordpoint": "2010",
-                        "recordtext": "&quot;Twenty years of the Institute of Creative Photography&quot;, Month of photography, Bratislava, Slovakia",
+                        "recordtext": "<em>Twenty years of the Institute of Creative Photography</em>, Month of photography, Bratislava, Slovakia",
                         "recordlink": "http://www.itf.cz/dokumenty/01_katalogitf.pdf"
                     },
                     {
                         "recordpoint": "2009",
-                        "recordtext": "&quot;workshop with Jiří Šigut&quot;, group exhibition, photography festival Funkeho Kolín, Malá Galerie Na Hradbách, Kolín, Czech Republic",
+                        "recordtext": "workshop with Jiří Šigut, group exhibition, photography festival Funkeho Kolín, Malá Galerie Na Hradbách, Kolín, Czech Republic",
                         "recordlink": "http://www.itf.cz/dokumenty/01_katalogitf.pdf"
-                    },
-                    {
-                        "recordpoint": "2007",
-                        "recordtext": "&quot;Landscape&quot;, group exhibition, Galerie v zahradě, Kolín, Czech Republic",
-                        "recordlink": ""
-                    },
-                    {
-                        "recordpoint": "2006",
-                        "recordtext": "&quot;Me, him, her…you&quot;, group exhibition, Galerie v Zahradě, Kolín, Czech Republic",
-                        "recordlink": ""
                     }
                 ]
         }
