@@ -21,7 +21,6 @@ var Site = (function() {
 				$('[data-site="biography"]').html(bioHTML);
 				publicationsHTML = getPublicationsSnippet(data);
 				$('[data-site="publications"]').html(publicationsHTML);
-
 				funcCB();
 			})
 			.fail(function(jqxhr, textStatus, error) {
@@ -30,7 +29,7 @@ var Site = (function() {
 				$('#content-spinner .spinner-msg')
 					.addClass('spinner-msg-alert')
 					.html('Could not load the site data file.</br> Check console for more detail.');
-				// funcCB();
+				funcCB();
 			});
 	}
 
