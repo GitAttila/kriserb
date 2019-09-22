@@ -9,9 +9,9 @@ var Site = (function() {
 		$.getJSON(URL)
 			.done(function(data) {
 				console.log('site data loaded succesfully...');
-				//console.log(data);
-
-				socmediaHTML = getSocialMediaSnippet(data);
+				console.log(data);
+				let contactInfo = data.contactinfo || {};
+				socmediaHTML = getSocialMediaSnippet(contactInfo );
 				$('[data-site="socialmedia"]').html(socmediaHTML);
 				contactHTML = getContactSnippet(data);
 				$('[data-site="contactinfo"]').html(contactHTML);
@@ -61,11 +61,12 @@ var Site = (function() {
 	function getContactSnippet(data) {
 		htmlCode = '';
 		if (data.contactinfo) {
+			$('#content-contact-title').text(data.contactinfo.title || '');
 			htmlCode += '<div class="contact-divider col-xs-12 col-sm-5 col-md-4">';
 			htmlCode += '<div class="contact-qrcode">';
 			htmlCode += '<img src="' + data.contactinfo.qrcode.path + '" alt="' + data.contactinfo.qrcode.alt + '" >';
 			htmlCode += '</div></div><div class="contact-card contact-divider col-xs-12 col-sm-7 col-md-8">';
-			htmlCode += '<h3>' + data.contactinfo.contactmessage + '</h3>';
+			htmlCode += '<h3>' + data.contactinfo.subtitle + '</h3>';
 			htmlCode += '<address>';
 			$(data.contactinfo.email).each(function(key, val) {
 				val.emailaddress = val.emailaddress.trim();

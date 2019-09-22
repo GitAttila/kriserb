@@ -286,10 +286,10 @@ section.hidden {
     background-color: rgb(222, 222, 222);
     outline: none;
     display: inline-block;
-    font-size: 1.3rem;
-    width: 1.8rem;
-    height: 1.8rem;
-    margin-right: 0.3rem;
+    font-size: 1.6rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    margin-right: 0.7rem;
     border-radius: 0.2rem;
     text-align: center;
 }

@@ -1,44 +1,8 @@
 {
-    "socialmedia": [
-        {
-            "active": "true",
-            "name":"Instagram",
-            "link":"https://instagram.com/kris_erb/",
-            "open-new-window": "true",
-            "ion-icon": "ion-logo-instagram"
-        },
-        {
-            "active": "true",
-            "name":"Facebook",
-            "link":"https://www.facebook.com/kristyna.erbenova",
-            "open-new-window": "true",
-            "ion-icon": "ion-logo-facebook"
-        },
-        {
-            "active": "false",
-            "name":"Pinterest",
-            "link":"https://www.pinterest.com/kristynaerbenova/",
-            "open-new-window": "true",
-            "ion-icon": "ion-logo-pinterst"
-        },
-        {
-            "active": "true",
-            "name":"Blogspot",
-            "link":"http://deadnlovely.blogspot.cz/",
-            "open-new-window": "true",
-            "ion-icon": "ion-ios-clipboard"
-        },
-        {
-            "active": "true",
-            "name":"Twitter",
-            "link":"",
-            "open-new-window": "true",
-            "ion-icon": "ion-logo-twitter"
-        }
-    ],
     "contactinfo": 
     {
-        "contactmessage": "For print sale and commission enquiries please get in touch.",
+        "title": "Send me a message",
+        "subtitle": "For print sale and commission enquiries please get in touch.",
         "email":
             [
                 {
@@ -58,6 +22,43 @@
                     "number": "+61 477 233 145"
                 }
             ],
+        "socialmedia": [
+            {
+                "active": "true",
+                "name":"Instagram",
+                "link":"https://instagram.com/kris_erb/",
+                "open-new-window": "true",
+                "ion-icon": "ion-logo-instagram"
+            },
+            {
+                "active": "true",
+                "name":"Facebook",
+                "link":"https://www.facebook.com/kristyna.erbenova",
+                "open-new-window": "true",
+                "ion-icon": "ion-logo-facebook"
+            },
+            {
+                "active": "false",
+                "name":"Pinterest",
+                "link":"https://www.pinterest.com/kristynaerbenova/",
+                "open-new-window": "true",
+                "ion-icon": "ion-logo-pinterst"
+            },
+            {
+                "active": "true",
+                "name":"Blogspot",
+                "link":"http://deadnlovely.blogspot.cz/",
+                "open-new-window": "true",
+                "ion-icon": "ion-ios-clipboard"
+            },
+            {
+                "active": "true",
+                "name":"Twitter",
+                "link":"",
+                "open-new-window": "true",
+                "ion-icon": "ion-logo-twitter"
+            }
+        ],
         "qrcode": 
             {
                 "path": "resources/img/kriserb_qrcode_grey.png",
