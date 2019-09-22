@@ -9,7 +9,6 @@ var Site = (function() {
 		$.getJSON(URL)
 			.done(function(data) {
 				console.log('site data loaded succesfully...');
-				console.log(data);
 				let contactInfo = data.contactinfo || {};
 				socmediaHTML = getSocialMediaSnippet(contactInfo );
 				$('[data-site="socialmedia"]').html(socmediaHTML);
