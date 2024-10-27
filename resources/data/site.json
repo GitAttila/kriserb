@@ -388,35 +388,11 @@
           },
           "images": [
             {
-              "path": "resources/img/KE_pub_moondust01.png",
+              "path": "resources/img/KE_pub_dark-places_01.png",
               "alt": "Kristyna Erbenova - dark places"
             },
             {
-              "path": "resources/img/KE_pub_moondust02.png",
-              "alt": "Kristyna Erbenova - dark places"
-            },
-            {
-              "path": "resources/img/KE_pub_moondust03.png",
-              "alt": "Kristyna Erbenova - dark places"
-            },
-            {
-              "path": "resources/img/KE_pub_moondust04.png",
-              "alt": "Kristyna Erbenova - dark places"
-            },
-            {
-              "path": "resources/img/KE_pub_moondust05.png",
-              "alt": "Kristyna Erbenova - dark places"
-            },
-            {
-              "path": "resources/img/KE_pub_moondust06.png",
-              "alt": "Kristyna Erbenova - dark places"
-            },
-            {
-              "path": "resources/img/KE_pub_moondust07.png",
-              "alt": "Kristyna Erbenova - dark places"
-            },
-            {
-              "path": "resources/img/KE_pub_moondust08.png",
+              "path": "resources/img/KE_pub_dark-places_02.png",
               "alt": "Kristyna Erbenova - dark places"
             }
           ]
