@@ -380,6 +380,50 @@
     "record": [
       {
         "title": "Kristýna Erbenová",
+        "subtitle": "Dark Places",
+        "text": "<p>Dark places exhibition photobook from 2023.</p><p>Night film photography of the Australian landscape & life accompanied by original poems by Jaromir Typlt and two texts by different authors: curatorial and literary critical. Both in Czech and English.",
+        "carousel": {
+          "options": {
+            "interval": 5000
+          },
+          "images": [
+            {
+              "path": "resources/img/KE_pub_moondust01.png",
+              "alt": "Kristyna Erbenova - dark places"
+            },
+            {
+              "path": "resources/img/KE_pub_moondust02.png",
+              "alt": "Kristyna Erbenova - dark places"
+            },
+            {
+              "path": "resources/img/KE_pub_moondust03.png",
+              "alt": "Kristyna Erbenova - dark places"
+            },
+            {
+              "path": "resources/img/KE_pub_moondust04.png",
+              "alt": "Kristyna Erbenova - dark places"
+            },
+            {
+              "path": "resources/img/KE_pub_moondust05.png",
+              "alt": "Kristyna Erbenova - dark places"
+            },
+            {
+              "path": "resources/img/KE_pub_moondust06.png",
+              "alt": "Kristyna Erbenova - dark places"
+            },
+            {
+              "path": "resources/img/KE_pub_moondust07.png",
+              "alt": "Kristyna Erbenova - dark places"
+            },
+            {
+              "path": "resources/img/KE_pub_moondust08.png",
+              "alt": "Kristyna Erbenova - dark places"
+            }
+          ]
+        }
+      },
+      {
+        "title": "Kristýna Erbenová",
         "subtitle": "Moondust",
         "text": "<p>Moondust exhibition photobook from 2018.</p><p> Night medium format photography of the Australian landscape accompanied by original texts by three different authors: curatorial, literary critical and philosophical. Both in Czech and English.",
         "btn": {
