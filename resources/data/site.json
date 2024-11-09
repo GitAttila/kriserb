@@ -388,11 +388,27 @@
           },
           "images": [
             {
-              "path": "resources/img/KE_pub_dark-places_01.png",
+              "path": "resources/img/KE_pub_dark-places_1.png",
               "alt": "Kristyna Erbenova - dark places"
             },
             {
-              "path": "resources/img/KE_pub_dark-places_02.png",
+              "path": "resources/img/KE_pub_dark-places_2.png",
+              "alt": "Kristyna Erbenova - dark places"
+            },
+            {
+              "path": "resources/img/KE_pub_dark-places_3.png",
+              "alt": "Kristyna Erbenova - dark places"
+            },
+            {
+              "path": "resources/img/KE_pub_dark-places_4.png",
+              "alt": "Kristyna Erbenova - dark places"
+            },
+            {
+              "path": "resources/img/KE_pub_dark-places_5.png",
+              "alt": "Kristyna Erbenova - dark places"
+            },
+            {
+              "path": "resources/img/KE_pub_dark-places_6.png",
               "alt": "Kristyna Erbenova - dark places"
             }
           ]
@@ -628,7 +644,7 @@
         {
           "recordpoint": "2023",
           "recordtext": "<em>Dark Place</em>, solo exhibition, Galerie arto.to, Prague, Czech Republic",
-          "recordlink": "https://www.informuji.cz/akce/str/270701-dark-places-kristyna-erbenova-jaromir-typlt-jan-torjan"
+          "recordlink": "https://www.nekdeneco.cz/detail-akce/270701-dark-places-kristyna-erbenova-jaromir-typlt-jan-trojan"
         },
         {
           "recordpoint": "2021",
