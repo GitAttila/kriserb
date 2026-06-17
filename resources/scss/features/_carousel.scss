@@ -1,0 +1,100 @@
+@use '../variables' as v;
+
+/* ----------------------------------------- */
+/* GENERAL CAROUSEL STYLES                   */
+/* ----------------------------------------- */
+
+.carousel-indicators,
+.carousel-control-prev,
+.carousel-control-next {
+  filter: alpha(opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
+}
+
+.carousel-control-prev .icon,
+.carousel-control-next .icon {
+  font-size: 2rem;
+}
+
+.carousel:hover .carousel-indicators,
+.carousel:hover .carousel-control-prev,
+.carousel:hover .carousel-control-next,
+.carousel:focus .carousel-indicators,
+.carousel:focus .carousel-control-prev,
+.carousel:focus .carousel-control-next {
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+
+.carousel-pub .carousel-control-prev .icon,
+.carousel-pub .carousel-control-next .icon {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+.carousel-pub .carousel-indicators,
+.carousel-pub .carousel-control-prev,
+.carousel-pub .carousel-control-next {
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+
+/* ------------ LOADING SPINNER ------------ */
+.container-spinner {
+  position: relative;
+}
+.section-spinner {
+  position: absolute;
+  padding: 0;
+  left: 0;
+  top: 0;
+  height: calc(100vh - 200px);
+  width: 100%;
+  z-index: 1000;
+}
+
+.section-spinner .main-logo-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.section-spinner .main-logo-wrapper .main-logo-text-offset-erb {
+  margin-left: 1.2rem;
+}
+
+.section-spinner .main-logo-wrapper .main-logo-frame {
+  animation: 0.8s infinite rotating;
+}
+
+.section-spinner .main-logo-wrapper a:hover .main-logo-frame {
+  border-color: rgba(222, 222, 222, 1);
+}
+.section-spinner .spinner-msg {
+  margin: 1rem 0;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgba(222, 222, 222, 1);
+}
+.section-spinner .spinner-msg-alert {
+  color: #f08a24;
+}
+@keyframes rotating {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(90deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+

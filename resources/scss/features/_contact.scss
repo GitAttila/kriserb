@@ -1,0 +1,164 @@
+@use '../variables' as v;
+@use '../mixins' as m;
+
+/* ----------------------------------------- */
+/* CONTACT                                   */
+/* ----------------------------------------- */
+
+.input-contact-box,
+.input-message {
+  width: 100%;
+  padding: 2px 4px;
+  margin: 10px 0;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+}
+
+.input-message {
+  height: 200px;
+}
+
+.style-input {
+  border: solid 1px #dcdcdc;
+  -webkit-transition:
+    box-shadow 0.3s,
+    border 0.3s;
+  transition:
+    box-shadow 0.3s,
+    border 0.3s;
+}
+
+.style-input:focus {
+  border: solid 1px v.$color-gray-medium;
+  box-shadow: 0 0 7px 1px rgba(128, 128, 128, 0.5);
+}
+
+.contact-icon {
+  color: v.$color-gray-medium;
+  font-size: 170%;
+  vertical-align: middle;
+  padding-right: 10px;
+}
+
+.contact-submit,
+.btn-site {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  width: 100%;
+  font-size: 1.2rem;
+  font-family: v.$font-title;
+  font-weight: 300;
+  border-radius: 5px;
+  padding: 5px 0;
+  margin-bottom: 1rem;
+  text-align: center;
+  background-color: v.$color-gray-light;
+  color: v.$color-almost-white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.btn-site {
+  max-width: 6rem;
+}
+
+a.btn-site span {
+  color: v.$color-almost-white;
+}
+
+.contact-submit:after,
+.btn-site:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(
+    rgba(44, 62, 80, 1),
+    rgba(52, 152, 219, 1)
+  );
+  /* For Safari 5.1 to 6.0 */
+  /* For Opera 11.1 to 12.0 */
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(44, 62, 80, 1), rgba(52, 152, 219, 1));
+  /* Standard syntax */
+  -webkit-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
+  z-index: 2;
+  opacity: 0;
+}
+
+.contact-submit:hover:after,
+.contact-submit:active:after,
+.btn-site:hover:after,
+.btn-site:active:after {
+  opacity: 1;
+}
+
+.contact-submit span,
+.btn-site span {
+  /* width: 100%; */
+  display: inline-block;
+  position: relative;
+  z-index: 3;
+}
+
+.contact-title {
+  padding-left: 15px;
+}
+
+.contact-qrcode {
+  width: 70%;
+  margin: auto;
+}
+
+.contact-qrcode img {
+  width: 100%;
+  fill: v.$color-gray-medium;
+}
+
+.contact-divider {
+  margin-top: 50px;
+}
+
+div[data-error-id] {
+  font-size: 1.2em;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+.form-error {
+  color: red;
+}
+
+.form-OK {
+  color: green;
+}
+
+#send-result {
+  color: red;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.2em;
+  font-weight: 300;
+  text-align: center;
+}
+.section-content address .icon {
+  margin-right: 0.5rem;
+}
+
+/* Small phones to small tablets: from 576px to 767px */
+@include m.max-sm {
+  .contact-card {
+    text-align: center;
+  }
+}
+
