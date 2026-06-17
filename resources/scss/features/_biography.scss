@@ -18,10 +18,10 @@
   font-size: 1.2rem;
   padding-left: 1rem;
   transition: color 0.2s ease-in-out;
-}
 
-.bio-link:hover {
-  color: v.$color-turquoise-green;
+  &:hover {
+    color: v.$color-turquoise-green;
+  }
 }
 
 .bio-row {
@@ -34,7 +34,6 @@
   font-weight: bolder;
   vertical-align: top;
 }
-
 
 /* Small phones to small tablets: from 576px to 767px */
 @include m.max-sm {
@@ -49,4 +48,3 @@
     width: 100%;
   }
 }
-

@@ -79,28 +79,27 @@ button.hamburger-wrapper {
     background-color 0.3s ease-in-out;
 }
 
-.hamburger-wrapper:hover .hamburger-icon::before {
-  background-color: v.$color-turquoise-green;
-}
-
-.hamburger-wrapper:hover .hamburger-icon-middle {
-  background-color: v.$color-turquoise-green;
-}
-
-.hamburger-wrapper:hover .hamburger-icon::after {
-  background-color: v.$color-turquoise-green;
+.hamburger-wrapper {
+  &:hover {
+    .hamburger-icon::before,
+    .hamburger-icon-middle,
+    .hamburger-icon::after {
+      background-color: v.$color-turquoise-green;
+    }
+  }
 }
 
 .hamburger-close-x::before {
   transform: rotate(45deg) scaleX(1.3);
 }
 
-.hamburger-close-x .hamburger-icon-middle {
-  opacity: 0;
-  transform: scaleX(0);
-}
+.hamburger-close-x {
+  .hamburger-icon-middle {
+    opacity: 0;
+    transform: scaleX(0);
+  }
 
-.hamburger-close-x::after {
-  transform: rotate(-45deg) scaleX(1.3) translateY(1px);
+  &::after {
+    transform: rotate(-45deg) scaleX(1.3) translateY(1px);
+  }
 }
-

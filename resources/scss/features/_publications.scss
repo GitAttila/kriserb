@@ -4,13 +4,13 @@
 /* PUBLICATIONS                              */
 /* ----------------------------------------- */
 
-#content-publications p {
-  line-height: 1.33;
+#content-publications {
+  p {
+    line-height: 1.33;
+  }
+
+  .pub-item {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
 }
-
-#content-publications .pub-item {
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
-}
-
-
