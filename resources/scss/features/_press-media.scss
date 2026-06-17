@@ -22,12 +22,11 @@
 }
 .press-link {
   color: v.$color-gray-medium;
-}
 
-.press-link:hover {
-  color: v.$color-turquoise-green;
+  &:hover {
+    color: v.$color-turquoise-green;
+  }
 }
-
 
 /* Big tablet to 1200px (widths smaller than the 1200px row) */
 @include m.max-lg {
@@ -54,11 +53,10 @@
 @include m.max-xs {
   .pub-item {
     text-align: center;
-  }
 
-  .pub-item .btn-site {
-    margin: auto;
-    margin-bottom: 0.5rem;
+    .btn-site {
+      margin: auto;
+      margin-bottom: 0.5rem;
+    }
   }
 }
-

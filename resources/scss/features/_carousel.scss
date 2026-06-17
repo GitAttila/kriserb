@@ -13,30 +13,39 @@
   transition: opacity 0.5s ease-out;
 }
 
-.carousel-control-prev .icon,
-.carousel-control-next .icon {
-  font-size: 2rem;
+.carousel {
+  .carousel-control-prev,
+  .carousel-control-next {
+    .icon {
+      font-size: 2rem;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    .carousel-indicators,
+    .carousel-control-prev,
+    .carousel-control-next {
+      filter: alpha(opacity=50);
+      opacity: 0.5;
+    }
+  }
 }
 
-.carousel:hover .carousel-indicators,
-.carousel:hover .carousel-control-prev,
-.carousel:hover .carousel-control-next,
-.carousel:focus .carousel-indicators,
-.carousel:focus .carousel-control-prev,
-.carousel:focus .carousel-control-next {
-  filter: alpha(opacity=50);
-  opacity: 0.5;
-}
+.carousel-pub {
+  .carousel-control-prev,
+  .carousel-control-next {
+    .icon {
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+  }
 
-.carousel-pub .carousel-control-prev .icon,
-.carousel-pub .carousel-control-next .icon {
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-}
-.carousel-pub .carousel-indicators,
-.carousel-pub .carousel-control-prev,
-.carousel-pub .carousel-control-next {
-  filter: alpha(opacity=50);
-  opacity: 0.5;
+  .carousel-indicators,
+  .carousel-control-prev,
+  .carousel-control-next {
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+  }
 }
 
 /* ------------ LOADING SPINNER ------------ */
@@ -51,37 +60,41 @@
   height: calc(100vh - 200px);
   width: 100%;
   z-index: 1000;
-}
 
-.section-spinner .main-logo-wrapper {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
+  .main-logo-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 
-.section-spinner .main-logo-wrapper .main-logo-text-offset-erb {
-  margin-left: 1.2rem;
-}
+    .main-logo-text-offset-erb {
+      margin-left: 1.2rem;
+    }
 
-.section-spinner .main-logo-wrapper .main-logo-frame {
-  animation: 0.8s infinite rotating;
-}
+    .main-logo-frame {
+      animation: 0.8s infinite rotating;
+    }
 
-.section-spinner .main-logo-wrapper a:hover .main-logo-frame {
-  border-color: rgba(222, 222, 222, 1);
-}
-.section-spinner .spinner-msg {
-  margin: 1rem 0;
-  font-size: 1rem;
-  font-weight: bold;
-  color: rgba(222, 222, 222, 1);
-}
-.section-spinner .spinner-msg-alert {
-  color: #f08a24;
+    a:hover {
+      .main-logo-frame {
+        border-color: rgba(222, 222, 222, 1);
+      }
+    }
+  }
+
+  .spinner-msg {
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgba(222, 222, 222, 1);
+  }
+
+  .spinner-msg-alert {
+    color: #f08a24;
+  }
 }
 @keyframes rotating {
   0% {
@@ -96,5 +109,3 @@
     transform: rotate(180deg);
   }
 }
-
-

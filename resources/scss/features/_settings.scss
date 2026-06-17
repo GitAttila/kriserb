@@ -193,73 +193,77 @@ section.hidden {
   margin-bottom: 0;
   padding-bottom: 0.6rem;
   width: 100%;
+
+  a {
+    position: relative;
+
+    &:link,
+    &:visited,
+    &:focus {
+      color: v.$color-gray-medium;
+      outline: none;
+      -webkit-transition: color 0.3s ease-out;
+      transition: color 0.3s ease-out;
+    }
+
+    &:hover {
+      .logo-blur-onhover {
+        -webkit-filter: blur(2px);
+        filter: blur(2px);
+      }
+
+      .logo-blur {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        color: rgba(52, 152, 219, 1);
+      }
+
+      .main-logo-frame {
+        border-color: rgba(52, 152, 219, 1);
+      }
+    }
+  }
+
+  .main-logo-frame {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 4rem;
+    width: 4rem;
+    border: 1px solid rgba(222, 222, 222, 1);
+    -webkit-transition: border-color 0.3s ease-out;
+    transition: border-color 0.3s ease-out;
+  }
+
+  .logo-blur,
+  .logo-blur-onhover {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    -webkit-transition: 0.5s ease-out;
+    transition: 0.5s ease-out;
+  }
+
+  .logo-blur {
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+  }
 }
-.main-logo-wrapper a {
-  position: relative;
-}
+
 .main-logo-text {
   margin-left: 0.3rem;
   text-transform: lowercase;
-}
 
-.main-logo-text-offset-erb {
-  margin-left: 0.5rem;
-}
+  &-offset-erb {
+    margin-left: 0.5rem;
+  }
 
-.main-logo-text-offset-tyna {
-  margin-left: -0.4rem;
-}
+  &-offset-tyna {
+    margin-left: -0.4rem;
+  }
 
-.main-logo-text-offset-enova {
-  margin-left: -0.4rem;
-}
-
-.main-logo-frame {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 4rem;
-  width: 4rem;
-  border: 1px solid rgba(222, 222, 222, 1);
-  -webkit-transition: border-color 0.3s ease-out;
-  transition: border-color 0.3s ease-out;
-}
-
-.logo-blur,
-.logo-blur-onhover {
-  -webkit-filter: blur(0px);
-  filter: blur(0px);
-  -webkit-transition: 0.5s ease-out;
-  transition: 0.5s ease-out;
-}
-
-.logo-blur {
-  -webkit-filter: blur(2px);
-  filter: blur(2px);
-}
-
-.main-logo-wrapper a:link,
-.main-logo-wrapper a:visited,
-.main-logo-wrapper a:focus {
-  color: v.$color-gray-medium;
-  outline: none;
-  -webkit-transition: color 0.3s ease-out;
-  transition: color 0.3s ease-out;
-}
-
-.main-logo-wrapper a:hover .logo-blur-onhover {
-  -webkit-filter: blur(2px);
-  filter: blur(2px);
-}
-
-.main-logo-wrapper a:hover .logo-blur {
-  -webkit-filter: blur(0px);
-  filter: blur(0px);
-  color: rgba(52, 152, 219, 1);
-}
-
-.main-logo-wrapper a:hover .main-logo-frame {
-  border-color: rgba(52, 152, 219, 1);
+  &-offset-enova {
+    margin-left: -0.4rem;
+  }
 }
 
 .dotted-spaced {
@@ -327,4 +331,3 @@ section.hidden {
     font-size: 125%;
   }
 }
-
