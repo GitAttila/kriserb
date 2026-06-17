@@ -1,0 +1,35 @@
+@mixin min-4k {
+  @media (min-width: 2560px) {
+    @content;
+  }
+}
+
+@mixin max-4k {
+  @media only screen and (max-width: 2560px) {
+    @content;
+  }
+}
+
+@mixin max-lg {
+  @media only screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin max-md {
+  @media only screen and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin max-sm {
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin max-xs {
+  @media only screen and (max-width: 576px) {
+    @content;
+  }
+}

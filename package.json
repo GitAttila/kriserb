@@ -3,20 +3,20 @@
   "version": "1.0.0",
   "description": "KrisErb's personal site",
   "main": "index.js",
-  "dependencies": {},
+  "type": "module",
   "devDependencies": {
-    "browser-sync": "^2.26.7",
-    "del": "^5.1.0",
-    "gulp": "^4.0.2",
-    "gulp-imagemin": "^6.2.0",
-    "imagemin": "^7.0.1",
-    "imagemin-gifsicle": "^6.0.1",
-    "imagemin-jpeg-recompress": "^6.0.0",
-    "imagemin-mozjpeg": "^8.0.0",
-    "imagemin-pngquant": "^8.0.0"
+    "sass": "^1.101.0",
+    "vite": "^7.1.3",
+    "vite-plugin-static-copy": "^3.1.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "vite --open",
+    "build": "vite build",
+    "preview": "vite preview --open",
+    "clean": "rm -rf dist",
+    "dev:vite": "vite --open",
+    "build:vite": "vite build",
+    "preview:vite": "vite preview --open"
   },
   "repository": {
     "type": "git",
@@ -27,5 +27,12 @@
   "bugs": {
     "url": "https://github.com/GitAttila/kriserb/issues"
   },
-  "homepage": "https://github.com/GitAttila/kriserb#readme"
+  "homepage": "https://github.com/GitAttila/kriserb#readme",
+  "dependencies": {
+    "bootstrap": "^4.6.2",
+    "imagesloaded": "^5.0.0",
+    "isotope-layout": "^3.0.6",
+    "jquery": "^3.6.4",
+    "jquery-bridget": "^3.0.1"
+  }
 }

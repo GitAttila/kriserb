@@ -1,0 +1,106 @@
+@use '../variables' as v;
+
+/* ----------------------------------------- */
+/* HAMBURGER                                 */
+/* ----------------------------------------- */
+
+button.hamburger-wrapper {
+  width: 23px;
+  --webkit-appearance: none;
+  border: none;
+  outline: 0;
+}
+.hamburger-wrapper {
+  background-color: transparent;
+  z-index: 1010;
+  -webkit-transform: translate3d(0, 0, 0);
+  cursor: pointer;
+  transition: 0.3s background-color ease-in-out;
+  border: none;
+  padding: 0;
+  position: relative;
+}
+
+.hamburger-wrapper:focus {
+  outline: 0;
+}
+
+.hamburger-icon {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hamburger-icon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 21px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: rgba(192, 192, 192, 1);
+  transform-origin: 0 0;
+  transition:
+    transform 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
+}
+
+.hamburger-icon-middle {
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 21px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: rgba(192, 192, 192, 1);
+  transform-origin: 0 50%;
+  transition:
+    transform 0.3s ease-in-out,
+    opacity 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
+}
+
+.hamburger-icon::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 21px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: rgba(192, 192, 192, 1);
+  transform-origin: 0 100%;
+  transition:
+    transform 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
+}
+
+.hamburger-wrapper:hover .hamburger-icon::before {
+  background-color: v.$color-turquoise-green;
+}
+
+.hamburger-wrapper:hover .hamburger-icon-middle {
+  background-color: v.$color-turquoise-green;
+}
+
+.hamburger-wrapper:hover .hamburger-icon::after {
+  background-color: v.$color-turquoise-green;
+}
+
+.hamburger-close-x::before {
+  transform: rotate(45deg) scaleX(1.3);
+}
+
+.hamburger-close-x .hamburger-icon-middle {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.hamburger-close-x::after {
+  transform: rotate(-45deg) scaleX(1.3) translateY(1px);
+}
+

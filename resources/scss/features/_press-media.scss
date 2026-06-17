@@ -1,0 +1,64 @@
+@use '../variables' as v;
+@use '../mixins' as m;
+
+/* ----------------------------------------- */
+/* PRESS/MEDIA                               */
+/* ----------------------------------------- */
+
+.row-press {
+  margin-bottom: 1rem;
+}
+
+.press-logo {
+  width: 100%;
+  margin: 1rem auto;
+  display: block;
+}
+.icon-press {
+  color: rgba(222, 222, 222, 1);
+  display: block;
+  text-align: center;
+  font-size: 3rem;
+}
+.press-link {
+  color: v.$color-gray-medium;
+}
+
+.press-link:hover {
+  color: v.$color-turquoise-green;
+}
+
+
+/* Big tablet to 1200px (widths smaller than the 1200px row) */
+@include m.max-lg {
+  .press-logo {
+    width: 67%;
+  }
+}
+
+/* Small tablet to big tablet: from 768px to 992px */
+@include m.max-md {
+  .press-logo {
+    width: 67%;
+  }
+}
+
+/* Small phones to small tablets: from 576px to 767px */
+@include m.max-sm {
+  .press-logo {
+    width: 50%;
+  }
+}
+
+/* Small phones: from 0 to 576px */
+@include m.max-xs {
+  .pub-item {
+    text-align: center;
+  }
+
+  .pub-item .btn-site {
+    margin: auto;
+    margin-bottom: 0.5rem;
+  }
+}
+

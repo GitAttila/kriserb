@@ -65,3 +65,8 @@ xcuserdata/
 ############
 /node_modules
 /dist
+
+# Local environment and runtime files
+.env
+.env.*
+resources/js/userFormHistory.json

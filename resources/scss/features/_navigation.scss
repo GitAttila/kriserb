@@ -1,0 +1,166 @@
+@use '../variables' as v;
+@use '../mixins' as m;
+
+/* ----------------------------------------- */
+/* NAVIGATION                                */
+/* ----------------------------------------- */
+
+section.main-view {
+  top: 167px; /*offsetting section header */
+}
+nav.navbar {
+  position: fixed;
+  width: 25%;
+  padding-right: 15px;
+}
+.navbar {
+  background-color: transparent;
+  padding: 0;
+  font-family: v.$font-title;
+  font-weight: 100;
+  text-transform: lowercase;
+}
+
+.navbar-nav .nav-link,
+.navbar-nav .nav-link:visited,
+.navbar-nav .nav-link:focus {
+  color: v.$color-gray-medium;
+  font-size: 1.4rem;
+  padding: 0;
+  background-color: transparent;
+  outline: none;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:active {
+  color: v.$color-turquoise-green;
+}
+
+.navbar-nav .nav-link .icon {
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+.navbar-nav .nav-link:hover .icon {
+  color: v.$color-turquoise-green;
+}
+
+.navbar-nav .submenu {
+  display: none;
+}
+
+.navbar-nav .submenu .nav-link {
+  padding-left: 1rem;
+  font-style: italic;
+}
+.icon-menu-up,
+.icon-menu-down {
+  color: v.$color-gray-light;
+}
+
+.icon-menu-up {
+  display: none;
+}
+
+.navbar-nav .nav-item.active > .nav-link > span {
+  background-image: -webkit-linear-gradient(
+    left,
+    rgb(192, 192, 192) 40%,
+    rgba(255, 255, 255, 0) 20%
+  );
+  background-image: -webkit-linear-gradient(
+    left,
+    rgb(192, 192, 192) 25%,
+    rgba(255, 255, 255, 0) 0%
+  );
+  background-image: linear-gradient(
+    to right,
+    rgb(192, 192, 192) 25%,
+    rgba(255, 255, 255, 0) 0%
+  );
+  background-position: bottom;
+  background-size: 5px 1px;
+  background-repeat: repeat-x;
+}
+
+.animation-width {
+  -webkit-transition:
+    max-width 0.3s ease-in-out,
+    flex 0.3s ease-in-out;
+  transition:
+    max-width 0.3s ease-in-out,
+    flex 0.3s ease-in-out;
+}
+
+.navbar-menu-collapsed {
+  max-width: 0%;
+  flex: 0 0 0%;
+}
+
+.icon-home-wrapper {
+  font-size: 2rem;
+}
+
+.icon-home-wrapper .nav-link {
+  padding: 0;
+  display: inline-block;
+}
+
+.icon-home-wrapper .icon-home {
+  color: v.$color-gray-light;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+.icon-home-wrapper .icon-home:hover,
+.icon-home-wrapper .icon-home:active {
+  color: v.$color-turquoise-green;
+}
+
+
+/* Small phones to small tablets: from 576px to 767px */
+@include m.max-sm {
+  section.main-header {
+    padding-top: 1rem;
+  }
+  .main-view {
+    padding-top: 0;
+  }
+
+  .collapse.in > ul > li > a {
+    background-image: -webkit-linear-gradient(
+      left,
+      v.$color-gray-light 40%,
+      rgba(255, 255, 255, 0) 20%
+    );
+    background-image: linear-gradient(
+      to right,
+      v.$color-gray-light 25%,
+      rgba(255, 255, 255, 0) 0%
+    );
+    background-position: bottom;
+    background-size: 5px 1px;
+    background-repeat: repeat-x;
+  }
+  .submenu {
+    padding-left: 0;
+  }
+}
+
+/* Small phones: from 0 to 576px */
+@include m.max-xs {
+  nav.navbar {
+    width: 100%;
+    background-color: v.$color-almost-white-95;
+    z-index: 1000;
+    margin-left: -15px;
+    padding-right: 0;
+    top: 151px;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+}
+

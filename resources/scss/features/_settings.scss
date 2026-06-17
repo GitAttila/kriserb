@@ -1,0 +1,330 @@
+@use '../variables' as v;
+@use '../mixins' as m;
+
+/* ----------------------------------------- */
+/* GENERAL SETTINGS */
+/* ----------------------------------------- */
+
+/* ----------------- FONTS ----------------- */
+/* Title font: $font-title                  */
+/* Body font: $font-text                    */
+
+/* ----------------- COLORS ---------------- */
+/* Turquoise blue: $color-turquoise-blue      */
+/* Turquoise green: $color-turquoise-green    */
+/* Grey medium: $color-gray-medium             */
+/* Grey lighter: $color-gray-light             */
+/* Almost white: $color-almost-white           */
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+html,
+body {
+  background-color: v.$color-almost-white;
+  color: v.$color-gray-medium;
+  font-family: v.$font-title;
+  /* font-family: v.$font-text; */
+  font-size: 1rem;
+  font-weight: 100;
+  text-rendering: optimizeLegibility;
+}
+
+a:link,
+a:visited {
+  text-decoration: none !important;
+}
+
+a[href^='tel'] {
+  text-decoration: none;
+  color: inherit;
+}
+
+::-webkit-input-placeholder {
+  color: v.$color-gray-light;
+}
+
+::-moz-placeholder {
+  color: v.$color-gray-light;
+}
+
+:-ms-input-placeholder {
+  color: v.$color-gray-light;
+}
+
+input:-moz-placeholder {
+  color: v.$color-gray-light;
+}
+
+textarea:focus,
+input:focus {
+  outline: 0;
+}
+
+textarea,
+input {
+  font-family: v.$font-text;
+  -webkit-appearance: none;
+  border-radius: 0;
+  font-size: 1rem;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: v.$font-title;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 100;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  color: v.$color-gray-medium;
+  margin-bottom: 1.2rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: v.$color-gray-light;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 100;
+  margin-bottom: 0.8rem;
+  color: v.$color-gray-medium;
+}
+
+h4 {
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+  color: v.$color-gray-light;
+}
+
+p {
+  font-family: v.$font-text;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.text-gradient {
+  background: -webkit-linear-gradient(
+    top,
+    rgba(44, 62, 80, 1),
+    rgba(52, 152, 219, 1)
+  );
+  background: linear-gradient(top, rgba(44, 62, 80, 1), rgba(52, 152, 219, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.font-title {
+  font-family: v.$font-title;
+}
+
+.font-text {
+  font-family: v.$font-text;
+}
+
+/* ----------------------------------------- */
+/* PAGE HEADER                               */
+/* ----------------------------------------- */
+section {
+  padding: 2rem 0;
+  position: relative;
+}
+
+.section-content {
+  display: none;
+  padding: 0;
+}
+
+.section-content.active {
+  display: block;
+}
+#content-container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+/* ----------------------------------------- */
+/* PAGE HEADER                               */
+/* ----------------------------------------- */
+
+section.main-header {
+  padding-bottom: 1rem;
+  background-color: v.$color-almost-white-95;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+section.hidden {
+  display: none;
+}
+
+.main-logo-wrapper {
+  font-size: 1.8rem;
+  line-height: 2rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 0;
+  padding-bottom: 0.6rem;
+  width: 100%;
+}
+.main-logo-wrapper a {
+  position: relative;
+}
+.main-logo-text {
+  margin-left: 0.3rem;
+  text-transform: lowercase;
+}
+
+.main-logo-text-offset-erb {
+  margin-left: 0.5rem;
+}
+
+.main-logo-text-offset-tyna {
+  margin-left: -0.4rem;
+}
+
+.main-logo-text-offset-enova {
+  margin-left: -0.4rem;
+}
+
+.main-logo-frame {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 4rem;
+  width: 4rem;
+  border: 1px solid rgba(222, 222, 222, 1);
+  -webkit-transition: border-color 0.3s ease-out;
+  transition: border-color 0.3s ease-out;
+}
+
+.logo-blur,
+.logo-blur-onhover {
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+
+.logo-blur {
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+}
+
+.main-logo-wrapper a:link,
+.main-logo-wrapper a:visited,
+.main-logo-wrapper a:focus {
+  color: v.$color-gray-medium;
+  outline: none;
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+}
+
+.main-logo-wrapper a:hover .logo-blur-onhover {
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+}
+
+.main-logo-wrapper a:hover .logo-blur {
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+  color: rgba(52, 152, 219, 1);
+}
+
+.main-logo-wrapper a:hover .main-logo-frame {
+  border-color: rgba(52, 152, 219, 1);
+}
+
+.dotted-spaced {
+  background-image: -webkit-linear-gradient(
+    left,
+    v.$color-gray-medium 40%,
+    rgba(255, 255, 255, 0) 20%
+  );
+  background-image: -webkit-linear-gradient(
+    left,
+    v.$color-gray-medium 25%,
+    rgba(255, 255, 255, 0) 0%
+  );
+  background-image: linear-gradient(
+    to right,
+    v.$color-gray-medium 25%,
+    rgba(255, 255, 255, 0) 0%
+  );
+  background-position: bottom;
+  background-size: 5px 1px;
+  background-repeat: repeat-x;
+}
+
+.dotted-spaced-light {
+  background-image: -webkit-linear-gradient(
+    left,
+    rgb(192, 192, 192) 40%,
+    rgba(255, 255, 255, 0) 20%
+  );
+  background-image: -webkit-linear-gradient(
+    left,
+    rgb(192, 192, 192) 25%,
+    rgba(255, 255, 255, 0) 0%
+  );
+  background-image: linear-gradient(
+    to right,
+    rgb(192, 192, 192) 25%,
+    rgba(255, 255, 255, 0) 0%
+  );
+  background-position: bottom;
+  background-size: 5px 1px;
+  background-repeat: repeat-x;
+}
+
+@include m.min-4k {
+  html,
+  body {
+    font-size: 1.4rem;
+  }
+}
+
+@include m.max-4k {
+}
+
+/* Small phones to small tablets: from 576px to 767px */
+@include m.max-sm {
+  .gigante {
+    font-size: 135%;
+  }
+}
+
+/* Small phones: from 0 to 576px */
+@include m.max-xs {
+  .gigante {
+    font-size: 125%;
+  }
+}
+

@@ -1,0 +1,15 @@
+@use '../variables' as v;
+
+/* ----------------------------------------- */
+/* HOME GALLERY                              */
+/* ----------------------------------------- */
+
+#home-gallery {
+  position: relative;
+  width: calc(100vh - 200px - 1rem);
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+
