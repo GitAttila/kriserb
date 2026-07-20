@@ -1,0 +1,54 @@
+@use '../variables' as v;
+
+/* ----------------------------------------- */
+/* COMING SOON PLACEHOLDER                   */
+/* ----------------------------------------- */
+
+.coming-soon-page {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.coming-soon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: 2rem 1.5rem;
+  box-sizing: border-box;
+}
+
+.coming-soon__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 28rem;
+  width: 100%;
+
+  .main-logo-wrapper {
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    margin-bottom: 1.5rem;
+    width: auto;
+
+    .main-logo-frame {
+      height: 5.2rem;
+      width: 5.2rem;
+    }
+  }
+
+  .social-media {
+    margin-top: 0.25rem;
+  }
+}
+
+.coming-soon__message {
+  margin: 0 0 1.75rem;
+  font-family: v.$font-text;
+  font-size: 1.05rem;
+  font-weight: 300;
+  line-height: 1.6;
+  letter-spacing: 0.02rem;
+  color: v.$color-gray-medium;
+}
